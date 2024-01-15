@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="next-head-count" content="4">
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/next.css')}}" data-n-g="">
-    <link rel="stylesheet" href="{{asset('admin/css/custom_next.css')}}" data-n-g="">
+    <link rel="stylesheet" href="{{asset('lmodel/m2/css/custom_next.css')}}" data-n-g="">
 
     <title>Registration | Infinix</title>
     <meta name="description"

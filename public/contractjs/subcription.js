@@ -281,7 +281,7 @@ var subcription = function () {
         init: function () {
             initialiseEtheruim();
             initialiseABI();
-            profit();
+           // profit();
             $('#spinner_register').hide();
             $('#spinner_approuve').hide();
         },
@@ -293,6 +293,7 @@ var subcription = function () {
         login,
         approve,
         activateLevel,
+        profit
     }
 }();
 jQuery(document).ready(function() {

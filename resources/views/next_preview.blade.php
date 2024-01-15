@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="next-head-count" content="4">
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/next.css')}}" data-n-g="">
-    <link rel="stylesheet" href="{{asset('admin/css/custom_next.css')}}" data-n-g="">
+    <link rel="stylesheet" href="{{asset('lmodel/m2/css/custom_next.css')}}" data-n-g="">
 
     <title>Preview | NEXACHAIN FDUSD</title>
     <style id="abu-collapse-styles" type="text/css"></style>
 
 </head>
 <body style="overflow: unset; position: relative; min-height: 100%; top: 40px;">
-
+<span id="user_id">{{$id}}</span>
 <div id="__next">
     <div class="relative flex bg-main-bg items-center justify-center min-h-screen min-w-full overflow-hidden">
         <div
@@ -1920,6 +1920,10 @@
     function hideMenu() {
         $('#hambuger').hide()
     }
+    jQuery(window).on('load',function () {
+        'use strict';
+        subcription.profit();
+    });
 </script>
 
 </body>

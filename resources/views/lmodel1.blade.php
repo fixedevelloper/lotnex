@@ -7,7 +7,7 @@
     <meta name="next-head-count" content="4">
     <link rel="preload" href="{{asset('lmodel/m2/css/preview_next.css')}}" as="style">
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/next.css')}}" data-n-g="">
-    <link rel="stylesheet" href="{{asset('admin/css/custom_next.css')}}" data-n-g="">
+    <link rel="stylesheet" href="{{asset('lmodel/m2/css/custom_next.css')}}" data-n-g="">
     <script src="{{asset("lmodel/m2/js/next-dashboard.js")}}" defer=""></script>
     <style data-react-tooltip="true">
         .__react_component_tooltip {
@@ -2313,6 +2313,10 @@
     function hideMenu() {
         $('#hambuger').hide()
     }
+    jQuery(window).on('load',function () {
+        'use strict';
+        subcription.profit();
+    });
 </script>
 </body>
 </html>
