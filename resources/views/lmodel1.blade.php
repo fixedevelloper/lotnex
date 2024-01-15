@@ -1199,7 +1199,7 @@
                                                     <div
                                                         class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md @if($activate_level->level7) bg-main-blue @else bg-white-100 @endif "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md @if($activate_level->level8) bg-main-blue @else bg-white-100 @endif bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md @if($activate_level->level8) bg-main-blue @else bg-white-100 @endif "></div>
                                                     <div
                                                         class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md @if($activate_level->level9) bg-main-blue @else bg-white-100 @endif "></div>
                                                     <div

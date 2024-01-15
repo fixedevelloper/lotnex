@@ -693,7 +693,7 @@
                                                 <div class="relative flex flex-col -ml-2.5 -mr-2.5 !mb-3 ">
                                                     <div class="flex w-full justify-center items-center">
                                                         <div class="relative flex w-full justify-evenly items-start false">
-                                                            @if($activate_level)
+                                                            @if($activate_level->level2)
                                                                 <div class="flex w-full">
                                                                     <div
                                                                         class="flex flex-col w-full justify-evenly items-center space-y-1.5">
@@ -752,7 +752,7 @@
                                                 <div class="relative flex flex-col -ml-2.5 -mr-2.5 !mb-3 ">
                                                     <div class="flex w-full justify-center items-center">
                                                         <div class="relative flex w-full justify-evenly items-start false">
-                                                            @if($activate_level)
+                                                            @if($activate_level->level3)
                                                                 <div class="flex w-full">
                                                                     <div
                                                                         class="flex flex-col w-full justify-evenly items-center space-y-1.5">
@@ -811,7 +811,7 @@
                                                 <div class="relative flex flex-col -ml-2.5 -mr-2.5 !mb-3 ">
                                                     <div class="flex w-full justify-center items-center">
                                                         <div class="relative flex w-full justify-evenly items-start false">
-                                                            @if($activate_level)
+                                                            @if($activate_level->level4)
                                                                 <div class="flex w-full">
                                                                     <div
                                                                         class="flex flex-col w-full justify-evenly items-center space-y-1.5">
@@ -870,7 +870,7 @@
                                                 <div class="relative flex flex-col -ml-2.5 -mr-2.5 !mb-3 ">
                                                     <div class="flex w-full justify-center items-center">
                                                         <div class="relative flex w-full justify-evenly items-start false">
-                                                            @if($activate_level)
+                                                            @if($activate_level->level5)
                                                                 <div class="flex w-full">
                                                                     <div
                                                                         class="flex flex-col w-full justify-evenly items-center space-y-1.5">
@@ -928,7 +928,7 @@
                                                 <div class="relative flex flex-col -ml-2.5 -mr-2.5 !mb-3 ">
                                                     <div class="flex w-full justify-center items-center">
                                                         <div class="relative flex w-full justify-evenly items-start false">
-                                                            @if($activate_level)
+                                                            @if($activate_level->level6)
                                                                 <div class="flex w-full">
                                                                     <div
                                                                         class="flex flex-col w-full justify-evenly items-center space-y-1.5">
@@ -987,7 +987,7 @@
                                                 <div class="relative flex flex-col -ml-2.5 -mr-2.5 !mb-3 ">
                                                     <div class="flex w-full justify-center items-center">
                                                         <div class="relative flex w-full justify-evenly items-start false">
-                                                            @if($activate_level)
+                                                            @if($activate_level->level7)
                                                                 <div class="flex w-full">
                                                                     <div
                                                                         class="flex flex-col w-full justify-evenly items-center space-y-1.5">
@@ -1033,15 +1033,7 @@
                                                         </svg>
                                                         <span class="text-sm text-white font-normal sm:text-sm">0</span>
                                                     </div>
-                                                    {{-- <div class="flex space-x-2 items-center">
-                                                         <svg class="w-5 h-5 stroke-current text-white-500"
-                                                              viewBox="0 0 20 20" fill="none" stroke="#2CFF4E"
-                                                              xmlns="http://www.w3.org/2000/svg">
-                                                             <path clip-rule="evenodd"
-                                                                   d="M6.354 3.818a7.25 7.25 0 0 1 10.808 5.28.5.5 0 1 1-.99.137A6.25 6.25 0 0 0 4.551 7h2.115a.5.5 0 0 1 0 1H3.333a.5.5 0 0 1-.5-.5V4.167a.5.5 0 1 1 1 0v2.086a7.25 7.25 0 0 1 2.521-2.435ZM3.265 10.338a.5.5 0 0 1 .564.427A6.25 6.25 0 0 0 15.449 13h-2.116a.5.5 0 1 1 0-1H16.667a.5.5 0 0 1 .5.5v3.333a.5.5 0 1 1-1 0v-2.086a7.25 7.25 0 0 1-13.329-2.845.5.5 0 0 1 .427-.564Z"></path>
-                                                         </svg>
-                                                         <span class="text-sm text-white font-normal sm:text-sm">8732</span>
-                                                     </div>--}}
+
                                                 </div>
                                             </div>
                                         </a>
@@ -1054,7 +1046,7 @@
                                                 <div class="relative flex flex-col -ml-2.5 -mr-2.5 !mb-3 ">
                                                     <div class="flex w-full justify-center items-center">
                                                         <div class="relative flex w-full justify-evenly items-start false">
-                                                            @if($activate_level)
+                                                            @if($activate_level->level8)
                                                                 <div class="flex w-full">
                                                                     <div
                                                                         class="flex flex-col w-full justify-evenly items-center space-y-1.5">
@@ -1112,7 +1104,7 @@
                                                 <div class="relative flex flex-col -ml-2.5 -mr-2.5 !mb-3 ">
                                                     <div class="flex w-full justify-center items-center">
                                                         <div class="relative flex w-full justify-evenly items-start false">
-                                                            @if($activate_level)
+                                                            @if($activate_level->level9)
                                                                 <div class="flex w-full">
                                                                     <div
                                                                         class="flex flex-col w-full justify-evenly items-center space-y-1.5">
@@ -1171,7 +1163,7 @@
                                                 <div class="relative flex flex-col -ml-2.5 -mr-2.5 !mb-3 ">
                                                     <div class="flex w-full justify-center items-center">
                                                         <div class="relative flex w-full justify-evenly items-start false">
-                                                            @if($activate_level)
+                                                            @if($activate_level->level10)
                                                                 <div class="flex w-full">
                                                                     <div
                                                                         class="flex flex-col w-full justify-evenly items-center space-y-1.5">

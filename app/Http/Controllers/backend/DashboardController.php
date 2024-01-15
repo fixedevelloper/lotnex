@@ -88,9 +88,11 @@ class DashboardController extends Controller
         $id=$request->get("id");
         $address=$request->get("address");
         $user=User::query()->firstWhere(['address'=>$address]);
-        if (is_null($user->id_contract)){
-            $user->id_contract=$request->get("id");
-            $user->save();
+        if (is_null($user)){
+            if (is_null($user->id_contract)){
+                $user->id_contract=$request->get("id");
+                $user->save();
+            }
         }
         Session::put("id_connect",$id);
         Session::put("address_connect",$address);
