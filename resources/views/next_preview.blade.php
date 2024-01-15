@@ -1914,6 +1914,7 @@
     }
     jQuery(window).on('load',function () {
         'use strict';
+        subcription.getBalance();
         subcription.profit();
     });
 </script>

@@ -58,6 +58,12 @@ var subcription = function () {
         const accounts = await window.web3.eth.getAccounts();
         return accounts[0];
     };
+    const getBalance= async function(){
+        const accounts = await getAccount();
+        window.mxgfcontract = await new window.web3.eth.Contract(initialiseABIApprove().tokenmatrixAbi, initialiseABIApprove().tokenaddress);
+        const balance=  await window.mxgfcontract.methods.balanceOf(accounts).call();
+        return balance;
+    };
     const initialiseEtheruim = async function () {
         if (window.ethereum) {
             window.web3 = new Web3(ethereum);
@@ -83,6 +89,41 @@ var subcription = function () {
         }
     };
     const activateLevel=async function(level){
+        const balance=await getBalance();
+        if (level===1 && convertDiv(balance)<10){
+            alert("impossible")
+            return ;
+        }else if (level===2 && convertDiv(balance)<20){
+            alert("impossible")
+            return ;
+        }else if (level===3 && convertDiv(balance)<30){
+            alert("impossible")
+            return ;
+        }
+        else if (level===4 && convertDiv(balance)<50){
+            alert("impossible")
+            return ;
+        }
+        else if (level===5 && convertDiv(balance)<100){
+            alert("impossible")
+            return ;
+        }
+        else if (level===6 && convertDiv(balance)<250){
+            alert("impossible")
+            return ;
+        }else if (level===7 && convertDiv(balance)<500){
+            alert("impossible")
+            return ;
+        }else if (level===8 && convertDiv(balance)<1250){
+            alert("impossible")
+            return ;
+        }else if (level===9 && convertDiv(balance)<2500){
+            alert("impossible")
+            return ;
+        }else if (level===10 && convertDiv(balance)<5000){
+            alert("impossible")
+            return ;
+        }
         $('#spinner_register').show();
         const account=await getAccount()
         window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
@@ -293,7 +334,8 @@ var subcription = function () {
         login,
         approve,
         activateLevel,
-        profit
+        profit,
+        getBalance
     }
 }();
 jQuery(document).ready(function() {
