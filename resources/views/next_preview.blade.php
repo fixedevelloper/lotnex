@@ -624,7 +624,7 @@
                                     @if(is_null($activate_level))
 
                                     @else
-                                        <a href="#" onclick="subcription.activateLevel(1)">
+                                        <a @if($activate_level->level1) disabled @else href="#" onclick="subcription.activateLevel(1)" @endif>
                                             <div class="relative overflow-hidden flex flex-col w-180px min-h-158px max-h-[158px] sm:w-158px rounded-small p-5 m-2 justify-between bg-main-blue hover:bg-hover-main-blue sm:space-y-1.5">
                                                 <div class="flex w-full justify-between !mb-2.5">
                                                     <div class="flex space-x-1.5 items-center"><span
@@ -639,7 +639,7 @@
                                                                         class="flex flex-col w-full justify-evenly items-center space-y-1.5">
                                                                         <div class="relative">
                                                                             <div
-                                                                                class="@if($activate_level->level1) @else  bg-white @endif rounded-full w-7.5 h-7.5 "></div>
+                                                                                class="@if($activate_level->direct_partner_activate1>0) bg-white-500 @else bg-hover-main-blue @endif rounded-full w-7.5 h-7.5 "></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -648,7 +648,7 @@
                                                                         class="flex flex-col w-full justify-evenly items-center space-y-1.5">
                                                                         <div class="relative">
                                                                             <div
-                                                                                class="bg-hover-main-blue  rounded-full w-7.5 h-7.5 "></div>
+                                                                                class="@if($activate_level->direct_partner_activate1>1) bg-white-500 @else bg-hover-main-blue @endif rounded-full w-7.5 h-7.5 "></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -657,7 +657,7 @@
                                                                         class="flex flex-col w-full justify-evenly items-center space-y-1.5">
                                                                         <div class="relative">
                                                                             <div
-                                                                                class="bg-hover-main-blue  rounded-full w-7.5 h-7.5 "></div>
+                                                                                class="@if($activate_level->direct_partner_activate1>2) bg-white-500 @else bg-hover-main-blue @endif rounded-full w-7.5 h-7.5 "></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -683,7 +683,7 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="#" onclick="subcription.activateLevel(2)">
+                                        <a @if($activate_level->level2) disabled @else href="#" onclick="subcription.activateLevel(2)" @endif>
                                             <div class="relative overflow-hidden flex flex-col w-180px min-h-158px max-h-[158px] sm:w-158px rounded-small p-5 m-2 justify-between bg-main-blue hover:bg-hover-main-blue sm:space-y-1.5">
                                                 <div class="flex w-full justify-between !mb-2.5">
                                                     <div class="flex space-x-1.5 items-center"><span
@@ -743,7 +743,7 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="#" onclick="subcription.activateLevel(3)">
+                                        <a @if($activate_level->level3) disabled @else href="#" onclick="subcription.activateLevel(3)" @endif>
                                             <div class="relative overflow-hidden flex flex-col w-180px min-h-158px max-h-[158px] sm:w-158px rounded-small p-5 m-2 justify-between bg-main-blue hover:bg-hover-main-blue sm:space-y-1.5">
                                                 <div class="flex w-full justify-between !mb-2.5">
                                                     <div class="flex space-x-1.5 items-center"><span
@@ -802,7 +802,7 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="#" onclick="subcription.activateLevel(4)">
+                                        <a @if($activate_level->level4) disabled @else  href="#" onclick="subcription.activateLevel(4)" @endif>
                                             <div class="relative overflow-hidden flex flex-col w-180px min-h-158px max-h-[158px] sm:w-158px rounded-small p-5 m-2 justify-between bg-main-blue hover:bg-hover-main-blue sm:space-y-1.5">
                                                 <div class="flex w-full justify-between !mb-2.5">
                                                     <div class="flex space-x-1.5 items-center"><span
@@ -861,7 +861,7 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="#" onclick="subcription.activateLevel(5)">
+                                        <a @if($activate_level->level5) disabled @else  href="#" onclick="subcription.activateLevel(5)" @endif>
                                             <div class="relative overflow-hidden flex flex-col w-180px min-h-158px max-h-[158px] sm:w-158px rounded-small p-5 m-2 justify-between bg-main-blue hover:bg-hover-main-blue sm:space-y-1.5">
                                                 <div class="flex w-full justify-between !mb-2.5">
                                                     <div class="flex space-x-1.5 items-center"><span
@@ -919,7 +919,7 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="#" onclick="subcription.activateLevel(6)">
+                                        <a @if($activate_level->level6) disabled @else  href="#" onclick="subcription.activateLevel(6)" @endif>
                                             <div class="relative overflow-hidden flex flex-col w-180px min-h-158px max-h-[158px] sm:w-158px rounded-small p-5 m-2 justify-between bg-main-blue hover:bg-hover-main-blue sm:space-y-1.5">
                                                 <div class="flex w-full justify-between !mb-2.5">
                                                     <div class="flex space-x-1.5 items-center"><span
@@ -978,7 +978,7 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="#" onclick="subcription.activateLevel(7)">
+                                        <a @if($activate_level->level2) disabled @else  href="#" onclick="subcription.activateLevel(7)" @endif>
                                             <div class="relative overflow-hidden flex flex-col w-180px min-h-158px max-h-[158px] sm:w-158px rounded-small p-5 m-2 justify-between bg-main-blue hover:bg-hover-main-blue sm:space-y-1.5">
                                                 <div class="flex w-full justify-between !mb-2.5">
                                                     <div class="flex space-x-1.5 items-center"><span
@@ -1037,7 +1037,7 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="#" onclick="subcription.activateLevel(8)">
+                                        <a @if($activate_level->level8) disabled @else  href="#" onclick="subcription.activateLevel(8)" @endif>
                                             <div class="relative overflow-hidden flex flex-col w-180px min-h-158px max-h-[158px] sm:w-158px rounded-small p-5 m-2 justify-between bg-main-blue hover:bg-hover-main-blue sm:space-y-1.5">
                                                 <div class="flex w-full justify-between !mb-2.5">
                                                     <div class="flex space-x-1.5 items-center"><span
@@ -1095,7 +1095,7 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="#" onclick="subcription.activateLevel(9)">
+                                        <a @if($activate_level->level9) disabled @else  href="#" onclick="subcription.activateLevel(9)" @endif>
                                             <div class="relative overflow-hidden flex flex-col w-180px min-h-158px max-h-[158px] sm:w-158px rounded-small p-5 m-2 justify-between bg-main-blue hover:bg-hover-main-blue sm:space-y-1.5">
                                                 <div class="flex w-full justify-between !mb-2.5">
                                                     <div class="flex space-x-1.5 items-center"><span
@@ -1154,7 +1154,7 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href="#" onclick="subcription.activateLevel(10)">
+                                        <a @if($activate_level->level10) disabled @else  href="#" onclick="subcription.activateLevel(10)" @endif>
                                             <div class="relative overflow-hidden flex flex-col w-180px min-h-158px max-h-[158px] sm:w-158px rounded-small p-5 m-2 justify-between bg-main-blue hover:bg-hover-main-blue sm:space-y-1.5">
                                                 <div class="flex w-full justify-between !mb-2.5">
                                                     <div class="flex space-x-1.5 items-center"><span
