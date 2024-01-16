@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/responsive.css')}}">
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/custom_next.css')}}">
+    <title>Nexachain</title>
 
 </head>
 <body data-spy="scroll" data-offset="80">
@@ -41,7 +42,7 @@
                                 <p class="seconds_text">Seconds</p>
                             </li>
                         </ul>
-                        <a href="https://t.me/nexachainofficial" class="button iq-mt-20 iq-ml-10">Buy Tokens</a>
+                        <a target="_blank" href="https://t.me/nexachainofficial" class="button iq-mt-20 iq-ml-10">Buy Tokens</a>
                     </div>
                 </div>
             </div>

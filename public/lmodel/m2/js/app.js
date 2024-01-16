@@ -35,7 +35,7 @@ particlesJS('particles-js',
           "nb_sides": 5
         },
         "image": {
-          "src": "/front/images/coin/14.png",
+          "src": "/images/coin/14.png",
           "width": 100,
           "height": 100
         },
