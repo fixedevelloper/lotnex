@@ -84,6 +84,7 @@
 <body style="overflow: unset; position: relative; min-height: 100%; top: 40px;">
 <div id="__next">
     <span id="user_id" hidden>{{$id}}</span>
+    <span id="parent_address" hidden>{{$user->address_parent}}</span>
     <div class="relative flex bg-main-bg items-center justify-center min-h-screen min-w-full overflow-hidden">
         <div class="fixed top-0 left-1/2 -translate-x-1/2 flex justify-center w-full px-10 py-2.5 z-40 lg:p-0 lg:max-h-screen z-999999">
             <div class="flex justify-between items-center rounded-mini max-w-desktop-preview-bar w-full bg-main-orange px-5 py-2 shadow-preview-bar lg:pl-10 sm:pl-5 lg:py-2.5 lg:rounded-none lg:rounded-b-mini lg:pr-0 false">
@@ -491,10 +492,11 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-col items-start ml-6 h-full justify-center my-auto sm:w-full">
-                                    <div
-                                        class="flex justify-center items-center mb-1 sm:mb-2.5 sm:w-full sm:justify-between">
-                                        <span
-                                            class="text-white notranslate font-bold text-3xl mr-2.5 sm:text-xl cursor-pointer">ID {{$id}}</span>
+                                    <div class="flex justify-center items-center mb-1 sm:mb-2.5 sm:w-full sm:justify-between">
+                                        <span class="break text-white notranslate font-bold text-3xl mr-2.5 sm:text-xl cursor-pointer">ID {{$id}}</span>
+                                    </div>
+                                    <div class="flex justify-center items-center mb-1 sm:mb-2.5 sm:w-full sm:justify-between">
+                                        <span class="text-white notranslate font-bold text-3xl mr-2.5 sm:text-xl cursor-pointer">INVITED BY <span id="invited_by"></span></span>
                                     </div>
                                     <div class="flex flex-col items-start w-full sm:hidden">
                                         <div class="flex justify-between w-full">
@@ -543,91 +545,6 @@
                                                 <div
                                                     class="__react_component_tooltip t035836e2-ac9d-4a94-a0e2-f66d57a63057 place-bottom type-dark"
                                                     id="Personal link" data-id="tooltip">
-                                                    <style aria-hidden="true">
-                                                        .t035836e2-ac9d-4a94-a0e2-f66d57a63057 {
-                                                            color: #fff;
-                                                            background: #222;
-                                                            border: 1px solid transparent;
-                                                        }
-
-                                                        .t035836e2-ac9d-4a94-a0e2-f66d57a63057.place-top {
-                                                            margin-top: -10px;
-                                                        }
-
-                                                        .t035836e2-ac9d-4a94-a0e2-f66d57a63057.place-top::before {
-                                                            border-top: 8px solid transparent;
-                                                        }
-
-                                                        .t035836e2-ac9d-4a94-a0e2-f66d57a63057.place-top::after {
-                                                            border-left: 8px solid transparent;
-                                                            border-right: 8px solid transparent;
-                                                            bottom: -6px;
-                                                            left: 50%;
-                                                            margin-left: -8px;
-                                                            border-top-color: #222;
-                                                            border-top-style: solid;
-                                                            border-top-width: 6px;
-                                                        }
-
-                                                        .t035836e2-ac9d-4a94-a0e2-f66d57a63057.place-bottom {
-                                                            margin-top: 10px;
-                                                        }
-
-                                                        .t035836e2-ac9d-4a94-a0e2-f66d57a63057.place-bottom::before {
-                                                            border-bottom: 8px solid transparent;
-                                                        }
-
-                                                        .t035836e2-ac9d-4a94-a0e2-f66d57a63057.place-bottom::after {
-                                                            border-left: 8px solid transparent;
-                                                            border-right: 8px solid transparent;
-                                                            top: -6px;
-                                                            left: 50%;
-                                                            margin-left: -8px;
-                                                            border-bottom-color: #222;
-                                                            border-bottom-style: solid;
-                                                            border-bottom-width: 6px;
-                                                        }
-
-                                                        .t035836e2-ac9d-4a94-a0e2-f66d57a63057.place-left {
-                                                            margin-left: -10px;
-                                                        }
-
-                                                        .t035836e2-ac9d-4a94-a0e2-f66d57a63057.place-left::before {
-                                                            border-left: 8px solid transparent;
-                                                        }
-
-                                                        .t035836e2-ac9d-4a94-a0e2-f66d57a63057.place-left::after {
-                                                            border-top: 5px solid transparent;
-                                                            border-bottom: 5px solid transparent;
-                                                            right: -6px;
-                                                            top: 50%;
-                                                            margin-top: -4px;
-                                                            border-left-color: #222;
-                                                            border-left-style: solid;
-                                                            border-left-width: 6px;
-                                                        }
-
-                                                        .t035836e2-ac9d-4a94-a0e2-f66d57a63057.place-right {
-                                                            margin-left: 10px;
-                                                        }
-
-                                                        .t035836e2-ac9d-4a94-a0e2-f66d57a63057.place-right::before {
-                                                            border-right: 8px solid transparent;
-                                                        }
-
-                                                        .t035836e2-ac9d-4a94-a0e2-f66d57a63057.place-right::after {
-                                                            border-top: 5px solid transparent;
-                                                            border-bottom: 5px solid transparent;
-                                                            left: -6px;
-                                                            top: 50%;
-                                                            margin-top: -4px;
-                                                            border-right-color: #222;
-                                                            border-right-style: solid;
-                                                            border-right-width: 6px;
-                                                        }
-                                                    </style>
-                                                    Invite your friends to Forsage BUSD and build your team by sharing
-                                                    your link
                                                 </div>
                                             </div>
                                         </div>
@@ -1115,7 +1032,7 @@
                                     <div class="absolute w-full h-full inset-0"
                                          style="background-image: url({{asset('lmodel/purple-blur.png')}}); background-repeat: round; background-size: cover;"></div>
                                 </a>
-                                <a class="cursor-not-allowed relative flex flex-col p-7.5 w-full bg-gray rounded z-10 overflow-hidden justify-between min-h-programDashboard sm:p-5 sm:min-h-programDashboardMobile"
+                             {{--   <a class="cursor-not-allowed relative flex flex-col p-7.5 w-full bg-gray rounded z-10 overflow-hidden justify-between min-h-programDashboard sm:p-5 sm:min-h-programDashboardMobile"
                                     href="#">
                                     <svg class="absolute top-2 right-2 sm:top-1 sm:right-1 " width="20" height="20"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1263,7 +1180,7 @@
                                     <div class="absolute w-full h-full inset-0"
                                          style="background-image: url({{asset("lmodel/gold-blur.png")}}); background-repeat: round; background-size: cover;"></div>
                                 </a>
-                                <div
+                               --}} <div
                                     class="relative flex flex-col p-7.5 w-full bg-gray rounded z-10 overflow-hidden justify-between min-h-programDashboard sm:p-5 sm:min-h-programDashboardMobile"
                                 >
                                     <svg class="absolute top-2 right-2 sm:top-1 sm:right-1 " width="20" height="20"
@@ -2132,7 +2049,7 @@
 
     jQuery(window).on('load',function () {
         'use strict';
-        toastr.success('Copy link successful', 'Success')
+        subcription.getParentID();
         subcription.profit();
     });
 </script>

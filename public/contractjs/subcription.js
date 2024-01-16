@@ -294,6 +294,11 @@ var subcription = function () {
         console.log(new_adress)
         return new_adress;
     };
+    const getParentID=async function(){
+        window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
+        var new_adress=  await window.mxgfcontract.methods.userIDs($('#parent_address').text()).call();
+       $('#parent_id').text(new_adress)
+    };
     const profit=async function(){
         var account= await getAccountBy_id();
         window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
@@ -335,7 +340,8 @@ var subcription = function () {
         approve,
         activateLevel,
         profit,
-        getBalance
+        getBalance,
+        getParentID
     }
 }();
 jQuery(document).ready(function() {
