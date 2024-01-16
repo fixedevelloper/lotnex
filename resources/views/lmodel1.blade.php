@@ -155,7 +155,7 @@
                                 <form>
                                     <input name="id"
                                         class="px-4 py-3 rounded-mini leading-5 bg-white-100 text-white text-base outline-none lg:w-full lg:flex-1"
-                                        value="{{$îd}}">
+                                        value="{{$id}}">
                                     <button disabled=""
                                             class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none bg-white-100 py-3 px-5 cursor-not-allowed lg:px-10">
                                         Go
