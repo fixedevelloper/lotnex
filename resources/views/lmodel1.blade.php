@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="next-head-count" content="4">
-    <link rel="preload" href="{{asset('lmodel/m2/css/preview_next.css')}}" as="style">
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/next.css')}}" data-n-g="">
-    <link rel="stylesheet" href="{{asset('toast/toastr.scss')}}" data-n-g="">
+    <link rel="stylesheet" type="text/x-scss" href="{{asset('toast/toastr.scss')}}">
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/custom_next.css')}}" data-n-g="">
-    <script src="{{asset("lmodel/m2/js/next-dashboard.js")}}" defer=""></script>
     <style data-react-tooltip="true">
         .__react_component_tooltip {
             border-radius: 3px;
@@ -720,11 +718,9 @@
                                 <div
                                     class="relative flex flex-wrap flex-grow w-full h-full p-5 justify-between bg-blue-100 rounded z-10 sm:p-4">
                                     <div class="flex items-center mb-2 sm:justify-between sm:w-full sm:flex-wrap">
-                                        <div class="flex items-center justify-between"><span
-                                                class="text-white-500 text-base text-sm sm:text-xs">Personal link</span>
+                                        <div class="flex items-center justify-between"><span class="text-white-500 text-base text-sm sm:text-xs">Personal link</span>
                                             <div class="relative group">
-                                                <button
-                                                    class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none ml-1.5 "
+                                                <button class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none ml-1.5 "
                                                     data-tip="true" data-for="Personal link" currentitem="false">
                                                     <span></span>
                                                     <svg class="w-5 h-5 " viewBox="0 0 20 20" fill="#fff"
@@ -824,12 +820,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <span class="hidden sm:block text-main-blue text-base font-bold notranslate">{{is_null($user)?"Not system":$user->link}}</span>
+                                        <span class="hidden sm:block text-main-blue text-base font-bold notranslate">{{route('nextregister',['tx'=>$id])}}</span>
                                     </div>
-                                    <div class="flex items-center justify-between w-full"><span
-                                            class="text-main-blue text-xl font-bold notranslate sm:hidden">{{is_null($user)?"Not system":$user->link}}</span>
+                                    <div class="flex items-center justify-between w-full"><span id="text-to-copy"
+                                            class="text-main-blue text-xl font-bold notranslate sm:hidden">{{route('nextregister',['tx'=>$id])}}</span>
                                         <div class="flex space-x-2.5 sm:w-full">
-                                            <button
+                                            <button id="copy-button"
                                                 class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none py-0 px-2.5 bg-main-blue text-white rounded !leading-30px hover:bg-hover-main-blue active:bg-active-main-blue !leading-30px sm:flex-1">
                                                 Copy
                                             </button>
@@ -2315,8 +2311,19 @@
     function hideMenu() {
         $('#hambuger').hide()
     }
+    $('#copy-button').click(function() {
+        var textToCopy = $('#text-to-copy').text();
+        var tempTextarea = $('<textarea>');
+        $('body').append(tempTextarea);
+        tempTextarea.val(textToCopy).select();
+        document.execCommand('copy');
+        tempTextarea.remove();
+        toastr.success('Copy link successful', 'Success')
+    });
+
     jQuery(window).on('load',function () {
         'use strict';
+        toastr.success('Copy link successful', 'Success')
         subcription.profit();
     });
 </script>

@@ -43,8 +43,11 @@ class FrontController extends Controller
         ]);
 
     }
-    public function modelRegister(){
-        return view('register_next', []);
+    public function modelRegister(Request $request){
+
+        return view('register_next', [
+            'id'=>$request->get("tx")
+        ]);
 
     }
     public function modelHome(){

@@ -400,8 +400,8 @@
                                 <div class="flex items-baseline"><label
                                         class="mb-2.5 text-white-500 sm:text-sm flex-shrink-0">Your upline</label></div>
                                 <div class="w-full relative">
-                                    <input id="referralid" class="w-full bg-white-100 border-2 border-transparent rounded-mini py-3 px-5 text-white outline-none focus:border-2 focus:border-main-blue focus:bg-transparent  "
-                                        type="text" placeholder="Upline" value="1"></div>
+                                    <input id="referralid"  class="w-full bg-white-100 border-2 border-transparent rounded-mini py-3 px-5 text-white outline-none focus:border-2 focus:border-main-blue focus:bg-transparent  "
+                                        type="text" placeholder="Upline" value="{{$id}}"></div>
                             </div>
                         </div>
                         <div class="flex flex-col space-y-5">

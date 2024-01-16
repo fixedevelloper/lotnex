@@ -9357,19 +9357,19 @@ video {
         transform:rotate(1turn)
     }
 }
-@font-face {
+/*@font-face {
     font-family:Rubik;
     src:url(/fonts/Rubik/Rubik-BlackItalic.woff2) format("woff2");
     font-weight:900;
     font-style:italic
-}
+}*/
 @font-face {
     font-family:Rubik;
     src:url(/fonts/Rubik/Rubik-BlackItalic.eot);
     src:local("Rubik Black Italic"),
     local("Rubik-BlackItalic"),
     url(/fonts/Rubik/Rubik-BlackItalic.eot?#iefix) format("embedded-opentype"),
-    url(/fonts/Rubik/Rubik-BlackItalic.woff) format("woff"),
+   /* url(/fonts/Rubik/Rubik-BlackItalic.woff) format("woff"),*/
     url(/fonts/Rubik/Rubik-BlackItalic.ttf) format("truetype");
     font-weight:900;
     font-style:italic
@@ -9380,7 +9380,7 @@ video {
     src:local("Rubik Bold Italic"),
     local("Rubik-BoldItalic"),
     url(/fonts/Rubik/Rubik-BoldItalic.eot?#iefix) format("embedded-opentype"),
-    url(/fonts/Rubik/Rubik-BoldItalic.woff) format("woff"),
+    /*url(/fonts/Rubik/Rubik-BoldItalic.woff) format("woff"),*/
     url(/fonts/Rubik/Rubik-BoldItalic.ttf) format("truetype");
     font-weight:700;
     font-style:italic
@@ -9391,7 +9391,7 @@ video {
     src:local("Rubik Light"),
     local("Rubik-Light"),
     url(/fonts/Rubik/Rubik-Light.eot?#iefix) format("embedded-opentype"),
-    url(/fonts/Rubik/Rubik-Light.woff) format("woff"),
+   /* url(/fonts/Rubik/Rubik-Light.woff) format("woff"),*/
     url(/fonts/Rubik/Rubik-Light.ttf) format("truetype");
     font-weight:300;
     font-style:normal
@@ -9402,7 +9402,7 @@ video {
     src:local("Rubik Medium"),
     local("Rubik-Medium"),
     url(/fonts/Rubik/Rubik-Medium.eot?#iefix) format("embedded-opentype"),
-    url(/fonts/Rubik/Rubik-Medium.woff) format("woff"),
+    /*url(/fonts/Rubik/Rubik-Medium.woff) format("woff"),*/
     url(/fonts/Rubik/Rubik-Medium.ttf) format("truetype");
     font-weight:500;
     font-style:normal
@@ -9413,7 +9413,7 @@ video {
     src:local("Rubik Italic"),
     local("Rubik-Italic"),
     url(/fonts/Rubik/Rubik-Italic.eot?#iefix) format("embedded-opentype"),
-    url(/fonts/Rubik/Rubik-Italic.woff) format("woff"),
+  /*  url(/fonts/Rubik/Rubik-Italic.woff) format("woff"),*/
     url(/fonts/Rubik/Rubik-Italic.ttf) format("truetype");
     font-weight:400;
     font-style:italic
@@ -9424,7 +9424,7 @@ video {
     src:local("Rubik Bold"),
     local("Rubik-Bold"),
     url(/fonts/Rubik/Rubik-Bold.eot?#iefix) format("embedded-opentype"),
-    url(/fonts/Rubik/Rubik-Bold.woff) format("woff"),
+    /*url(/fonts/Rubik/Rubik-Bold.woff) format("woff"),*/
     url(/fonts/Rubik/Rubik-Bold.ttf) format("truetype");
     font-weight:700;
     font-style:normal
@@ -9435,7 +9435,7 @@ video {
     src:local("Rubik Light Italic"),
     local("Rubik-LightItalic"),
     url(/fonts/Rubik/Rubik-LightItalic.eot?#iefix) format("embedded-opentype"),
-    url(/fonts/Rubik/Rubik-LightItalic.woff) format("woff"),
+ /*   url(/fonts/Rubik/Rubik-LightItalic.woff) format("woff"),*/
     url(/fonts/Rubik/Rubik-LightItalic.ttf) format("truetype");
     font-weight:300;
     font-style:italic
@@ -9446,7 +9446,7 @@ video {
     src:local("Rubik"),
     local("Rubik-Regular"),
     url(/fonts/Rubik/Rubik-Regular.eot?#iefix) format("embedded-opentype"),
-    url(/fonts/Rubik/Rubik-Regular.woff) format("woff"),
+   /* url(/fonts/Rubik/Rubik-Regular.woff) format("woff"),*/
     url(/fonts/Rubik/Rubik-Regular.ttf) format("truetype");
     font-weight:400;
     font-style:normal
