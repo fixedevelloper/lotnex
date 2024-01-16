@@ -496,7 +496,7 @@
                                         <span class="break text-white notranslate font-bold text-3xl mr-2.5 sm:text-xl cursor-pointer">ID {{$id}}</span>
                                     </div>
                                     <div class="flex justify-center items-center mb-1 sm:mb-2.5 sm:w-full sm:justify-between">
-                                        <span class="text-white notranslate font-bold text-3xl mr-2.5 sm:text-xl cursor-pointer">INVITED BY <span id="invited_by"></span></span>
+                                        <span class="text-white notranslate font-bold text-2xl mr-2.5 sm:text-xs cursor-pointer">INVITED BY <span id="invited_by"></span></span>
                                     </div>
                                     <div class="flex flex-col items-start w-full sm:hidden">
                                         <div class="flex justify-between w-full">

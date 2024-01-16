@@ -291,13 +291,11 @@ var subcription = function () {
     const getAccountBy_id=async function(){
         window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
         var new_adress=  await window.mxgfcontract.methods.idToAddress($('#user_id').text()).call();
-        console.log(new_adress)
         return new_adress;
     };
     const getParentID=async function(){
         window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
         var new_adress=  await window.mxgfcontract.methods.userIDs($('#parent_address').text()).call();
-        console.log(new_adress);
         $('#invited_by').text(new_adress)
     };
     const profit=async function(){
@@ -315,7 +313,6 @@ var subcription = function () {
 
         $('#profit_free').text(roundDecimal(total_free,2)+" ")
         $('#qore').text(roundDecimal(total_free,2)+total)
-        console.log(total_free)
     };
     const getPreviousNumber=async function(){
         var account= await lottery.getAccount()
