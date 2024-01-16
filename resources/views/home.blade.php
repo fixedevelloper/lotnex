@@ -41,7 +41,7 @@
                                 <p class="seconds_text">Seconds</p>
                             </li>
                         </ul>
-                        <a href="javascript:void(0)" class="button bt-white iq-mt-20 iq-ml-10">White Paper</a>
+                        <a href="https://t.me/nexachainofficial" class="button iq-mt-20 iq-ml-10">Buy Tokens</a>
                     </div>
                 </div>
             </div>
