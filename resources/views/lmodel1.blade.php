@@ -99,16 +99,18 @@
                                           fill="#fff"></path>
                                 </svg>
                             </a><span class="text-base text-white whitespace-nowrap mr-5 notranslate lg:mr-0 false">Preview ID<span
-                                    class="hidden lg:inline ml-1.5">1</span></span>
-                            <div class="flex justify-between items-center space-x-2.5 lg:space-x-5 lg:w-full lg:hidden">
-                                <input
-                                    class="px-4 py-3 rounded-mini leading-5 bg-white-100 text-white text-base outline-none false"
-                                    value="1">
-                                <button disabled=""
-                                        class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none bg-white-100 py-3 px-5 cursor-not-allowed">
-                                    Go
-                                </button>
-                            </div>
+                                    class="hidden lg:inline ml-1.5">{{$id}}</span></span>
+                            <form>
+                                <div class="flex justify-between items-center space-x-2.5 lg:space-x-5 lg:w-full lg:hidden">
+                                    <input name="id"
+                                        class="px-4 py-3 rounded-mini leading-5 bg-white-100 text-white text-base outline-none false"
+                                        value="{{$id}}">
+                                    <button class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none bg-white-100 py-3 px-5">
+                                        Go
+                                    </button>
+                                </div>
+
+                            </form>
                         </div>
                     </div>
                     <w3m-core-button class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-main-bg hover:bg-black-500 whitespace-nowrap"></w3m-core-button>

@@ -34,15 +34,19 @@
                                 </svg>
                             </a><span class="text-base text-white whitespace-nowrap mr-5 notranslate lg:mr-0 false">Preview ID<span
                                     class="hidden lg:inline ml-1.5">{{$id}}</span></span>
-                            <div class="flex justify-between items-center space-x-2.5 lg:space-x-5 lg:w-full lg:hidden">
-                                <input
-                                    class="px-4 py-3 rounded-mini leading-5 bg-white-100 text-white text-base outline-none false"
-                                    value="1">
-                                <button disabled=""
-                                        class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none bg-white-100 py-3 px-5 cursor-not-allowed">
-                                    Go
-                                </button>
-                            </div>
+                           <form>
+                               <div class="flex justify-between items-center space-x-2.5 lg:space-x-5 lg:w-full lg:hidden">
+                                   <input name="id"
+                                       class="px-4 py-3 rounded-mini leading-5 bg-white-100 text-white text-base outline-none false"
+                                       value="{{$id}}">
+                                   <input name="type" value="{{$type}}" hidden>
+                                   <button
+                                           class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none bg-white-100 py-3 px-5">
+                                       Go
+                                   </button>
+                               </div>
+                           </form>
+
                         </div>
                     </div>
                     @if($isLogged)
@@ -625,7 +629,7 @@
                                     @if(is_null($activate_level))
 
                                     @else
-                                        <a @if($activate_level->level1) disabled @else href="#" onclick="subcription.activateLevel(1)" @endif>
+                                        <a @if($activate_level->level1) disabled class="cursor-not-allowed" @else href="#" onclick="subcription.activateLevel(1)" @endif>
                                             <div class="relative overflow-hidden flex flex-col w-180px min-h-158px max-h-[158px] sm:w-158px rounded-small p-5 m-2 justify-between bg-main-blue hover:bg-hover-main-blue sm:space-y-1.5">
                                                 <div class="flex w-full justify-between !mb-2.5">
                                                     <div class="flex space-x-1.5 items-center"><span
@@ -1096,7 +1100,7 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <a @if($activate_level->level9) disabled @else  href="#" onclick="subcription.activateLevel(9)" @endif>
+                                        <a @if($activate_level->level9) disabled class="cursor-not-allowed" @else  href="#" onclick="subcription.activateLevel(9)" @endif>
                                             <div class="relative overflow-hidden flex flex-col w-180px min-h-158px max-h-[158px] sm:w-158px rounded-small p-5 m-2 justify-between bg-main-blue hover:bg-hover-main-blue sm:space-y-1.5">
                                                 <div class="flex w-full justify-between !mb-2.5">
                                                     <div class="flex space-x-1.5 items-center"><span
