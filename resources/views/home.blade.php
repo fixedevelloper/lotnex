@@ -42,7 +42,7 @@
                                 <p class="seconds_text">Seconds</p>
                             </li>
                         </ul>
-                        <a target="_blank" href="https://t.me/nexachainofficial" class="button iq-mt-20 iq-ml-10">Buy Tokens</a>
+                        <a target="_blank" href="https://t.me/nexachainofficial" class="button iq-mt-20 iq-ml-10">TELEGRAM</a>
                     </div>
                 </div>
             </div>
