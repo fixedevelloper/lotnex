@@ -79,11 +79,11 @@
             padding: 2px 0;
             text-align: center;
         }</style>
-    <title>Dashboard | Infinix</title>
+    <title>Dashboard | Nexachain</title>
 </head>
 <body style="overflow: unset; position: relative; min-height: 100%; top: 40px;">
 <div id="__next">
-    <span id="user_id">{{$id}}</span>
+    <span id="user_id" hidden>{{$id}}</span>
     <div class="relative flex bg-main-bg items-center justify-center min-h-screen min-w-full overflow-hidden">
         <div class="fixed top-0 left-1/2 -translate-x-1/2 flex justify-center w-full px-10 py-2.5 z-40 lg:p-0 lg:max-h-screen z-999999">
             <div class="flex justify-between items-center rounded-mini max-w-desktop-preview-bar w-full bg-main-orange px-5 py-2 shadow-preview-bar lg:pl-10 sm:pl-5 lg:py-2.5 lg:rounded-none lg:rounded-b-mini lg:pr-0 false">
@@ -98,8 +98,9 @@
                                           d="M37.68 5.851a.482.482 0 0 1 .615.296l.43 1.247s-1.852-.59-2.818-.777l1.773-.766Zm6.055 3.336c-.004 0-.195-.131-.297-.186l-3.111-1.586c-.965-.46-.752-.82-1.118-1.826a6.228 6.228 0 0 0-.549-1.127C36.884 3.62 31.836 3.817 31.354 0c0 0-1.884 1.236-2.227 3.5C9.227 1.98 0 12.96 0 12.96c3.706-1.476 7.705-2.176 11.704-2.362-7.603 5.851-9.997 14.666-9.997 14.666s6.16-5.982 15.419-9.318C14.702 19.37 13.298 23.963 13.872 30c0 0 4.763-18.177 27.361-13.78 0 0 .827-2.417 2.962-4.89.135-.152.211-.382.227-.645a1.735 1.735 0 0 0-.687-1.498Z"
                                           fill="#fff"></path>
                                 </svg>--}}
-                            </a><span class="text-base text-white whitespace-nowrap mr-5 notranslate lg:mr-0 false">Preview ID<span
-                                    class="hidden lg:inline ml-1.5">{{$id}}</span></span>
+                            </a>
+                           {{-- <span class="text-base text-white whitespace-nowrap mr-5 notranslate lg:mr-0 false">Preview ID<span
+                                    class="hidden lg:inline ml-1.5">{{$id}}</span></span>--}}
                             <form>
                                 <div class="flex justify-between items-center space-x-2.5 lg:space-x-5 lg:w-full lg:hidden">
                                     <input name="id"
@@ -149,7 +150,7 @@
                                 </svg>--}}
                             </a><span
                                 class="text-base text-white whitespace-nowrap mr-5 notranslate lg:mr-0 lg:text-2xl lg:text-medium lg:mb-7.5">Preview ID<span
-                                    class="hidden lg:inline ml-1.5">1</span></span>
+                                    class="hidden lg:inline ml-1.5">{{$id}}</span></span>
                             <div class="flex justify-between items-center space-x-2.5 lg:space-x-5 lg:w-full lg:flex"><input
                                     class="px-4 py-3 rounded-mini leading-5 bg-white-100 text-white text-base outline-none lg:w-full lg:flex-1"
                                     value="1">
@@ -169,7 +170,7 @@
                             <div class="flex flex-1 flex-col h-full w-full overflow-y-auto space-y-2.5 lg:space-y-0">
                                 <div
                                     class="flex flex-1 flex-col w-full h-full overflow-y-auto space-y-2.5 lg:space-y-0 lg:mb-5 sm:mb-[50px]">
-                                    <a class="undefined undefined" href="/dashboard?user=1">
+                                    <a class="undefined undefined" href="{{route("lmodel1",['id'=>$id])}}">
                                         <button
                                             class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between   lg:border-b lg:border-white-300">
                                             <div class="flex items-center text-left">
@@ -278,7 +279,8 @@
                                                 </svg>
                                                 <span class="text-white-500 text-base ml-2.5 false">Marathon</span></div>
                                         </button>
-                                    </a><a class="undefined undefined" href="/social?user=1">
+                                    </a>
+                                    <a class="undefined undefined" href="/social?user=1">
                                         <button
                                             class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between   lg:border-b lg:border-white-300">
                                             <div class="flex items-center text-left">
@@ -302,7 +304,8 @@
                                                     class="absolute top-1 right-1.5 text-green text-sm lg:bg-green-200 lg:px-2.5 lg:py-1 lg:rounded lg:top-1/2 lg:-translate-y-1/2 lg:right-5">New</span>
                                             </div>
                                         </button>
-                                    </a><a class="undefined undefined" href="/nft?user=1">
+                                    </a>
+                                    <a class="undefined undefined" href="/nft?user=1">
                                         <button
                                             class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between   lg:border-b lg:border-white-300">
                                             <div class="flex items-center text-left">

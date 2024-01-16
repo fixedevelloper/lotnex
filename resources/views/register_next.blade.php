@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{asset('toast/toastr.scss')}}" data-n-g="">
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/custom_next.css')}}" data-n-g="">
 
-    <title>Registration | Infinix</title>
+    <title>Registration | Nexachain</title>
     <meta name="description"
           content="Registration of new partners on a decentralized matrix platform based on an honest marketing plan using smart contracts"
           data-react-helmet="true">
