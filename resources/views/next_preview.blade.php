@@ -1070,13 +1070,11 @@
                                           fill="#fff"></path>
                                 </svg>
                                 <div class="flex flex-col items-start space-y-1.5"><span
-                                        class="text-left block text-3xl font-medium text-white">Official <span
-                                            class="text-yellow">Notify Bot</span> <br class="sm:hidden"> for busd.forsage.io users</span><span
-                                        class="text-white font-light">Here you can get notifications about all the events in your account.</span>
+                                        class="text-left block text-3xl font-medium text-white">Your journey    <span
+                                            class="text-yellow">into the world of decentralized</span> <br class="sm:hidden"> finance starts here</span>
+
                                 </div>
-                                <img
-                                    class="absolute bottom-0 right-[10%] sm:right-auto sm:relative h-full max-h-[110%] sm:max-h-[170px]"
-                                    src="/banners/notifybot/robot.png" alt=""></button>
+                               </button>
                         </div>
                         <div
                             class="sm:rounded-none flex flex-1 flex-col w-full bg-black-light rounded overflow-hidden h-full min-h-90 sm:max-h-3/4">

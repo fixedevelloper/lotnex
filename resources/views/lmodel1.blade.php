@@ -1242,8 +1242,8 @@
                                          style="background-image: url({{asset("lmodel/tiffany-blur.png")}}); background-repeat: round; background-size: cover;"></div>
                                 </div>
                                 <a
-                                    class="relative flex flex-col p-7.5 w-full bg-gray rounded z-10 overflow-hidden justify-between min-h-programDashboard sm:p-5 sm:min-h-programDashboardMobile"
-                                    href="/dashboard/maxQore?id=1">
+                                    class="cursor-not-allowed relative flex flex-col p-7.5 w-full bg-gray rounded z-10 overflow-hidden justify-between min-h-programDashboard sm:p-5 sm:min-h-programDashboardMobile"
+                                    href="#">
                                     <svg class="absolute top-2 right-2 sm:top-1 sm:right-1 " width="20" height="20"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1255,7 +1255,7 @@
                                     </svg>
                                     <div class="flex justify-between w-full z-10">
                                         <div class="flex items-center"><span
-                                                class="text-white text-2xl notranslate font-bold justify-start sm:text-xl false">maxQore</span>
+                                                class="text-white text-2xl notranslate font-bold justify-start sm:text-xl false">Meta</span>
                                         </div>
                                         <span
                                             class="text-white text-2xl font-bold justify-end text-right notranslate sm:text-xl">0 BNB</span>
@@ -1304,7 +1304,7 @@
                                                     <button
                                                         class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-program-green hover:bg-program-green-600 active:bg-program-green-600 z-0 sm:w-full pointer-events-none text-white">
                                                         <div class="flex flex-col space-y-1 items-start">
-                                                            <div class="flex items-center">Preview
+                                                            <div class="flex items-center">COMING SOON
                                                                 <svg class="ml-3 fill-current" width="16" height="16"
                                                                      fill="#fff" xmlns="http://www.w3.org/2000/svg">
                                                                     <path fill-rule="evenodd" clip-rule="evenodd"
