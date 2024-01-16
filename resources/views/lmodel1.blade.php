@@ -7,6 +7,7 @@
     <meta name="next-head-count" content="4">
     <link rel="preload" href="{{asset('lmodel/m2/css/preview_next.css')}}" as="style">
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/next.css')}}" data-n-g="">
+    <link rel="stylesheet" href="{{asset('toast/toastr.scss')}}" data-n-g="">
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/custom_next.css')}}" data-n-g="">
     <script src="{{asset("lmodel/m2/js/next-dashboard.js")}}" defer=""></script>
     <style data-react-tooltip="true">
@@ -2295,6 +2296,7 @@
 <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
 
 <script src="{{asset("js/jquery-3.7.min.js")}}"></script>
+<script src="{{asset("toast/toastr.js")}}"></script>
 <script src="{{asset("contractjs/lotterie.js")}}"></script>
 <script src="{{asset("contractjs/subcription.js")}}"></script>
 <script type="module" src="{{asset('contractjs/connect-wallet.js')}}"></script>

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="next-head-count" content="4">
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/next.css')}}" data-n-g="">
+    <link rel="stylesheet" href="{{asset('toast/toastr.scss')}}" data-n-g="">
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/custom_next.css')}}" data-n-g="">
     <noscript data-n-css=""></noscript>
 
@@ -2009,6 +2010,7 @@
     }
 </script>
 <script src="{{asset("js/jquery-3.7.min.js")}}"></script>
+<script src="{{asset("toast/toastr.js")}}"></script>
 <script src="{{asset("contractjs/subcription.js")}}"></script>
 <script type="module" src="{{asset('contractjs/connect-wallet.js')}}"></script>
 </body>

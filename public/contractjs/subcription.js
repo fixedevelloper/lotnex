@@ -37,7 +37,7 @@ var subcription = function () {
         });
         if (balance.transactionHash) {
             if (balance.transactionHash) {
-                alert('Wallet approve successfully')
+                toastr.success('Wallet approve successfully', 'Success')
                 $('#usdt_approve_id').addClass('list-group-item-success');
                 $('#balance_id').addClass('list-group-item-success');
                 $('#usdt_approve_id').removeClass('list-group-item-danger');
@@ -47,8 +47,7 @@ var subcription = function () {
                 $('#spinner_approuve').hide();
             }
             else {
-                alert('Wallet approve Failed')
-
+                toastr.error('Wallet approve Failed!', 'Error')
                 $('#spinner_approuve').hide();
             }
 
@@ -91,37 +90,37 @@ var subcription = function () {
     const activateLevel=async function(level){
         const balance=await getBalance();
         if (level===1 && convertDiv(balance)<10){
-            alert("impossible")
+            toastr.error('Insufficient FDUSD on the balance', 'Error!')
             return ;
         }else if (level===2 && convertDiv(balance)<20){
-            alert("impossible")
+            toastr.error('Insufficient FDUSD on the balance', 'Error!')
             return ;
         }else if (level===3 && convertDiv(balance)<30){
-            alert("impossible")
+            toastr.error('Insufficient FDUSD on the balance', 'Error!')
             return ;
         }
         else if (level===4 && convertDiv(balance)<50){
-            alert("impossible")
+            toastr.error('Insufficient FDUSD on the balance', 'Error!')
             return ;
         }
         else if (level===5 && convertDiv(balance)<100){
-            alert("impossible")
+            toastr.error('Insufficient FDUSD on the balance', 'Error!')
             return ;
         }
         else if (level===6 && convertDiv(balance)<250){
-            alert("impossible")
+            toastr.error('Insufficient FDUSD on the balance', 'Error!')
             return ;
         }else if (level===7 && convertDiv(balance)<500){
-            alert("impossible")
+            toastr.error('Insufficient FDUSD on the balance', 'Error!')
             return ;
         }else if (level===8 && convertDiv(balance)<1250){
-            alert("impossible")
+            toastr.error('Insufficient FDUSD on the balance', 'Error!')
             return ;
         }else if (level===9 && convertDiv(balance)<2500){
-            alert("impossible")
+            toastr.error('Insufficient FDUSD on the balance', 'Error!')
             return ;
         }else if (level===10 && convertDiv(balance)<5000){
-            alert("impossible")
+            toastr.error('Insufficient FDUSD on the balance', 'Error!')
             return ;
         }
         $('#spinner_register').show();
@@ -142,13 +141,14 @@ var subcription = function () {
                     'address':account
                 },
                 success: function (data) {
-                    alert('Activation Successfully ');
+                    toastr.success('Activation Successfully!', 'Success')
+
                     window.location.reload(true);
                 },
                 error: function (err) {
                     $('#spinner_send_svg').show()
                     $('#spinner_send').hide();
-                    alert("An error ocurred while loading data ...");
+                    toastr.error('An error ocurred while loading data ...!', 'Error')
                 }
             });
         }
@@ -188,24 +188,24 @@ var subcription = function () {
                                 'id': id
                             },
                             success: function (data) {
-                                alert('Registration Successfully ');
+                                toastr.success('Registration Successfully', 'Success')
                                 window.location.reload(true);
                             },
                             error: function (err) {
                                 $('#spinner_send_svg').show()
                                 $('#spinner_send').hide();
-                                alert("An error ocurred while loading data ...");
+                                toastr.error('An error ocurred while loading data ...!', 'Error')
                             }
                         });
 
                         $('#spinner_register').hide();
                         //  window.location.href = url;
                     } else {
-                        alert('Registration failed' + JSON.stringify((result)));
+                        toastr.error('Registration failed' + JSON.stringify((result)),'Error')
                         $('#spinner_register').hide();
                     }
                 }else {
-                    alert("You are already registered please login");
+                    toastr.warning('You are already registered please login')
                 }
 
             },
@@ -230,18 +230,18 @@ var subcription = function () {
                     'address':account
                 },
                 success: function (data) {
-                    alert('Login Successfully ');
+                    toastr.success('Login Successfully', 'Success')
                     window.location.href=configs.routes.dashboard + "?id=" + id;
                 },
                 error: function (err) {
                     $('#spinner_send_svg').show()
                     $('#spinner_send').hide();
-                    alert("An error ocurred while loading data ...");
+                    toastr.error('Echec login', 'Error!')
                 }
             });
         }else {
             //window.location.href=configs.routes.dashboard + "?id=" + id;
-            alert('Echec login ');
+            toastr.error('Echec login', 'Error!')
         }
 
     };
