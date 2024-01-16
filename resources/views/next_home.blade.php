@@ -420,7 +420,7 @@
                                 Watch tutorial
                             </button>
                             <div class="flex justify-end space-x-5 sm:space-x-0 sm:space-y-3.5 sm:flex-col">
-                                <a href="{{route("nextregister")}}" class="text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-green-350 hover:bg-gold-500 rounded-mini sm:w-full">
+                                <a href="{{route("nextregister")}}" class="text-center text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-main-bg hover:bg-hover-main-bg active:bg-active-main-bg sm:w-full">
                                     Register
                                 </a></div>
                         </div>

@@ -111,7 +111,7 @@
                             <div class="flex flex-1 flex-col h-full w-full overflow-y-auto space-y-2.5 lg:space-y-0">
                                 <div
                                     class="flex flex-1 flex-col w-full h-full overflow-y-auto space-y-2.5 lg:space-y-0 lg:mb-5 sm:mb-[50px]">
-                                    <a class="undefined undefined" href="/dashboard?user=1">
+                                    <a class="undefined undefined" href="{{route("lmodel1",['id'=>$id])}}">
                                         <button
                                             class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between   lg:border-b lg:border-white-300">
                                             <div class="flex items-center text-left">
@@ -343,7 +343,7 @@
                             <div class="flex flex-1 flex-col h-full w-full overflow-y-auto space-y-2.5 lg:space-y-0">
                                 <div
                                     class="flex flex-1 flex-col w-full h-full overflow-y-auto space-y-2.5 lg:space-y-0 lg:mb-5 sm:mb-[50px]">
-                                    <a class="undefined undefined" href="/dashboard?user=1">
+                                    <a class="undefined undefined" href="{{route("lmodel1",['id'=>$id])}}">
                                         <button
                                             class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between   lg:border-b lg:border-white-300">
                                             <div class="flex items-center text-left">
@@ -1326,7 +1326,7 @@
                                         </td>
                                         <td class="p-4 text-left whitespace-nowrap sm:p-3"><a
                                                 class="flex items-center notranslate justify-center px-2.5 leading-30px bg-blue-100 hover:bg-main-blue-300 text-main-blue rounded w-max text-sm"
-                                                href="/dashboard?user=1644702">ID 1644702</a></td>
+                                                href="{{route("lmodel1",['id'=>$id])}}">ID {{$id}}</a></td>
                                         <td class="p-4 text-left whitespace-nowrap sm:p-3">
                                             <div class="text-white text-sm ">1</div>
                                         </td>
@@ -1440,7 +1440,7 @@
                                         <td class=" p-4 text-left whitespace-nowrap sm:p-3">
                                             <div class="text-white-500 text-sm ">13.01.2024 09:58</div>
                                         </td>
-                                        <td class="p-4 text-left whitespace-nowrap sm:p-3"><a
+{{--                                        <td class="p-4 text-left whitespace-nowrap sm:p-3"><a
                                                 class="flex items-center notranslate justify-center px-2.5 leading-30px bg-blue-100 hover:bg-main-blue-300 text-main-blue rounded w-max text-sm"
                                                 href="/dashboard?user=1644431">ID 1644431</a></td>
                                         <td class="p-4 text-left whitespace-nowrap sm:p-3">
@@ -1473,7 +1473,7 @@
                                         </td>
                                         <td class="p-4 text-left whitespace-nowrap sm:p-3">
                                             <div class="text-white text-sm text-right notranslate">5 BUSD</div>
-                                        </td>
+                                        </td>--}}
                                     </tr>
                                     <tr class="border-b border-white-100 last:border-none">
                                         <td class="p-4 text-left whitespace-nowrap sm:p-3">
@@ -1734,7 +1734,7 @@
                                         <td class=" p-4 text-left whitespace-nowrap sm:p-3">
                                             <div class="text-white-500 text-sm ">12.01.2024 14:46</div>
                                         </td>
-                                        <td class="p-4 text-left whitespace-nowrap sm:p-3"><a
+                                    {{--    <td class="p-4 text-left whitespace-nowrap sm:p-3"><a
                                                 class="flex items-center notranslate justify-center px-2.5 leading-30px bg-blue-100 hover:bg-main-blue-300 text-main-blue rounded w-max text-sm"
                                                 href="/dashboard?user=1644038">ID 1644038</a></td>
                                         <td class="p-4 text-left whitespace-nowrap sm:p-3">
@@ -1767,7 +1767,7 @@
                                         </td>
                                         <td class="p-4 text-left whitespace-nowrap sm:p-3" colspan="2">
                                             <div class="text-green-light text-right text-sm">recycle</div>
-                                        </td>
+                                        </td>--}}
                                     </tr>
                                     <tr class="border-b border-white-100 last:border-none">
                                         <td class="p-4 text-left whitespace-nowrap sm:p-3">
@@ -1793,7 +1793,7 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class=" p-4 text-left whitespace-nowrap sm:p-3">
+                               {{--         <td class=" p-4 text-left whitespace-nowrap sm:p-3">
                                             <div class="text-white-500 text-sm ">12.01.2024 13:03</div>
                                         </td>
                                         <td class="p-4 text-left whitespace-nowrap sm:p-3"><a
@@ -1829,7 +1829,7 @@
                                         </td>
                                         <td class="p-4 text-left whitespace-nowrap sm:p-3">
                                             <div class="text-white text-sm text-right notranslate">5 BUSD</div>
-                                        </td>
+                                        </td>--}}
                                     </tr>
                                     </tbody>
                                 </table>

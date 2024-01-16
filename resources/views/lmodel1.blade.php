@@ -403,7 +403,7 @@
                             <div class="flex flex-1 flex-col h-full w-full overflow-y-auto space-y-2.5 lg:space-y-0">
                                 <div
                                     class="flex flex-1 flex-col w-full h-full overflow-y-auto space-y-2.5 lg:space-y-0 lg:mb-5 sm:mb-[50px]">
-                                    <a class="undefined undefined" href="/dashboard?user=1">
+                                    <a class="undefined undefined" href="{{route("lmodel1",['id'=>$id])}}">
                                         <button
                                             class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent bg-black-light lg:bg-transparent lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between   lg:border-b lg:border-white-300">
                                             <div class="flex items-center text-left">
@@ -840,7 +840,7 @@
                                     <div class="lg:flex-grow sm:w-full sm:mobile-infoblock-base flex flex-col bg-black-light rounded relative z-[11] overflow-hidden desktop-infoblock-base sm:mobile-infoblock-base">
                                         <img
                                             class="h-full absolute top-0 bottom-0 left-1/2 -translate-x-1/2"
-                                            src="{{asset('lmodel/bnbBusd.png')}}" alt="">
+                                            src="{{asset('lmodel/fdusd.png')}}" alt="">
                                         <div class="flex flex-col px-5 py-5 w-full">
                                             <div class="flex items-center mb-1"><span
                                                     class="text-white-500 text-base sm:text-sm sm:whitespace-nowrap">Profits</span>
@@ -869,7 +869,7 @@
                                     <div class="lg:flex-grow sm:w-full sm:mobile-infoblock-base flex flex-col bg-black-light rounded relative z-[11] overflow-hidden desktop-infoblock-base sm:mobile-infoblock-base">
                                         <img
                                             class="h-full absolute top-0 bottom-0 left-1/2 -translate-x-1/2"
-                                            src="{{asset('lmodel/bnbBusd.png')}}" alt="">
+                                            src="{{asset('lmodel/fdusd.png')}}" alt="">
                                         <div class="flex flex-col px-5 py-5 w-full">
                                             <div class="flex items-center mb-1"><span
                                                     class="text-white-500 text-base sm:text-sm sm:whitespace-nowrap">FREE EARNINGS</span>
@@ -1017,7 +1017,7 @@
                                     <div class="lg:flex-grow sm:w-full sm:mobile-infoblock-base flex flex-col bg-black-light rounded relative z-[11] overflow-hidden desktop-infoblock-base sm:mobile-infoblock-base">
                                         <img
                                             class="h-full absolute top-0 bottom-0 left-1/2 -translate-x-1/2"
-                                            src="{{asset('lmodel/bnbBusd.png')}}" alt="">
+                                            src="{{asset('lmodel/bnb.png')}}" alt="">
                                         <div class="flex flex-col px-5 py-5 w-full">
                                             <div class="flex items-center mb-1"><span
                                                     class="text-white-500 text-base sm:text-sm sm:whitespace-nowrap">ROYAL LOTTERY</span>
@@ -1025,7 +1025,7 @@
                                             <div class="flex items-center justify-between">
                                                 <div
                                                     class="flex flex-1 w-full text-white text-2xl font-bold notranslate sm:text-xl !mt-1 !sm:mt-2.5 mt-5 sm:mt-2.5">
-                                                    <span id="profit_royal_lottery">0 </span> <span>&nbsp; FDUSD</span>
+                                                    <span id="profit_royal_lottery">0 </span> <span>&nbsp; BNB</span>
                                                 </div>
                                                 <div class="flex p-1.5">
                                                     <div
@@ -1047,14 +1047,14 @@
                                     <div class="lg:flex-grow sm:w-full sm:mobile-infoblock-base flex flex-col bg-black-light rounded relative z-[11] overflow-hidden desktop-infoblock-base sm:mobile-infoblock-base">
                                         <img
                                             class="h-full absolute top-0 bottom-0 left-1/2 -translate-x-1/2"
-                                            src="{{asset('lmodel/bnbBusd.png')}}" alt="">
+                                            src="{{asset('lmodel/bnb.png')}}" alt="">
                                         <div class="flex flex-col px-5 py-5 w-full">
                                             <div class="flex items-center mb-1"><span
                                                     class="text-white-500 text-base sm:text-sm sm:whitespace-nowrap">ETL LOTTERY</span>
                                             </div>
                                             <div class="flex items-center justify-between">
                                                 <div class="flex flex-1 w-full text-white text-2xl font-bold notranslate sm:text-xl !mt-1 !sm:mt-2.5 mt-5 sm:mt-2.5">
-                                                    <span id="profit_ternal_lottery">0 </span> <span>&nbsp; FDUSD</span>
+                                                    <span id="profit_ternal_lottery">0 </span> <span>&nbsp; BNB</span>
                                                 </div>
                                                 <div class="flex p-1.5">
                                                     <div
@@ -1237,8 +1237,8 @@
                                          style="background-image: url({{asset('lmodel/blue-blur.png')}}); background-repeat: round; background-size: cover;"></div>
                                 </a>
                                 <a
-                                    class="relative flex flex-col p-7.5 w-full bg-gray rounded z-10 overflow-hidden justify-between min-h-programDashboard sm:p-5 sm:min-h-programDashboardMobile"
-                                    href="{{route('nextpreviuos',['id'=>$id,'type'=>2])}}">
+                                    class="cursor-not-allowed relative flex flex-col p-7.5 w-full bg-gray rounded z-10 overflow-hidden justify-between min-h-programDashboard sm:p-5 sm:min-h-programDashboardMobile"
+                                    href="#">
                                     <svg class="absolute top-2 right-2 sm:top-1 sm:right-1 " width="20" height="20"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1250,10 +1250,10 @@
                                     </svg>
                                     <div class="flex justify-between w-full z-10">
                                         <div class="flex items-center"><span
-                                                class="text-white text-2xl notranslate font-bold justify-start sm:text-xl false">x4</span>
+                                                class="text-white text-2xl notranslate font-bold justify-start sm:text-xl false">VDM</span>
                                         </div>
                                         <span
-                                            class="text-white text-2xl font-bold justify-end text-right notranslate sm:text-xl">410 845 BUSD</span>
+                                            class="text-white text-2xl font-bold justify-end text-right notranslate sm:text-xl">0 BNB</span>
                                     </div>
                                     <div class="flex justify-between h-full w-full">
                                         <div class="flex justify-between w-full z-10 sm:flex-col mt-5 w-full items-end">
@@ -1292,7 +1292,7 @@
                                                     <button
                                                         class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-light-purple hover:bg-hover-purple active:bg-active-purple z-0 sm:w-full pointer-events-none text-white">
                                                         <div class="flex flex-col space-y-1 items-start">
-                                                            <div class="flex items-center">Preview
+                                                            <div class="flex items-center">Coming soon
                                                                 <svg class="ml-3 fill-current" width="16" height="16"
                                                                      fill="#fff" xmlns="http://www.w3.org/2000/svg">
                                                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1308,9 +1308,8 @@
                                     <div class="absolute w-full h-full inset-0"
                                          style="background-image: url({{asset('lmodel/purple-blur.png')}}); background-repeat: round; background-size: cover;"></div>
                                 </a>
-                                <a
-                                    class="relative flex flex-col p-7.5 w-full bg-gray rounded z-10 overflow-hidden justify-between min-h-programDashboard sm:p-5 sm:min-h-programDashboardMobile"
-                                    href="{{route('nextpreviuos',['id'=>$id,'type'=>2])}}">
+                                <a class="cursor-not-allowed relative flex flex-col p-7.5 w-full bg-gray rounded z-10 overflow-hidden justify-between min-h-programDashboard sm:p-5 sm:min-h-programDashboardMobile"
+                                    href="#">
                                     <svg class="absolute top-2 right-2 sm:top-1 sm:right-1 " width="20" height="20"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1380,9 +1379,8 @@
                                     <div class="absolute w-full h-full inset-0"
                                          style="background-image: url({{asset('lmodel/pink-blur.png')}}); background-repeat: round; background-size: cover;"></div>
                                 </a>
-                                <a
-                                    class="relative flex flex-col p-7.5 w-full bg-gray rounded z-10 overflow-hidden justify-between min-h-programDashboard sm:p-5 sm:min-h-programDashboardMobile"
-                                    href="/dashboard/xGold?user=1">
+                                <a class="cursor-not-allowed relative flex flex-col p-7.5 w-full bg-gray rounded z-10 overflow-hidden justify-between min-h-programDashboard sm:p-5 sm:min-h-programDashboardMobile"
+                                    href="#">
                                     <svg class="absolute top-2 right-2 sm:top-1 sm:right-1 " width="20" height="20"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
