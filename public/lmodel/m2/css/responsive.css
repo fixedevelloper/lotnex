@@ -64,11 +64,12 @@
 }
 
 @media(max-width:767px) {
+
 	.iq-banner-3 { padding: 100px 0 50px; }
 	.container { max-width: 100%; }
 	header .navbar-light .nav { display: none; }
 	.navbar-light .navbar-toggler { right: 0; }
-	h1 { font-size: 40px; }
+	h1 { font-size: 30px; }
 	h2 { font-size: 32px; }
 	h3 { font-size: 30px; }
 	.owl-carousel .owl-controls { display: none; }

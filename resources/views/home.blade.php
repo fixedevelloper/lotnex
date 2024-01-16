@@ -8,8 +8,8 @@
     <meta name="next-head-count" content="4">
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/bootstrap.min.css')}}" data-n-g="">
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('lmodel/m2/css/responsive.css')}}">
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/custom_next.css')}}">
+    <link rel="stylesheet" href="{{asset('lmodel/m2/css/responsive.css')}}">
     <title>Nexachain</title>
 
 </head>
