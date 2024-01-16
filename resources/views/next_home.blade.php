@@ -285,7 +285,7 @@
                                                     stroke-linecap="round" stroke-linejoin="round"></path>
                                             </svg>
                                             <span
-                                                class="text-white-500 text-base ml-2.5 false">Forsage Account search</span>
+                                                class="text-white-500 text-base ml-2.5 false">Nexachain Account search</span>
                                         </div>
                                         <svg class="stroke-current text-white-500 hidden lg:flex" width="8" height="14"
                                              stroke="#fff" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -487,7 +487,7 @@
                                                         MaxQore
                                                     </div>
                                                     <div class="text-[16px] text-white-500 text-left font-light">Meet
-                                                        MaxQore, the largest <br class="hidden sm:flex"> Forsage program
+                                                        MaxQore, the largest <br class="hidden sm:flex"> Nexachain program
                                                         ever!
                                                     </div>
                                                 </div>
@@ -511,10 +511,10 @@
                                                 <div class="flex flex-col mb-5 sm:p-5 sm:pb-0 sm:mb-6">
                                                     <div
                                                         class="text-[40px] sm:text-2xl font-medium text-white leading-1 text-left lg:text-[30px]">
-                                                        Forsage Social is here
+                                                        Nexachain Social is here
                                                     </div>
                                                     <span class="text-[16px] text-white-500 text-left"> Meet our native Web3 social network.<span
-                                                            class="hidden sm:inline ">To log in, you need only your Forsage ID!</span></span>
+                                                            class="hidden sm:inline ">To log in, you need only your Nexachain ID!</span></span>
                                                 </div>
                                                 <div class="flex flex-col sm:w-full justify-end">
                                                     <div class="flex items-center justify-center w-full sm:mt-5"><img
@@ -535,7 +535,7 @@
                                                 <div class="flex flex-col mb-5 sm:pt-5 sm:px-5 sm:mb-6">
                                                     <div
                                                         class="text-[40px] sm:text-2xl font-medium text-white text-left whitespace-nowrap">
-                                                        Forsage school
+                                                        Nexachain school
                                                     </div>
                                                     <div class="text-[16px] text-white-500 text-left">New Opportunities
                                                         For Your Business
@@ -624,7 +624,7 @@
                         <div class="flex flex-col sm:px-5"><span
                                 class="text-white text-3xl font-bold ">Account preview</span><span
                                 class="text-white-500 text-base mt-1 mb-7.5">Look up any <span
-                                    class="notranslate mx-1.5">Forsage BUSD</span> member account in preview mode. Enter ID or <span
+                                    class="notranslate mx-1.5">Nexachain BUSD</span> member account in preview mode. Enter ID or <span
                                     class="notranslate mx-1.5">BUSD</span> address to preview or click Demo to view a random account.</span>
                         </div>
                         <div class="flex sm:flex-col">
@@ -742,7 +742,7 @@
                                 <div class="h-[75px] flex items-center "><img
                                         class="max-h-full max-w-[75px] sm:max-w-[60px] sm:absolute sm:left-3 "
                                         src="/roadmap/games.png" alt=""></div>
-                                <span class="text-white min-h-[16px] font-medium sm:font-light sm:text-xl sm:pt-4">Forsage Games</span>
+                                <span class="text-white min-h-[16px] font-medium sm:font-light sm:text-xl sm:pt-4">Nexachainge Games</span>
                             </div>
                             <span class="absolute bottom-[-34px] sm:bottom-5 text-white "> 21.11 </span>
                             <div
@@ -919,7 +919,7 @@
                                             border-right-width: 6px;
                                         }
                                     </style>
-                                    Forsage BUSD real-time global events with links to transactions in blockchain
+                                    Nexachain BUSD real-time global events with links to transactions in blockchain
                                 </div>
                             </div>
                         </div>
@@ -1551,7 +1551,7 @@
                                                             border-right-width: 6px;
                                                         }
                                                     </style>
-                                                    Total number of members in Forsage BUSD and last 24 hours change
+                                                    Total number of members in Nexachain BUSD and last 24 hours change
                                                 </div>
                                             </div>
                                         </div>
@@ -1661,7 +1661,7 @@
         border-right-style: solid;
         border-right-width: 6px;
     }
-  </style>Total amount received by all members of Forsage and last 24 hours change</div></div></span>
+  </style>Total amount received by all members of Nexachain and last 24 hours change</div></div></span>
                                     <div
                                         class="flex flex-col py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
                                         <span
@@ -1677,7 +1677,7 @@
                                 </div>
                                 <div class="bg-gray rounded p-5 flex flex-col flex-1 max-w-full">
                                     <div class="flex justify-between items-center text-base text-white-500 sm:text-sm">
-                                        <span>Forsage BUSD Contracts</span>
+                                        <span>Nexachain BUSD Contracts</span>
                                         <button
                                             class="rounded-full h-5 w-5 justify-center items-center bg-main-blue hidden lg:flex">
                                             <svg class="stroke-current text-white" width="8" height="4" fill="#fff"
@@ -1878,7 +1878,7 @@
                 <div
                     class="flex flex-col items-center sm:items-start justify-center my-25 sm:mb-0 sm:p-5 z-10 sm:my-0 sm:pt-7.5">
                     <span class="text-white text-3xl font-bold mb-5"> Need help with using the platform? </span><span
-                        class="mb-7.5"> Get qualified support from Forsage experts via online chat </span>
+                        class="mb-7.5"> Get qualified support from Nexachain experts via online chat </span>
                     <button
                         class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-main-blue hover:bg-hover-main-blue active:bg-active-main-blue font-medium rounded-mini sm:w-full">
                         Contact support

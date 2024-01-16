@@ -360,7 +360,7 @@
                                                     stroke-linecap="round" stroke-linejoin="round"></path>
                                             </svg>
                                             <span
-                                                class="text-white-500 text-base ml-2.5 false">Forsage Account search</span>
+                                                class="text-white-500 text-base ml-2.5 false">Nexachain Account search</span>
                                         </div>
                                         <svg class="stroke-current text-white-500 hidden lg:flex" width="8" height="14"
                                              stroke="#fff" fill="none" xmlns="http://www.w3.org/2000/svg">

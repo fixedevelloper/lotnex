@@ -145,11 +145,9 @@
                         class="w-full flex justify-start items-center space-x-5 lg:flex-col lg:h-full lg:items-start lg:space-x-0 lg:space-y-7.5">
                         <div class="flex items-center  lg:flex-col lg:items-start lg:w-full lg:pr-10 sm:pr-5"><a href="/">
                                 <img src="{{asset("lmodel/icon_nexa.png")}}" width="163" height="30">
-
                             </a>
                             @if(!$isLogged)
-                            <span
-                                class="text-base text-white whitespace-nowrap mr-5 notranslate lg:mr-0 lg:text-2xl lg:text-medium lg:mb-7.5">Preview ID<span
+                            <span class="text-base text-white whitespace-nowrap mr-5 notranslate lg:mr-0 lg:text-2xl lg:text-medium lg:mb-7.5">Preview ID<span
                                     class="hidden lg:inline ml-1.5">{{$id}}</span></span>
                             <div class="flex justify-between items-center space-x-2.5 lg:space-x-5 lg:w-full lg:flex">
                                 <form>
@@ -190,167 +188,71 @@
                                                 <span class="text-white-500 text-base ml-2.5 false">Dashboard</span></div>
                                         </button>
                                     </a>
-                                    <div
-                                        class="undefined bg-black-light lg:bg-transparent lg:!pb-0  min-w-[186px] cursor-pointer hover:bg-black-light lg:hover:bg-transparent rounded-[10px] lg:border-b lg:border-white-300 lg:rounded-none lg:justify-between">
-                                        <div class="flex p-2.5 lg:px-0 lg:py-5">
-                                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="#8B8C8C"
-                                                 stroke-linecap="round" stroke-linejoin="round"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M16.494 14.195c1.236.207 2.597-.01 3.553-.648 1.27-.846 1.27-2.232 0-3.078-.965-.639-2.345-.855-3.58-.639m-8.961 4.365c-1.236.207-2.597-.01-3.553-.648-1.27-.846-1.27-2.232 0-3.078.965-.639 2.345-.855 3.58-.639m9.89-2.187a2.322 2.322 0 0 1-1.76-.71 2.313 2.313 0 0 1-.647-1.611A2.318 2.318 0 0 1 17.342 3a2.328 2.328 0 0 1 2.326 2.322 2.327 2.327 0 0 1-2.245 2.321Zm-10.846 0a.547.547 0 0 1 .171 0A2.322 2.322 0 0 0 6.658 3c-.617 0-1.208.245-1.645.68a2.32 2.32 0 0 0-.68 1.642c.008 1.26 1 2.276 2.244 2.321Zm5.437 6.723a.547.547 0 0 0-.172 0 2.313 2.313 0 0 1-2.236-2.322 2.318 2.318 0 0 1 2.326-2.322c.617 0 1.209.245 1.645.68a2.32 2.32 0 0 1 .681 1.642c-.009 1.26-1 2.286-2.244 2.322ZM9.39 17.2c-1.271.846-1.271 2.232 0 3.078 1.442.963 3.805.963 5.247 0 1.271-.846 1.271-2.232 0-3.078-1.433-.954-3.805-.954-5.247 0Z"></path>
-                                            </svg>
-                                            <span class="text-[#8B8C8C] text-base ml-2.5 lg:text-white-500">Team</span>
-                                            <svg class="ml-auto lg:mr-5 rotate-180" width="24" height="24" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="m8 11 4 4 4-4" stroke="#8B8C8C" stroke-linecap="round"
-                                                      stroke-linejoin="round"></path>
-                                            </svg>
-                                        </div>
-                                        <div class="border-solid border-[1px] border-[#363738] lg:hidden mx-2.5"></div>
-                                        <div class="flex flex-col p-2.5 lg:py-0 lg:pr-0"><a class="undefined undefined"
-                                                                                            href="#">
-                                                <button
-                                                    class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between  lg:pl-5 lg:border-t lg:border-white-300 hover:!bg-white-50 lg:hover:!bg-transparent">
-                                                    <div class="flex items-center text-left">
-                                                        <svg class="w-6 h-6 stroke-current text-white-500 " viewBox="0 0 16 16"
-                                                             fill="none" stroke="#fff" xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M6 7.333A2.667 2.667 0 1 0 6 2a2.667 2.667 0 0 0 0 5.333ZM2 14v-1.333A2.667 2.667 0 0 1 4.667 10h2.666A2.667 2.667 0 0 1 10 12.667V14M10.667 2.086a2.667 2.667 0 0 1 0 5.167M14 14v-1.333a2.667 2.667 0 0 0-2-2.567"
-                                                                stroke-width="1.333" stroke-linecap="round"
-                                                                stroke-linejoin="round"></path>
-                                                        </svg>
-                                                        <span class="text-white-500 text-base ml-2.5 false">Partners</span>
-                                                    </div>
-                                                </button>
-                                            </a>
-                                            <a class="undefined undefined" href="/links?user=1">
-                                                <button
-                                                    class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between  lg:pl-5 lg:border-t lg:border-white-300 hover:!bg-white-50 lg:hover:!bg-transparent">
-                                                    <div class="flex items-center text-left">
-                                                        <svg class="w-6 h-6 stroke-current text-white-500 "
-                                                             data-name="a239fe10-42dc-4f9c-ab1f-bcabd992189e"
-                                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.16 19.14">
-                                                            <path
-                                                                d="M7 9.17a4.42 4.42 0 0 0 4.5-4.33A4.42 4.42 0 0 0 7 .5h0a4.43 4.43 0 0 0-4.5 4.34A4.42 4.42 0 0 0 7 9.17Z"
-                                                                fill="none" stroke="#969797" stroke-linecap="round"
-                                                                stroke-linejoin="round"></path>
-                                                            <path
-                                                                d="M10.23 13.3a1.93 1.93 0 0 1 1.49 0 2 2 0 0 1 .63.43.3.3 0 0 1 0 .41.27.27 0 0 1-.4 0 1.37 1.37 0 0 0-.45-.3 1.31 1.31 0 0 0-.52-.11 1.42 1.42 0 0 0-1 .41l-1.85 1.91a1.4 1.4 0 0 0 0 2 1.36 1.36 0 0 0 1 .41 1.35 1.35 0 0 0 1-.41l.24-.24a.28.28 0 0 1 .4 0 .3.3 0 0 1 0 .41l-.24.24a1.93 1.93 0 0 1-2.74 0 2 2 0 0 1 0-2.8l1.81-1.93a2.08 2.08 0 0 1 .63-.43Z"
-                                                                fill="#969797" stroke="#969797" stroke-miterlimit="10"
-                                                                stroke-width=".25" fill-rule="evenodd"></path>
-                                                            <path
-                                                                d="M.5 18.55v-2a4.15 4.15 0 0 1 1.08-2.83 3.51 3.51 0 0 1 2.59-1.17H7.5"
-                                                                fill="none" stroke="#969797" stroke-linecap="round"
-                                                                stroke-linejoin="round"></path>
-                                                            <path
-                                                                d="M11.76 11.73a1.88 1.88 0 0 1 2.72 0 2 2 0 0 1 0 2.79l-1.86 1.91a2.06 2.06 0 0 1-.62.44 1.9 1.9 0 0 1-1.48 0 2.06 2.06 0 0 1-.62-.44.28.28 0 0 1 0-.4.28.28 0 0 1 .4 0 1.25 1.25 0 0 0 .44.31 1.28 1.28 0 0 0 1 0 1.25 1.25 0 0 0 .44-.31l1.86-1.91a1.44 1.44 0 0 0 0-2 1.34 1.34 0 0 0-1-.41 1.38 1.38 0 0 0-1 .41l-.23.24a.27.27 0 0 1-.39 0 .28.28 0 0 1 0-.4Z"
-                                                                fill="#969797" stroke="#969797" stroke-miterlimit="10"
-                                                                stroke-width=".25" fill-rule="evenodd"></path>
-                                                        </svg>
-                                                        <span class="text-white-500 text-base ml-2.5 false">Links</span></div>
-                                                </button>
-                                            </a>
-                                            <a class="undefined undefined" href="/stats?user=1">
-                                                <button
-                                                    class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between  lg:pl-5 lg:border-t lg:border-white-300 hover:!bg-white-50 lg:hover:!bg-transparent">
-                                                    <div class="flex items-center text-left">
-                                                        <svg class="w-6 h-6 stroke-current text-white-500 " viewBox="0 0 24 24"
-                                                             stroke="#fff" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M16 12h5m-9-9v5-5ZM8.929 14.582 5.5 17.5M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                            <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"
-                                                                  stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg>
-                                                        <span class="text-white-500 text-base ml-2.5 false">Stats</span></div>
-                                                </button>
-                                            </a></div>
-                                    </div>
-                                    <a class="undefined undefined" href="/MaxQoreMarathon?user=1">
+                                    <a class="undefined undefined"
+                                       href="/partners?id=1">
                                         <button
-                                            class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between   lg:border-b lg:border-white-300">
+                                            class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between  lg:pl-5 lg:border-t lg:border-white-300 hover:!bg-white-50 lg:hover:!bg-transparent">
                                             <div class="flex items-center text-left">
-                                                <svg class="w-6 h-6 stroke-current text-white-500 " viewBox="0 0 24 24">
-                                                    <style>.st1 {
-                                                            fill: none;
-                                                            stroke: #adadad;
-                                                            stroke-linecap: round;
-                                                            stroke-linejoin: round;
-                                                            stroke-miterlimit: 10
-                                                        }</style>
+                                                <svg class="w-6 h-6 stroke-current text-white-500 "
+                                                     viewBox="0 0 16 16" fill="none" stroke="#fff"
+                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
-                                                        d="m11.6 3.4 8.6 9.1c.7.7.4 1.9-.5 2.3L5.7 21c-.6.3-1.2.1-1.7-.4l-1.4-1.5c-.4-.4-.5-1.1-.2-1.6L9.2 3.8c.4-.9 1.7-1.1 2.4-.4z"
-                                                        style="fill: none; stroke: rgb(173, 173, 173); stroke-miterlimit: 10;"></path>
-                                                    <path class="st1"
-                                                          d="m15.6 3.7.6-1.9M19.7 7.8h2M18 5.4 20.4 3M7.5 20.4c.6 1.2 1.8 2 3.2 2 2 0 3.6-1.6 3.6-3.6 0-.4-.1-.9-.2-1.3"></path>
-                                                </svg>
-                                                <span class="text-white-500 text-base ml-2.5 false">Marathon</span></div>
-                                        </button>
-                                    </a>
-                                    <a class="undefined undefined" href="/social?user=1">
-                                        <button
-                                            class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between   lg:border-b lg:border-white-300">
-                                            <div class="flex items-center text-left">
-                                                <svg class="w-6 h-6 stroke-current text-white-500 " width="24" height="24"
-                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M22 11.78C22 6.405 17.566 2 11.955 2S2 6.317 2 11.78a9.449 9.449 0 0 0 2.896 6.872C4.806 19.797 4.715 22 4.715 22s2.443-.97 3.258-1.322c1.267.53 2.534.793 3.982.793 5.61 0 10.045-4.317 10.045-9.691Z"
-                                                        stroke="#969797" stroke-miterlimit="10" stroke-linecap="round"
+                                                        d="M6 7.333A2.667 2.667 0 1 0 6 2a2.667 2.667 0 0 0 0 5.333ZM2 14v-1.333A2.667 2.667 0 0 1 4.667 10h2.666A2.667 2.667 0 0 1 10 12.667V14M10.667 2.086a2.667 2.667 0 0 1 0 5.167M14 14v-1.333a2.667 2.667 0 0 0-2-2.567"
+                                                        stroke-width="1.333" stroke-linecap="round"
                                                         stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M12 14.4c3.314 0 6-1.075 6-2.4s-2.686-2.4-6-2.4-6 1.075-6 2.4 2.686 2.4 6 2.4Z"
-                                                        stroke="#969797" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M15.275 11.962c0 3.314-1.325 5.962-3.275 6.038-2.025-.076-3.35-2.724-3.35-6.038S9.975 6 12 6c2.025 0 3.275 2.648 3.275 5.962Z"
-                                                        stroke="#969797" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M11.962 6v11.924" stroke="#969797"></path>
-                                                    <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" stroke="#969797"
-                                                          stroke-linejoin="round"></path>
                                                 </svg>
-                                                <span class="text-white-500 text-base ml-2.5 false">Social</span><span
-                                                    class="absolute top-1 right-1.5 text-green text-sm lg:bg-green-200 lg:px-2.5 lg:py-1 lg:rounded lg:top-1/2 lg:-translate-y-1/2 lg:right-5">New</span>
+                                                <span
+                                                    class="text-white-500 text-base ml-2.5 false">Partners</span>
                                             </div>
                                         </button>
                                     </a>
-                                    <a class="undefined undefined" href="/nft?user=1">
+                                    <a class="undefined undefined" href="/links?id=1">
                                         <button
-                                            class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between   lg:border-b lg:border-white-300">
+                                            class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between  lg:pl-5 lg:border-t lg:border-white-300 hover:!bg-white-50 lg:hover:!bg-transparent">
                                             <div class="flex items-center text-left">
-                                                <svg class="w-6 h-6 stroke-current text-white-500 " viewBox="0 0 24 24"
-                                                     fill="none" stroke="#8B8C8C" xmlns="http://www.w3.org/2000/svg">
+                                                <svg class="w-6 h-6 stroke-current text-white-500 "
+                                                     data-name="a239fe10-42dc-4f9c-ab1f-bcabd992189e"
+                                                     xmlns="http://www.w3.org/2000/svg"
+                                                     viewBox="0 0 15.16 19.14">
                                                     <path
-                                                        d="M4 23c1-.837 2.37-1.052 3.383-2.133.442-.348.852-.644 1.107-1.108.216-.391 1.892-4.535.064-2.66-.82 1.183-.477-.983.254-1.397-.587-.276-1.847.72-2.058 1.266.124-.679.038-1.614-.021-2.294-.336-1.322 1.846-1.57.235-1.58-.542.064-.882.665-.885.727-.06-.65.405-1.524 1.015-1.893-.376-.344-1.357-.175-1.62.36-.086-.533.45-1.5 1.114-1.72.25.009.564-.623.666-.815-.052-.536-.32-1.061-.737-1.576-.386-.45-.404-1.638-.75-2.394-.346-.92-.673-2.342.244-3 1.59-.323 2.923 1.413 4.152 2.251.357-.167.938-.373 1.326-.443a8.874 8.874 0 0 1 3.193-.131c1.127-.608 2.98-3.472 4.038-2.086.625.531-.238 1.917-.494 2.61-.066.3-.052.595-.083.723-.072.286-.252.41-.212.564.747.478.775 1.143 1.137 1.852.249.511.444.986.58 1.419.114.373.082.678 0 .924.163.42.405 1.157.406 1.538.718.737 1.079.79.902 1.588-.17.933.105 1.585-.982 2.18-.195.314.61.269-.064 1.214.057.974-.39 1.091-1.684 1.339-.857.26-1.546-.22-2.234-.758-.323-.226-.596-.485-.9-.714l.102 2.527c.018.458.197.896.511 1.23 1.339 1.429 2.688.743 4.349 2.39"
-                                                        stroke-miterlimit="10" stroke-linecap="round"
+                                                        d="M7 9.17a4.42 4.42 0 0 0 4.5-4.33A4.42 4.42 0 0 0 7 .5h0a4.43 4.43 0 0 0-4.5 4.34A4.42 4.42 0 0 0 7 9.17Z"
+                                                        fill="none" stroke="#969797" stroke-linecap="round"
                                                         stroke-linejoin="round"></path>
+                                                    <path
+                                                        d="M10.23 13.3a1.93 1.93 0 0 1 1.49 0 2 2 0 0 1 .63.43.3.3 0 0 1 0 .41.27.27 0 0 1-.4 0 1.37 1.37 0 0 0-.45-.3 1.31 1.31 0 0 0-.52-.11 1.42 1.42 0 0 0-1 .41l-1.85 1.91a1.4 1.4 0 0 0 0 2 1.36 1.36 0 0 0 1 .41 1.35 1.35 0 0 0 1-.41l.24-.24a.28.28 0 0 1 .4 0 .3.3 0 0 1 0 .41l-.24.24a1.93 1.93 0 0 1-2.74 0 2 2 0 0 1 0-2.8l1.81-1.93a2.08 2.08 0 0 1 .63-.43Z"
+                                                        fill="#969797" stroke="#969797" stroke-miterlimit="10"
+                                                        stroke-width=".25" fill-rule="evenodd"></path>
+                                                    <path
+                                                        d="M.5 18.55v-2a4.15 4.15 0 0 1 1.08-2.83 3.51 3.51 0 0 1 2.59-1.17H7.5"
+                                                        fill="none" stroke="#969797" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    <path
+                                                        d="M11.76 11.73a1.88 1.88 0 0 1 2.72 0 2 2 0 0 1 0 2.79l-1.86 1.91a2.06 2.06 0 0 1-.62.44 1.9 1.9 0 0 1-1.48 0 2.06 2.06 0 0 1-.62-.44.28.28 0 0 1 0-.4.28.28 0 0 1 .4 0 1.25 1.25 0 0 0 .44.31 1.28 1.28 0 0 0 1 0 1.25 1.25 0 0 0 .44-.31l1.86-1.91a1.44 1.44 0 0 0 0-2 1.34 1.34 0 0 0-1-.41 1.38 1.38 0 0 0-1 .41l-.23.24a.27.27 0 0 1-.39 0 .28.28 0 0 1 0-.4Z"
+                                                        fill="#969797" stroke="#969797" stroke-miterlimit="10"
+                                                        stroke-width=".25" fill-rule="evenodd"></path>
                                                 </svg>
-                                                <span class="text-white-500 text-base ml-2.5 false">NFTs</span></div>
+                                                <span class="text-white-500 text-base ml-2.5 false">Links</span>
+                                            </div>
                                         </button>
                                     </a>
-                                    <div
-                                        class="undefined   min-w-[186px] cursor-pointer hover:bg-black-light lg:hover:bg-transparent rounded-[10px] lg:border-b lg:border-white-300 lg:rounded-none lg:justify-between">
-                                        <div class="flex p-2.5 lg:px-0 lg:py-5">
-                                            <svg class="w-6 h-6" width="24" height="24" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#a)" stroke="#8B8C8C" stroke-linecap="round"
-                                                   stroke-linejoin="round">
+                                    <a class="undefined undefined" href="/stats?id=1">
+                                        <button
+                                            class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between  lg:pl-5 lg:border-t lg:border-white-300 hover:!bg-white-50 lg:hover:!bg-transparent">
+                                            <div class="flex items-center text-left">
+                                                <svg class="w-6 h-6 stroke-current text-white-500 "
+                                                     viewBox="0 0 24 24" stroke="#fff" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
-                                                        d="M3 19a9 9 0 0 1 9 0 9 9 0 0 1 9 0M3 6a9 9 0 0 1 9 0 9 9 0 0 1 9 0M3 6v13M12 6v13M21 6v13"></path>
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="a">
-                                                        <path fill="#fff" d="M0 0h24v24H0z"></path>
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                            <span class="text-[#8B8C8C] text-base ml-2.5 lg:text-white-500">Information</span>
-                                            <svg class="ml-auto lg:mr-5 " width="24" height="24" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="m8 11 4 4 4-4" stroke="#8B8C8C" stroke-linecap="round"
-                                                      stroke-linejoin="round"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <a class="undefined undefined" href="/promo?user=1">
+                                                        d="M16 12h5m-9-9v5-5ZM8.929 14.582 5.5 17.5M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"
+                                                          stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                                <span class="text-white-500 text-base ml-2.5 false">Stats</span>
+                                            </div>
+                                        </button>
+                                    </a>
+                                    <a class="undefined undefined" href="#">
                                         <button
                                             class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between   lg:border-b lg:border-white-300">
                                             <div class="flex items-center text-left">
@@ -433,173 +335,72 @@
                                             </div>
                                         </button>
                                     </a>
-                                    <div
-                                        class="undefined bg-black-light lg:bg-transparent lg:!pb-0  min-w-[186px] cursor-pointer hover:bg-black-light lg:hover:bg-transparent rounded-[10px] lg:border-b lg:border-white-300 lg:rounded-none lg:justify-between">
-                                        <div class="flex p-2.5 lg:px-0 lg:py-5">
-                                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="#8B8C8C"
-                                                 stroke-linecap="round" stroke-linejoin="round"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M16.494 14.195c1.236.207 2.597-.01 3.553-.648 1.27-.846 1.27-2.232 0-3.078-.965-.639-2.345-.855-3.58-.639m-8.961 4.365c-1.236.207-2.597-.01-3.553-.648-1.27-.846-1.27-2.232 0-3.078.965-.639 2.345-.855 3.58-.639m9.89-2.187a2.322 2.322 0 0 1-1.76-.71 2.313 2.313 0 0 1-.647-1.611A2.318 2.318 0 0 1 17.342 3a2.328 2.328 0 0 1 2.326 2.322 2.327 2.327 0 0 1-2.245 2.321Zm-10.846 0a.547.547 0 0 1 .171 0A2.322 2.322 0 0 0 6.658 3c-.617 0-1.208.245-1.645.68a2.32 2.32 0 0 0-.68 1.642c.008 1.26 1 2.276 2.244 2.321Zm5.437 6.723a.547.547 0 0 0-.172 0 2.313 2.313 0 0 1-2.236-2.322 2.318 2.318 0 0 1 2.326-2.322c.617 0 1.209.245 1.645.68a2.32 2.32 0 0 1 .681 1.642c-.009 1.26-1 2.286-2.244 2.322ZM9.39 17.2c-1.271.846-1.271 2.232 0 3.078 1.442.963 3.805.963 5.247 0 1.271-.846 1.271-2.232 0-3.078-1.433-.954-3.805-.954-5.247 0Z"></path>
-                                            </svg>
-                                            <span class="text-[#8B8C8C] text-base ml-2.5 lg:text-white-500">Team</span>
-                                            <svg class="ml-auto lg:mr-5 rotate-180" width="24" height="24" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="m8 11 4 4 4-4" stroke="#8B8C8C" stroke-linecap="round"
-                                                      stroke-linejoin="round"></path>
-                                            </svg>
-                                        </div>
-                                        <div class="border-solid border-[1px] border-[#363738] lg:hidden mx-2.5"></div>
-                                        <div class="flex flex-col p-2.5 lg:py-0 lg:pr-0"><a class="undefined undefined"
-                                                                                            href="/partners?user=1">
-                                                <button
-                                                    class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between  lg:pl-5 lg:border-t lg:border-white-300 hover:!bg-white-50 lg:hover:!bg-transparent">
-                                                    <div class="flex items-center text-left">
-                                                        <svg class="w-6 h-6 stroke-current text-white-500 "
-                                                             viewBox="0 0 16 16" fill="none" stroke="#fff"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M6 7.333A2.667 2.667 0 1 0 6 2a2.667 2.667 0 0 0 0 5.333ZM2 14v-1.333A2.667 2.667 0 0 1 4.667 10h2.666A2.667 2.667 0 0 1 10 12.667V14M10.667 2.086a2.667 2.667 0 0 1 0 5.167M14 14v-1.333a2.667 2.667 0 0 0-2-2.567"
-                                                                stroke-width="1.333" stroke-linecap="round"
-                                                                stroke-linejoin="round"></path>
-                                                        </svg>
-                                                        <span
-                                                            class="text-white-500 text-base ml-2.5 false">Partners</span>
-                                                    </div>
-                                                </button>
-                                            </a><a class="undefined undefined" href="/links?user=1">
-                                                <button
-                                                    class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between  lg:pl-5 lg:border-t lg:border-white-300 hover:!bg-white-50 lg:hover:!bg-transparent">
-                                                    <div class="flex items-center text-left">
-                                                        <svg class="w-6 h-6 stroke-current text-white-500 "
-                                                             data-name="a239fe10-42dc-4f9c-ab1f-bcabd992189e"
-                                                             xmlns="http://www.w3.org/2000/svg"
-                                                             viewBox="0 0 15.16 19.14">
-                                                            <path
-                                                                d="M7 9.17a4.42 4.42 0 0 0 4.5-4.33A4.42 4.42 0 0 0 7 .5h0a4.43 4.43 0 0 0-4.5 4.34A4.42 4.42 0 0 0 7 9.17Z"
-                                                                fill="none" stroke="#969797" stroke-linecap="round"
-                                                                stroke-linejoin="round"></path>
-                                                            <path
-                                                                d="M10.23 13.3a1.93 1.93 0 0 1 1.49 0 2 2 0 0 1 .63.43.3.3 0 0 1 0 .41.27.27 0 0 1-.4 0 1.37 1.37 0 0 0-.45-.3 1.31 1.31 0 0 0-.52-.11 1.42 1.42 0 0 0-1 .41l-1.85 1.91a1.4 1.4 0 0 0 0 2 1.36 1.36 0 0 0 1 .41 1.35 1.35 0 0 0 1-.41l.24-.24a.28.28 0 0 1 .4 0 .3.3 0 0 1 0 .41l-.24.24a1.93 1.93 0 0 1-2.74 0 2 2 0 0 1 0-2.8l1.81-1.93a2.08 2.08 0 0 1 .63-.43Z"
-                                                                fill="#969797" stroke="#969797" stroke-miterlimit="10"
-                                                                stroke-width=".25" fill-rule="evenodd"></path>
-                                                            <path
-                                                                d="M.5 18.55v-2a4.15 4.15 0 0 1 1.08-2.83 3.51 3.51 0 0 1 2.59-1.17H7.5"
-                                                                fill="none" stroke="#969797" stroke-linecap="round"
-                                                                stroke-linejoin="round"></path>
-                                                            <path
-                                                                d="M11.76 11.73a1.88 1.88 0 0 1 2.72 0 2 2 0 0 1 0 2.79l-1.86 1.91a2.06 2.06 0 0 1-.62.44 1.9 1.9 0 0 1-1.48 0 2.06 2.06 0 0 1-.62-.44.28.28 0 0 1 0-.4.28.28 0 0 1 .4 0 1.25 1.25 0 0 0 .44.31 1.28 1.28 0 0 0 1 0 1.25 1.25 0 0 0 .44-.31l1.86-1.91a1.44 1.44 0 0 0 0-2 1.34 1.34 0 0 0-1-.41 1.38 1.38 0 0 0-1 .41l-.23.24a.27.27 0 0 1-.39 0 .28.28 0 0 1 0-.4Z"
-                                                                fill="#969797" stroke="#969797" stroke-miterlimit="10"
-                                                                stroke-width=".25" fill-rule="evenodd"></path>
-                                                        </svg>
-                                                        <span class="text-white-500 text-base ml-2.5 false">Links</span>
-                                                    </div>
-                                                </button>
-                                            </a><a class="undefined undefined" href="/stats?user=1">
-                                                <button
-                                                    class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between  lg:pl-5 lg:border-t lg:border-white-300 hover:!bg-white-50 lg:hover:!bg-transparent">
-                                                    <div class="flex items-center text-left">
-                                                        <svg class="w-6 h-6 stroke-current text-white-500 "
-                                                             viewBox="0 0 24 24" stroke="#fff" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M16 12h5m-9-9v5-5ZM8.929 14.582 5.5 17.5M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"
-                                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                                            <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"
-                                                                  stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg>
-                                                        <span class="text-white-500 text-base ml-2.5 false">Stats</span>
-                                                    </div>
-                                                </button>
-                                            </a></div>
-                                    </div>
-                                    <a class="undefined undefined" href="/MaxQoreMarathon?user=1">
+                                    <a class="undefined undefined"
+                                       href="/partners?id=1">
                                         <button
-                                            class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between   lg:border-b lg:border-white-300">
+                                            class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between  lg:pl-5 lg:border-t lg:border-white-300 hover:!bg-white-50 lg:hover:!bg-transparent">
                                             <div class="flex items-center text-left">
-                                                <svg class="w-6 h-6 stroke-current text-white-500 " viewBox="0 0 24 24">
-                                                    <style>.st1 {
-                                                            fill: none;
-                                                            stroke: #adadad;
-                                                            stroke-linecap: round;
-                                                            stroke-linejoin: round;
-                                                            stroke-miterlimit: 10
-                                                        }</style>
+                                                <svg class="w-6 h-6 stroke-current text-white-500 "
+                                                     viewBox="0 0 16 16" fill="none" stroke="#fff"
+                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
-                                                        d="m11.6 3.4 8.6 9.1c.7.7.4 1.9-.5 2.3L5.7 21c-.6.3-1.2.1-1.7-.4l-1.4-1.5c-.4-.4-.5-1.1-.2-1.6L9.2 3.8c.4-.9 1.7-1.1 2.4-.4z"
-                                                        style="fill: none; stroke: rgb(173, 173, 173); stroke-miterlimit: 10;"></path>
-                                                    <path class="st1"
-                                                          d="m15.6 3.7.6-1.9M19.7 7.8h2M18 5.4 20.4 3M7.5 20.4c.6 1.2 1.8 2 3.2 2 2 0 3.6-1.6 3.6-3.6 0-.4-.1-.9-.2-1.3"></path>
+                                                        d="M6 7.333A2.667 2.667 0 1 0 6 2a2.667 2.667 0 0 0 0 5.333ZM2 14v-1.333A2.667 2.667 0 0 1 4.667 10h2.666A2.667 2.667 0 0 1 10 12.667V14M10.667 2.086a2.667 2.667 0 0 1 0 5.167M14 14v-1.333a2.667 2.667 0 0 0-2-2.567"
+                                                        stroke-width="1.333" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
                                                 </svg>
-                                                <span class="text-white-500 text-base ml-2.5 false">Marathon</span>
+                                                <span
+                                                    class="text-white-500 text-base ml-2.5 false">Partners</span>
                                             </div>
-                                        </button>
-                                    </a><a class="undefined undefined" href="/social?user=1">
-                                        <button
-                                            class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between   lg:border-b lg:border-white-300">
-                                            <div class="flex items-center text-left">
-                                                <svg class="w-6 h-6 stroke-current text-white-500 " width="24"
-                                                     height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M22 11.78C22 6.405 17.566 2 11.955 2S2 6.317 2 11.78a9.449 9.449 0 0 0 2.896 6.872C4.806 19.797 4.715 22 4.715 22s2.443-.97 3.258-1.322c1.267.53 2.534.793 3.982.793 5.61 0 10.045-4.317 10.045-9.691Z"
-                                                        stroke="#969797" stroke-miterlimit="10" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M12 14.4c3.314 0 6-1.075 6-2.4s-2.686-2.4-6-2.4-6 1.075-6 2.4 2.686 2.4 6 2.4Z"
-                                                        stroke="#969797" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path
-                                                        d="M15.275 11.962c0 3.314-1.325 5.962-3.275 6.038-2.025-.076-3.35-2.724-3.35-6.038S9.975 6 12 6c2.025 0 3.275 2.648 3.275 5.962Z"
-                                                        stroke="#969797" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path d="M11.962 6v11.924" stroke="#969797"></path>
-                                                    <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" stroke="#969797"
-                                                          stroke-linejoin="round"></path>
-                                                </svg>
-                                                <span class="text-white-500 text-base ml-2.5 false">Social</span><span
-                                                    class="absolute top-1 right-1.5 text-green text-sm lg:bg-green-200 lg:px-2.5 lg:py-1 lg:rounded lg:top-1/2 lg:-translate-y-1/2 lg:right-5">New</span>
-                                            </div>
-                                        </button>
-                                    </a><a class="undefined undefined" href="/nft?user=1">
-                                        <button
-                                            class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between   lg:border-b lg:border-white-300">
-                                            <div class="flex items-center text-left">
-                                                <svg class="w-6 h-6 stroke-current text-white-500 " viewBox="0 0 24 24"
-                                                     fill="none" stroke="#8B8C8C" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M4 23c1-.837 2.37-1.052 3.383-2.133.442-.348.852-.644 1.107-1.108.216-.391 1.892-4.535.064-2.66-.82 1.183-.477-.983.254-1.397-.587-.276-1.847.72-2.058 1.266.124-.679.038-1.614-.021-2.294-.336-1.322 1.846-1.57.235-1.58-.542.064-.882.665-.885.727-.06-.65.405-1.524 1.015-1.893-.376-.344-1.357-.175-1.62.36-.086-.533.45-1.5 1.114-1.72.25.009.564-.623.666-.815-.052-.536-.32-1.061-.737-1.576-.386-.45-.404-1.638-.75-2.394-.346-.92-.673-2.342.244-3 1.59-.323 2.923 1.413 4.152 2.251.357-.167.938-.373 1.326-.443a8.874 8.874 0 0 1 3.193-.131c1.127-.608 2.98-3.472 4.038-2.086.625.531-.238 1.917-.494 2.61-.066.3-.052.595-.083.723-.072.286-.252.41-.212.564.747.478.775 1.143 1.137 1.852.249.511.444.986.58 1.419.114.373.082.678 0 .924.163.42.405 1.157.406 1.538.718.737 1.079.79.902 1.588-.17.933.105 1.585-.982 2.18-.195.314.61.269-.064 1.214.057.974-.39 1.091-1.684 1.339-.857.26-1.546-.22-2.234-.758-.323-.226-.596-.485-.9-.714l.102 2.527c.018.458.197.896.511 1.23 1.339 1.429 2.688.743 4.349 2.39"
-                                                        stroke-miterlimit="10" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                </svg>
-                                                <span class="text-white-500 text-base ml-2.5 false">NFTs</span></div>
                                         </button>
                                     </a>
-                                    <div
-                                        class="undefined   min-w-[186px] cursor-pointer hover:bg-black-light lg:hover:bg-transparent rounded-[10px] lg:border-b lg:border-white-300 lg:rounded-none lg:justify-between">
-                                        <div class="flex p-2.5 lg:px-0 lg:py-5">
-                                            <svg class="w-6 h-6" width="24" height="24" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#a)" stroke="#8B8C8C" stroke-linecap="round"
-                                                   stroke-linejoin="round">
+                                    <a class="undefined undefined" href="/links?id=1">
+                                        <button
+                                            class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between  lg:pl-5 lg:border-t lg:border-white-300 hover:!bg-white-50 lg:hover:!bg-transparent">
+                                            <div class="flex items-center text-left">
+                                                <svg class="w-6 h-6 stroke-current text-white-500 "
+                                                     data-name="a239fe10-42dc-4f9c-ab1f-bcabd992189e"
+                                                     xmlns="http://www.w3.org/2000/svg"
+                                                     viewBox="0 0 15.16 19.14">
                                                     <path
-                                                        d="M3 19a9 9 0 0 1 9 0 9 9 0 0 1 9 0M3 6a9 9 0 0 1 9 0 9 9 0 0 1 9 0M3 6v13M12 6v13M21 6v13"></path>
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="a">
-                                                        <path fill="#fff" d="M0 0h24v24H0z"></path>
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                            <span
-                                                class="text-[#8B8C8C] text-base ml-2.5 lg:text-white-500">Information</span>
-                                            <svg class="ml-auto lg:mr-5 " width="24" height="24" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="m8 11 4 4 4-4" stroke="#8B8C8C" stroke-linecap="round"
-                                                      stroke-linejoin="round"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <a class="undefined undefined" href="/promo?user=1">
+                                                        d="M7 9.17a4.42 4.42 0 0 0 4.5-4.33A4.42 4.42 0 0 0 7 .5h0a4.43 4.43 0 0 0-4.5 4.34A4.42 4.42 0 0 0 7 9.17Z"
+                                                        fill="none" stroke="#969797" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    <path
+                                                        d="M10.23 13.3a1.93 1.93 0 0 1 1.49 0 2 2 0 0 1 .63.43.3.3 0 0 1 0 .41.27.27 0 0 1-.4 0 1.37 1.37 0 0 0-.45-.3 1.31 1.31 0 0 0-.52-.11 1.42 1.42 0 0 0-1 .41l-1.85 1.91a1.4 1.4 0 0 0 0 2 1.36 1.36 0 0 0 1 .41 1.35 1.35 0 0 0 1-.41l.24-.24a.28.28 0 0 1 .4 0 .3.3 0 0 1 0 .41l-.24.24a1.93 1.93 0 0 1-2.74 0 2 2 0 0 1 0-2.8l1.81-1.93a2.08 2.08 0 0 1 .63-.43Z"
+                                                        fill="#969797" stroke="#969797" stroke-miterlimit="10"
+                                                        stroke-width=".25" fill-rule="evenodd"></path>
+                                                    <path
+                                                        d="M.5 18.55v-2a4.15 4.15 0 0 1 1.08-2.83 3.51 3.51 0 0 1 2.59-1.17H7.5"
+                                                        fill="none" stroke="#969797" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    <path
+                                                        d="M11.76 11.73a1.88 1.88 0 0 1 2.72 0 2 2 0 0 1 0 2.79l-1.86 1.91a2.06 2.06 0 0 1-.62.44 1.9 1.9 0 0 1-1.48 0 2.06 2.06 0 0 1-.62-.44.28.28 0 0 1 0-.4.28.28 0 0 1 .4 0 1.25 1.25 0 0 0 .44.31 1.28 1.28 0 0 0 1 0 1.25 1.25 0 0 0 .44-.31l1.86-1.91a1.44 1.44 0 0 0 0-2 1.34 1.34 0 0 0-1-.41 1.38 1.38 0 0 0-1 .41l-.23.24a.27.27 0 0 1-.39 0 .28.28 0 0 1 0-.4Z"
+                                                        fill="#969797" stroke="#969797" stroke-miterlimit="10"
+                                                        stroke-width=".25" fill-rule="evenodd"></path>
+                                                </svg>
+                                                <span class="text-white-500 text-base ml-2.5 false">Links</span>
+                                            </div>
+                                        </button>
+                                    </a>
+                                    <a class="undefined undefined" href="/stats?id=1">
+                                        <button
+                                            class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between  lg:pl-5 lg:border-t lg:border-white-300 hover:!bg-white-50 lg:hover:!bg-transparent">
+                                            <div class="flex items-center text-left">
+                                                <svg class="w-6 h-6 stroke-current text-white-500 "
+                                                     viewBox="0 0 24 24" stroke="#fff" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M16 12h5m-9-9v5-5ZM8.929 14.582 5.5 17.5M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"
+                                                          stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                                <span class="text-white-500 text-base ml-2.5 false">Stats</span>
+                                            </div>
+                                        </button>
+                                    </a>
+
+                                    <a class="undefined undefined" href="#">
                                         <button
                                             class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between   lg:border-b lg:border-white-300">
                                             <div class="flex items-center text-left">
@@ -646,7 +447,7 @@
                                         </svg>
                                     </a><a
                                         class="w-7 h-7 flex justify-center items-center rounded-full bg-white-100 hover:bg-white-300"
-                                        target="_blank" href="https://www.youtube.com/@FORSAGECommunity/">
+                                        target="_blank" href="https://www.youtube.com/@NEXACHAINCommunity/">
                                         <svg class="w-4 h-4" viewBox="0 0 14 10" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -685,11 +486,7 @@
                                         <div
                                             class="flex justify-center items-center w-10 h-10 sm:w-7.5 sm:h-7.5 bg-status-gold rounded-full w-[36px] h-[36px] z-10 absolute right-0  bottom-2.5 ">
                                            <img src="{{asset('lmodel/icon_nexa.png')}}" class="h-5 sm:h-3.5 fill-current text-gray">
-                                            {{--<svg class="h-5 sm:h-3.5 fill-current text-gray" fill="none"
-                                                 viewBox="0 0 21 14" xmlns="http://www.w3.org/2000/svg">
-                                                <path clip-rule="evenodd"
-                                                      d="M17.205 3.531a.207.207 0 0 1 .264.128l.186.54s-.797-.255-1.213-.336l.763-.332Zm2.606 1.446c-.002 0-.084-.057-.128-.08l-1.34-.688c-.414-.2-.323-.356-.48-.792a2.705 2.705 0 0 0-.236-.488c-.765-.365-2.937-.28-3.144-1.933 0 0-.811.535-.959 1.516C4.961 1.854.99 6.612.99 6.612c1.595-.64 3.316-.943 5.037-1.024-3.272 2.536-4.302 6.355-4.302 6.355s2.65-2.592 6.635-4.037c-1.043 1.483-1.647 3.474-1.4 6.09 0 0 2.05-7.877 11.774-5.972 0 0 .356-1.047 1.274-2.118a.466.466 0 0 0 .098-.28.754.754 0 0 0-.296-.65Z"></path>
-                                            </svg>--}}
+
                                         </div>
                                     </div>
                                 </div>
@@ -1142,7 +939,7 @@
                                     src="{{asset('lmodel/cup.svg')}}" class="w-[110px] sm:w-20" alt=""><img
                                     src="{{asset('lmodel/cup.svg')}}" class="w-[110px] sm:w-20" alt=""></div>
                             <div class="flex flex-row cursor-pointer pr-5 sm:w-full"><a class="w-full p-2.5"
-                                                                                        href="/achievements?user=1">
+                                                                                        href="/achievements?id=1">
                                     <div class="flex space-x-2.5 items-center justify-center sm:w-full"><span
                                             class="text-base text-white-500 font-semibold whitespace-nowrap sm:text-sm">Show all </span>
                                         <svg class="h-7.5 sm:h-5" viewBox="0 0 30 28" fill="none"
@@ -1334,7 +1131,7 @@
                                                 class="text-white text-2xl notranslate font-bold justify-start sm:text-xl false">xXx</span>
                                         </div>
                                         <span
-                                            class="text-white text-2xl font-bold justify-end text-right notranslate sm:text-xl">174 237.8 BUSD</span>
+                                            class="text-white text-2xl font-bold justify-end text-right notranslate sm:text-xl">0 BUSD</span>
                                     </div>
                                     <div class="flex justify-between h-full w-full">
                                         <div class="flex justify-between w-full z-10 sm:flex-col mt-5 w-full items-end">
@@ -1405,7 +1202,7 @@
                                                 class="text-white text-2xl notranslate font-bold justify-start sm:text-xl false">xGold</span>
                                         </div>
                                         <span
-                                            class="text-white text-2xl font-bold justify-end text-right notranslate sm:text-xl">162 120 BUSD</span>
+                                            class="text-white text-2xl font-bold justify-end text-right notranslate sm:text-xl">0 BUSD</span>
                                     </div>
                                     <div class="flex justify-between h-full w-full">
                                         <div class="flex justify-between w-full z-10 sm:flex-col mt-5 w-full items-end">
@@ -1529,7 +1326,7 @@
                                 </div>
                                 <a
                                     class="relative flex flex-col p-7.5 w-full bg-gray rounded z-10 overflow-hidden justify-between min-h-programDashboard sm:p-5 sm:min-h-programDashboardMobile"
-                                    href="/dashboard/maxQore?user=1">
+                                    href="/dashboard/maxQore?id=1">
                                     <svg class="absolute top-2 right-2 sm:top-1 sm:right-1 " width="20" height="20"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1544,7 +1341,7 @@
                                                 class="text-white text-2xl notranslate font-bold justify-start sm:text-xl false">maxQore</span>
                                         </div>
                                         <span
-                                            class="text-white text-2xl font-bold justify-end text-right notranslate sm:text-xl">227.46 BNB</span>
+                                            class="text-white text-2xl font-bold justify-end text-right notranslate sm:text-xl">0 BNB</span>
                                     </div>
                                     <div class="flex justify-between h-full w-full">
                                         <div class="flex justify-between w-full z-10 sm:flex-col mt-5 w-full items-end">
@@ -1729,7 +1526,7 @@
                                                 border-right-width: 6px;
                                             }
                                         </style>
-                                        Forsage BUSD real-time global events with links to transactions in blockchain
+                                        Nexachain BUSD real-time global events with links to transactions in blockchain
                                     </div>
                                 </div>
                             </div>
@@ -1753,7 +1550,7 @@
                                                 <div class="flex ml-5 items-center sm:w-full flex-wrap sm:ml-2.5">
                                                     <a
                                                         class="flex items-center justify-center notranslate px-2.5 leading-30px bg-blue-100 hover:bg-main-blue-300 text-main-blue rounded font-medium text-base sm:text-sm w-max order-2"
-                                                        href="/dashboard?user=1644320">ID 1644320</a>
+                                                        href="/dashboard?id=1644320">ID 1644320</a>
                                                     <div
                                                         class="h-full flex flex-wrap justify-center items-center mx-2.5 sm:mx-1.5 ml-0">
                                                         <span
@@ -1936,7 +1733,7 @@
                                                                 border-right-width: 6px;
                                                             }
                                                         </style>
-                                                        Total number of members in Forsage BUSD and last 24 hours change
+                                                        Total number of members in Nexachain BUSD and last 24 hours change
                                                     </div>
                                                 </div>
                                             </div>
@@ -2049,7 +1846,7 @@
         border-right-style: solid;
         border-right-width: 6px;
     }
-  </style>Total amount received by all members of Forsage and last 24 hours change</div></div></span>
+  </style>Total amount received by all members of Nexachain and last 24 hours change</div></div></span>
                                         <div
                                             class="flex flex-col py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
                                             <span
@@ -2059,14 +1856,14 @@
                                         <div
                                             class="flex flex-col py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
                                             <span
-                                                class="text-2xl text-white font-bold sm:text-xl">22 382.5375 BNB</span><span
-                                                class="text-green-light text-base items-baseline sm:text-sm">+ 5.1805 BNB</span>
+                                                class="text-2xl text-white font-bold sm:text-xl">0 BNB</span><span
+                                                class="text-green-light text-base items-baseline sm:text-sm">+ 0 BNB</span>
                                         </div>
                                     </div>
                                     <div class="bg-gray rounded p-5 flex flex-col flex-1 max-w-full">
                                         <div
                                             class="flex justify-between items-center text-base text-white-500 sm:text-sm">
-                                            <span>Forsage BUSD Contracts</span>
+                                            <span>Nexachain BUSD Contracts</span>
                                             <button
                                                 class="rounded-full h-5 w-5 justify-center items-center bg-main-blue hidden lg:flex">
                                                 <svg class="stroke-current text-white" width="8" height="4" fill="#fff"
@@ -2264,7 +2061,7 @@
                                     </svg>
                                 </a><a
                                     class="w-7 h-7 flex justify-center items-center rounded-full bg-white-100 hover:bg-white-300"
-                                    target="_blank" href="https://www.youtube.com/@FORSAGECommunity/">
+                                    target="_blank" href="https://www.youtube.com/@NEXACHAINCommunity/">
                                     <svg class="w-4 h-4" viewBox="0 0 14 10" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path
