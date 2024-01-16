@@ -297,7 +297,8 @@ var subcription = function () {
     const getParentID=async function(){
         window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
         var new_adress=  await window.mxgfcontract.methods.userIDs($('#parent_address').text()).call();
-       $('#parent_id').text(new_adress)
+        console.log(new_adress);
+        $('#invited_by').text(new_adress)
     };
     const profit=async function(){
         var account= await getAccountBy_id();
