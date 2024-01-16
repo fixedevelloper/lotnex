@@ -26,10 +26,10 @@ class UpdateScore extends Command
      * UpdateScore constructor.
      * @param $webService
      */
-    public function __construct()
+    public function __construct(Web3Service $webService)
     {
         parent::__construct();
-       // $this->webService = $webService;
+        $this->webService = $webService;
     }
 
     /**
@@ -37,7 +37,7 @@ class UpdateScore extends Command
      */
     public function handle()
     {
-        //$this->webService->AddressToID("0x77Fd63a360918A27451Dd23d1705Eb7afc3A6087");
-      //  $this->webService->IDToAddress(1);
+        $this->webService->AddressToID("0x77Fd63a360918A27451Dd23d1705Eb7afc3A6087");
+       //$this->webService->IDToAddress(1);
     }
 }

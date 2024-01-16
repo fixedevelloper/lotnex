@@ -474,7 +474,7 @@
                                         <div class="flex flex-col">
                                             <a
                                                 target="_blank"
-                                                href="https://support.forsage.io/article/guides/registration-forsage-busd">
+                                                href="https://support.nexachain.io/article/guides/registration-nexachain-busd">
                                                 <button
                                                     class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none bg-red text-white py-2.5 px-5 hover:bg-hover-red active:bg-active-red p-5 rounded-large sm:rounded-mini mt-5 sm:mt-4 sm:w-full">
                                                     Read guide
@@ -545,7 +545,7 @@
                                                 class="notranslate text-white">0.025 BNB</span>.</span></span></span>--}}
                                 <a
                                     target="_blank"
-                                    href="https://support.forsage.io/article/guides/registration-forsage-busd">
+                                    href="https://support.nexachain.io/article/guides/registration-nexachain-busd">
                                     <button
                                         class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none bg-red text-white py-2.5 px-5 hover:bg-hover-red active:bg-active-red p-5 rounded-large sm:rounded-mini mt-5 sm:mt-4 sm:w-full">
                                         Read guide

@@ -459,7 +459,7 @@
                                                 <div class="sm:p-5">
                                                     <button
                                                         class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none py-3 px-5 text-main-blue  bg-white-900 hover:bg-main-blue hover:text-white sm:w-full">
-                                                        <a target="_blank" href="https://t.me/forsageio_official/342">Tutorial</a>
+                                                        <a target="_blank" href="https://t.me/nexachainio_official/342">Tutorial</a>
                                                     </button>
                                                 </div>
                                             </div>
@@ -622,7 +622,7 @@
                                                 <div class="sm:p-5">
                                                     <button
                                                         class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-main-blue hover:bg-hover-main-blue active:bg-active-main-blue sm:w-full sm:max-w-full bg-[#00DB83] hover:bg-[#00DB83] hover:opacity-75 active:bg-[#00DB83] active:opacity-50">
-                                                        <a target="_blank" href="https://school.forsage.io/">Go to
+                                                        <a target="_blank" href="https://school.nexachain.io/">Go to
                                                             school</a></button>
                                                 </div>
                                             </div>
@@ -648,7 +648,7 @@
                                                 <div class="sm:p-5">
                                                     <button
                                                         class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none py-3 px-5 text-main-blue  bg-white-900 hover:bg-main-blue hover:text-white sm:w-full">
-                                                        <a target="_blank" href="https://t.me/forsageio_official/342">Tutorial</a>
+                                                        <a target="_blank" href="https://t.me/nexachainio_official/342">Tutorial</a>
                                                     </button>
                                                 </div>
                                             </div>
@@ -699,14 +699,17 @@
                                 class="flex flex-col flex-1 justify-between sm:w-full bg-main-blue-200 rounded sm:rounded-none p-7.5 sm:p-5 mr-10 sm:mr-0 sm:mb-5">
                                 <span class="text-white mb-3">Enter <span class="notranslate mx-1">ID</span> or <span
                                         class="notranslate mx-1">BUSD</span>wallet</span>
-                                <div class="flex sm:flex-col"><input
-                                        class="w-full bg-white-100 border-2 border-transparent rounded-mini py-3 px-5 text-white outline-none focus:border-2 focus:border-main-blue focus:bg-transparent flex-1 mr-5 sm:mr-0 sm:mb-3.5 py-2"
-                                        type="text" placeholder="example: 87381" value="">
-                                    <button
-                                        class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-main-blue hover:bg-hover-main-blue active:bg-active-main-blue rounded-mini">
-                                        Preview
-                                    </button>
-                                </div>
+                                <form action="{{route('lmodel1')}}">
+                                    <div class="flex sm:flex-col"><input name="id"
+                                            class="w-full bg-white-100 border-2 border-transparent rounded-mini py-3 px-5 text-white outline-none focus:border-2 focus:border-main-blue focus:bg-transparent flex-1 mr-5 sm:mr-0 sm:mb-3.5 py-2"
+                                            type="text" placeholder="example: 87381" value="">
+                                        <button
+                                            class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-main-blue hover:bg-hover-main-blue active:bg-active-main-blue rounded-mini">
+                                            Preview
+                                        </button>
+                                    </div>
+                                </form>
+
                             </div>
                             <div class="w-1/3 min-w-320px sm:w-full sm:px-5">
                                 <div class="flex flex-col w-full rounded bg-black-light p-7.5 relative"><span
@@ -1930,7 +1933,7 @@
                         </svg>
                         <div class="flex flex-col items-start space-y-1.5"><span
                                 class="text-left block text-3xl font-medium text-white">Official <span
-                                    class="text-yellow">Notify Bot</span> <br class="sm:hidden"> for busd.forsage.io users</span><span
+                                    class="text-yellow">Notify Bot</span> <br class="sm:hidden"> for busd.nexachain.io users</span><span
                                 class="text-white font-light">Here you can get notifications about all the events in your account.</span>
                         </div>
                         <img
@@ -1959,14 +1962,14 @@
                 <div class="flex space-x-14 sm:w-full sm:space-y-14 sm:space-x-0 sm:order-1 sm:mb-7.5">
                     <div class="flex space-x-4 w-full"><a
                             class="w-7 h-7 flex justify-center items-center rounded-full bg-white-100 hover:bg-white-300"
-                            target="_blank" href="https://discord.gg/forsage/">
+                            target="_blank" href="https://discord.gg/nexachain/">
                             <svg class="w-4 h-4" viewBox="0 0 21 15" fill="#fff" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M17.581 1.247A15.918 15.918 0 0 0 13.58 0a.084.084 0 0 0-.065.028c-.169.31-.366.712-.497 1.022a15.08 15.08 0 0 0-4.499 0A9.395 9.395 0 0 0 8.012.028C8.002.01 7.975 0 7.947 0a16.038 16.038 0 0 0-4.003 1.247c-.009 0-.018.009-.028.018C1.367 5.08.664 8.791 1.011 12.465c0 .02.01.038.028.047a16.28 16.28 0 0 0 4.911 2.484c.028.01.056 0 .066-.019.375-.515.712-1.059 1.003-1.63.018-.038 0-.075-.038-.085-.534-.206-1.04-.45-1.537-.73-.037-.02-.037-.076-.01-.104.104-.075.207-.16.31-.234a.058.058 0 0 1 .066-.01c3.224 1.472 6.7 1.472 9.888 0a.058.058 0 0 1 .065.01c.103.084.206.16.31.243.037.029.037.085-.01.104-.487.29-1.003.524-1.537.73-.037.01-.047.057-.037.085.3.572.637 1.115 1.002 1.63.029.01.057.02.085.01a16.215 16.215 0 0 0 4.92-2.484.052.052 0 0 0 .029-.046c.412-4.246-.685-7.93-2.906-11.2-.01-.01-.019-.02-.038-.02ZM7.506 10.226c-.965 0-1.771-.89-1.771-1.987s.787-1.987 1.771-1.987c.994 0 1.78.9 1.771 1.987 0 1.096-.787 1.986-1.771 1.986Zm6.533 0c-.966 0-1.772-.89-1.772-1.987s.788-1.987 1.772-1.987c.993 0 1.78.9 1.771 1.987 0 1.096-.778 1.986-1.771 1.986Z"></path>
                             </svg>
                         </a><a
                             class="w-7 h-7 flex justify-center items-center rounded-full bg-white-100 hover:bg-white-300"
-                            target="_blank" href="https://t.me/forsageio_official/">
+                            target="_blank" href="https://t.me/nexachainio_official/">
                             <svg class="w-4 h-4" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                       d="M11.915.776.841 5.168a.4.4 0 0 0 .03.755l2.79.864 1.133 3.503a.4.4 0 0 0 .653.17l1.64-1.523 3.11 2.29a.4.4 0 0 0 .627-.231l2.166-9.294a.8.8 0 0 0-1.075-.926Zm-6.483 6.74-.346 2.072-.8-2.901 7.816-5.1-6.67 5.929Z"
@@ -1982,7 +1985,7 @@
                             </svg>
                         </a><a
                             class="w-7 h-7 flex justify-center items-center rounded-full bg-white-100 hover:bg-white-300"
-                            target="_blank" href="https://twitter.com/forsageofficial/">
+                            target="_blank" href="https://twitter.com/nexachainofficial/">
                             <svg class="w-4 h-4" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                       d="M12.196 1.338c-.442.195-.91.324-1.39.382.506-.302.884-.779 1.064-1.34a4.79 4.79 0 0 1-1.536.588 2.42 2.42 0 0 0-4.125 2.208A6.86 6.86 0 0 1 1.219.643a2.423 2.423 0 0 0 .751 3.235c-.4-.01-.774-.12-1.1-.302v.03A2.422 2.422 0 0 0 2.813 5.98a2.441 2.441 0 0 1-1.092.04 2.425 2.425 0 0 0 2.263 1.683A4.854 4.854 0 0 1 .398 8.705 6.767 6.767 0 0 0 4.103 9.8c4.458 0 6.893-3.692 6.893-6.895 0-.105-.003-.21-.008-.312a4.928 4.928 0 0 0 1.208-1.255Z"

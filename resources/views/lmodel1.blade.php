@@ -87,17 +87,18 @@
     <div class="relative flex bg-main-bg items-center justify-center min-h-screen min-w-full overflow-hidden">
         <div class="fixed top-0 left-1/2 -translate-x-1/2 flex justify-center w-full px-10 py-2.5 z-40 lg:p-0 lg:max-h-screen z-999999">
             <div
-                class="flex justify-between items-center rounded-mini max-w-desktop-preview-bar w-full bg-main-blue px-5 py-2 shadow-preview-bar lg:pl-10 sm:pl-5 lg:py-2.5 lg:rounded-none lg:rounded-b-mini lg:pr-0 false">
+                class="flex justify-between items-center rounded-mini max-w-desktop-preview-bar w-full bg-main-orange px-5 py-2 shadow-preview-bar lg:pl-10 sm:pl-5 lg:py-2.5 lg:rounded-none lg:rounded-b-mini lg:pr-0 false">
                 <div class="flex w-full overflow-hidden items-center justify-between space-x-2.5 lg:items-start ">
                     <div
                         class="w-full flex justify-start items-center space-x-5 lg:flex-col lg:h-full lg:items-start lg:space-x-0 lg:space-y-7.5">
                         <div class="flex items-center  false lg:w-full lg:pr-10 sm:pr-5"><a href="/">
-                                <svg class="block mr-2.5" width="45" height="30" fill="none"
+                                <img src="{{asset("lmodel/icon_nexa.png")}}" width="45">
+                                {{--<svg class="block mr-2.5" width="45" height="30" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                           d="M37.68 5.851a.482.482 0 0 1 .615.296l.43 1.247s-1.852-.59-2.818-.777l1.773-.766Zm6.055 3.336c-.004 0-.195-.131-.297-.186l-3.111-1.586c-.965-.46-.752-.82-1.118-1.826a6.228 6.228 0 0 0-.549-1.127C36.884 3.62 31.836 3.817 31.354 0c0 0-1.884 1.236-2.227 3.5C9.227 1.98 0 12.96 0 12.96c3.706-1.476 7.705-2.176 11.704-2.362-7.603 5.851-9.997 14.666-9.997 14.666s6.16-5.982 15.419-9.318C14.702 19.37 13.298 23.963 13.872 30c0 0 4.763-18.177 27.361-13.78 0 0 .827-2.417 2.962-4.89.135-.152.211-.382.227-.645a1.735 1.735 0 0 0-.687-1.498Z"
                                           fill="#fff"></path>
-                                </svg>
+                                </svg>--}}
                             </a><span class="text-base text-white whitespace-nowrap mr-5 notranslate lg:mr-0 false">Preview ID<span
                                     class="hidden lg:inline ml-1.5">{{$id}}</span></span>
                             <form>
@@ -134,18 +135,19 @@
             </div>
         </div>
         <div id="hambuger" class="fixed top-0 left-1/2 -translate-x-1/2 flex justify-center w-full px-10 py-2.5 z-40 lg:p-0 lg:max-h-screen z-999999">
-            <div class="flex justify-between items-center rounded-mini max-w-desktop-preview-bar w-full bg-main-blue px-5 py-2 shadow-preview-bar lg:pl-10 sm:pl-5 lg:py-2.5 lg:rounded-none lg:rounded-b-mini lg:pr-0 lg:flex-col lg:pb-5 lg:h-screen lg:max-h-screen lg:rounded-b-none lg:justify-start">
+            <div class="flex justify-between items-center rounded-mini max-w-desktop-preview-bar w-full bg-main-orange px-5 py-2 shadow-preview-bar lg:pl-10 sm:pl-5 lg:py-2.5 lg:rounded-none lg:rounded-b-mini lg:pr-0 lg:flex-col lg:pb-5 lg:h-screen lg:max-h-screen lg:rounded-b-none lg:justify-start">
                 <div
                     class="flex w-full overflow-hidden items-center justify-between space-x-2.5 lg:items-start lg:order-2 lg:flex-col lg:pt-10 lg:items-start lg:space-y-7.5 lg:flex-1 lg:h-full">
                     <div
                         class="w-full flex justify-start items-center space-x-5 lg:flex-col lg:h-full lg:items-start lg:space-x-0 lg:space-y-7.5">
                         <div class="flex items-center  lg:flex-col lg:items-start lg:w-full lg:pr-10 sm:pr-5"><a href="/">
-                                <svg class="absolute top-4 left-5" width="163" height="30" fill="none"
+                                <img src="{{asset("lmodel/icon_nexa.png")}}" width="163" height="30">
+                               {{-- <svg class="absolute top-4 left-5" width="163" height="30" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                           d="M46.732 21.907h2.61l2.062-4.44h11.08l1.097-2.374H49.894l-3.162 6.814ZM65.558 10.839h-13.69L50.772 13.2H64.46l1.097-2.362ZM143.239 21.874v.033l13.689-.033 1.097-2.362h-11.061l.947-2.046h11.08l1.096-2.373H146.4l-3.161 6.78ZM148.375 10.839l-1.097 2.362h13.69l1.096-2.362h-13.689ZM77.976 13.2l-2.91 6.311-8.473-.01 2.924-6.3h8.459Zm2.617 0a1.663 1.663 0 0 0-1.513-2.361h-8.474c-1.59 0-3.033.918-3.703 2.362l-2.066 4.451h.008l-.858 1.86h-.005a1.665 1.665 0 0 0 1.514 2.362h8.474c1.59 0 3.034-.919 3.703-2.363l2.913-6.31h.007ZM127.333 10.839h-8.474c-1.59 0-3.033.918-3.703 2.362h11.073l-.906 1.968h-11.08l-1.151 2.483-.855 1.86s-1.075 2.318-1.091 2.35l-.006.012h2.61l1.096-2.363.914-1.968h8.47l-2.004 4.33h2.57l4.044-8.672h.008a1.665 1.665 0 0 0-1.515-2.362ZM135.174 15.093l-1.096 2.373h6.254l-.519 1.116c-.259.569-.823.93-1.444.93l-6.602-.011a.537.537 0 0 1-.493-.766l2.138-4.615c.26-.558.822-.919 1.44-.919l10.067-.01c.498-1.105 0 0 1.108-2.352H134.93c-1.59 0-3.038.919-3.708 2.362l-2.061 4.452h.003l-.858 1.859a1.663 1.663 0 0 0 1.513 2.362h8.47a4.08 4.08 0 0 0 3.706-2.362l2.037-4.418h-8.858ZM109.652 15.17h-8.914l.915-1.97h11.076c1.115-2.361-.007 0 1.115-2.361h-11.098A4.076 4.076 0 0 0 99.04 13.2l-1.094 2.417a1.356 1.356 0 0 0 1.228 1.925h8.938l-.91 1.968H96.119c-.509 1.105 0 0-1.134 2.363h11.12a4.077 4.077 0 0 0 3.704-2.363s1.173-2.504 1.195-2.592a1.4 1.4 0 0 0-1.352-1.75ZM95.15 10.839H84.032L82.948 13.2h11.094l-.907 1.968h-11.09l-1.137 2.483-1.952 4.222h2.61l2.007-4.331h4.939l1.597 4.364h2.582l-1.565-4.364h1.195a3.605 3.605 0 0 0 3.282-2.133l1.05-2.209h.007a1.662 1.662 0 0 0-1.51-2.362ZM37.68 5.851a.482.482 0 0 1 .615.296l.43 1.247s-1.852-.59-2.818-.777l1.773-.766Zm6.055 3.336c-.004 0-.195-.131-.297-.186l-3.111-1.586c-.965-.46-.752-.82-1.118-1.826a6.228 6.228 0 0 0-.549-1.127C36.884 3.62 31.836 3.817 31.354 0c0 0-1.884 1.236-2.227 3.5C9.227 1.98 0 12.96 0 12.96c3.706-1.476 7.705-2.176 11.704-2.362-7.603 5.851-9.997 14.666-9.997 14.666s6.16-5.982 15.419-9.318C14.702 19.37 13.298 23.963 13.872 30c0 0 4.763-18.177 27.361-13.78 0 0 .827-2.417 2.962-4.89.135-.152.211-.382.227-.645a1.735 1.735 0 0 0-.687-1.498Z"
                                           fill="#fff"></path>
-                                </svg>
+                                </svg>--}}
                             </a><span
                                 class="text-base text-white whitespace-nowrap mr-5 notranslate lg:mr-0 lg:text-2xl lg:text-medium lg:mb-7.5">Preview ID<span
                                     class="hidden lg:inline ml-1.5">1</span></span>
@@ -618,7 +620,7 @@
                             <div class="pt-5 pb-10 w-full flex flex-col items-center justify-center">
                                 <div class="flex space-x-4 w-full"><a
                                         class="w-7 h-7 flex justify-center items-center rounded-full bg-white-100 hover:bg-white-300"
-                                        target="_blank" href="https://discord.gg/forsage/">
+                                        target="_blank" href="#">
                                         <svg class="w-4 h-4" viewBox="0 0 21 15" fill="#fff"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -626,7 +628,7 @@
                                         </svg>
                                     </a><a
                                         class="w-7 h-7 flex justify-center items-center rounded-full bg-white-100 hover:bg-white-300"
-                                        target="_blank" href="https://t.me/forsageio_official/">
+                                        target="_blank" href="https://t.me/nexachainofficial/">
                                         <svg class="w-4 h-4" viewBox="0 0 14 12" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -644,7 +646,7 @@
                                         </svg>
                                     </a><a
                                         class="w-7 h-7 flex justify-center items-center rounded-full bg-white-100 hover:bg-white-300"
-                                        target="_blank" href="https://twitter.com/forsageofficial/">
+                                        target="_blank" href="https://twitter.com/nexachainofficial/">
                                         <svg class="w-4 h-4" viewBox="0 0 13 10" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1438,7 +1440,7 @@
                                                 class="flex flex-col h-full relative justify-end sm:w-full sm:items-center">
                                                 <div class="flex sm:w-full ">
                                                     <button
-                                                        class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-orange hover:bg-hover-orange active:bg-active-orange z-0 sm:w-full pointer-events-none text-white">
+                                                        class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-main-blue-500 hover:bg-hover-orange active:bg-active-main-blue z-0 sm:w-full pointer-events-none text-white">
                                                         <div class="flex flex-col space-y-1 items-start">
                                                             <div class="flex items-center">Preview
                                                                 <svg class="ml-3 fill-current" width="16" height="16"
@@ -1598,7 +1600,7 @@
                                 </a>
                             </div>
                         </div>
-                        {{--ernd forsage program--}}
+                        {{--ernd nexachain program--}}
                         <div class="sm:px-5">
                             <div class="ambassador-buttonGradient rounded p-[1px]">
                                 <div
@@ -2237,7 +2239,7 @@
                         <div class="hidden lg:block mb-7.5">
                             <div class="flex space-x-4 w-full"><a
                                     class="w-7 h-7 flex justify-center items-center rounded-full bg-white-100 hover:bg-white-300"
-                                    target="_blank" href="https://discord.gg/forsage/">
+                                     href="#">
                                     <svg class="w-4 h-4" viewBox="0 0 21 15" fill="#fff"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -2245,7 +2247,7 @@
                                     </svg>
                                 </a><a
                                     class="w-7 h-7 flex justify-center items-center rounded-full bg-white-100 hover:bg-white-300"
-                                    target="_blank" href="https://t.me/forsageio_official/">
+                                    target="_blank" href="https://t.me/nexachainofficial/">
                                     <svg class="w-4 h-4" viewBox="0 0 14 12" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -2263,7 +2265,7 @@
                                     </svg>
                                 </a><a
                                     class="w-7 h-7 flex justify-center items-center rounded-full bg-white-100 hover:bg-white-300"
-                                    target="_blank" href="https://twitter.com/forsageofficial/">
+                                    target="_blank" href="https://twitter.com/nexachainofficial/">
                                     <svg class="w-4 h-4" viewBox="0 0 13 10" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
