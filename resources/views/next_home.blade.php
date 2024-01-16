@@ -9,79 +9,7 @@
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/next.css')}}" data-n-g="">
     <link rel="stylesheet" href="{{asset('toast/toastr.scss')}}" data-n-g="">
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/custom_next.css')}}" data-n-g="">
-    <noscript data-n-css=""></noscript>
 
-    <style data-react-tooltip="true">
-        .__react_component_tooltip {
-            border-radius: 3px;
-            display: inline-block;
-            font-size: 13px;
-            left: -999em;
-            opacity: 0;
-            padding: 8px 21px;
-            position: fixed;
-            pointer-events: none;
-            transition: opacity 0.3s ease-out;
-            top: -999em;
-            visibility: hidden;
-            z-index: 999;
-        }
-
-        .__react_component_tooltip.allow_hover, .__react_component_tooltip.allow_click {
-            pointer-events: auto;
-        }
-
-        .__react_component_tooltip::before, .__react_component_tooltip::after {
-            content: "";
-            width: 0;
-            height: 0;
-            position: absolute;
-        }
-
-        .__react_component_tooltip.show {
-            opacity: 0.9;
-            margin-top: 0;
-            margin-left: 0;
-            visibility: visible;
-        }
-
-        .__react_component_tooltip.place-top::before {
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            bottom: -8px;
-            left: 50%;
-            margin-left: -10px;
-        }
-
-        .__react_component_tooltip.place-bottom::before {
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            top: -8px;
-            left: 50%;
-            margin-left: -10px;
-        }
-
-        .__react_component_tooltip.place-left::before {
-            border-top: 6px solid transparent;
-            border-bottom: 6px solid transparent;
-            right: -8px;
-            top: 50%;
-            margin-top: -5px;
-        }
-
-        .__react_component_tooltip.place-right::before {
-            border-top: 6px solid transparent;
-            border-bottom: 6px solid transparent;
-            left: -8px;
-            top: 50%;
-            margin-top: -5px;
-        }
-
-        .__react_component_tooltip .multi-line {
-            display: block;
-            padding: 2px 0;
-            text-align: center;
-        }</style>
     <title>Main page | NEXACHAIN FDUSD</title>
     <meta name="description" content=""
           data-react-helmet="true">
@@ -95,24 +23,17 @@
             class="fixed top-0 w-full pb-2.5 pt-2.5 px-10 z-[2147483602] bg-transparent sm:px-5 lg:border-b lg:border-white-100 z-[999]">
             <nav class="z-10 w-full max-w-desktop-preview-bar m-auto header-border-b">
                 <div class="flex items-center justify-between"><a href="/">
-                        <svg class="hidden lg:block" width="45" height="30" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M37.68 5.851a.482.482 0 0 1 .615.296l.43 1.247s-1.852-.59-2.818-.777l1.773-.766Zm6.055 3.336c-.004 0-.195-.131-.297-.186l-3.111-1.586c-.965-.46-.752-.82-1.118-1.826a6.228 6.228 0 0 0-.549-1.127C36.884 3.62 31.836 3.817 31.354 0c0 0-1.884 1.236-2.227 3.5C9.227 1.98 0 12.96 0 12.96c3.706-1.476 7.705-2.176 11.704-2.362-7.603 5.851-9.997 14.666-9.997 14.666s6.16-5.982 15.419-9.318C14.702 19.37 13.298 23.963 13.872 30c0 0 4.763-18.177 27.361-13.78 0 0 .827-2.417 2.962-4.89.135-.152.211-.382.227-.645a1.735 1.735 0 0 0-.687-1.498Z"
-                                  fill="#fff"></path>
-                        </svg>
-                        <svg class="block lg:hidden" width="163" height="30" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M46.732 21.907h2.61l2.062-4.44h11.08l1.097-2.374H49.894l-3.162 6.814ZM65.558 10.839h-13.69L50.772 13.2H64.46l1.097-2.362ZM143.239 21.874v.033l13.689-.033 1.097-2.362h-11.061l.947-2.046h11.08l1.096-2.373H146.4l-3.161 6.78ZM148.375 10.839l-1.097 2.362h13.69l1.096-2.362h-13.689ZM77.976 13.2l-2.91 6.311-8.473-.01 2.924-6.3h8.459Zm2.617 0a1.663 1.663 0 0 0-1.513-2.361h-8.474c-1.59 0-3.033.918-3.703 2.362l-2.066 4.451h.008l-.858 1.86h-.005a1.665 1.665 0 0 0 1.514 2.362h8.474c1.59 0 3.034-.919 3.703-2.363l2.913-6.31h.007ZM127.333 10.839h-8.474c-1.59 0-3.033.918-3.703 2.362h11.073l-.906 1.968h-11.08l-1.151 2.483-.855 1.86s-1.075 2.318-1.091 2.35l-.006.012h2.61l1.096-2.363.914-1.968h8.47l-2.004 4.33h2.57l4.044-8.672h.008a1.665 1.665 0 0 0-1.515-2.362ZM135.174 15.093l-1.096 2.373h6.254l-.519 1.116c-.259.569-.823.93-1.444.93l-6.602-.011a.537.537 0 0 1-.493-.766l2.138-4.615c.26-.558.822-.919 1.44-.919l10.067-.01c.498-1.105 0 0 1.108-2.352H134.93c-1.59 0-3.038.919-3.708 2.362l-2.061 4.452h.003l-.858 1.859a1.663 1.663 0 0 0 1.513 2.362h8.47a4.08 4.08 0 0 0 3.706-2.362l2.037-4.418h-8.858ZM109.652 15.17h-8.914l.915-1.97h11.076c1.115-2.361-.007 0 1.115-2.361h-11.098A4.076 4.076 0 0 0 99.04 13.2l-1.094 2.417a1.356 1.356 0 0 0 1.228 1.925h8.938l-.91 1.968H96.119c-.509 1.105 0 0-1.134 2.363h11.12a4.077 4.077 0 0 0 3.704-2.363s1.173-2.504 1.195-2.592a1.4 1.4 0 0 0-1.352-1.75ZM95.15 10.839H84.032L82.948 13.2h11.094l-.907 1.968h-11.09l-1.137 2.483-1.952 4.222h2.61l2.007-4.331h4.939l1.597 4.364h2.582l-1.565-4.364h1.195a3.605 3.605 0 0 0 3.282-2.133l1.05-2.209h.007a1.662 1.662 0 0 0-1.51-2.362ZM37.68 5.851a.482.482 0 0 1 .615.296l.43 1.247s-1.852-.59-2.818-.777l1.773-.766Zm6.055 3.336c-.004 0-.195-.131-.297-.186l-3.111-1.586c-.965-.46-.752-.82-1.118-1.826a6.228 6.228 0 0 0-.549-1.127C36.884 3.62 31.836 3.817 31.354 0c0 0-1.884 1.236-2.227 3.5C9.227 1.98 0 12.96 0 12.96c3.706-1.476 7.705-2.176 11.704-2.362-7.603 5.851-9.997 14.666-9.997 14.666s6.16-5.982 15.419-9.318C14.702 19.37 13.298 23.963 13.872 30c0 0 4.763-18.177 27.361-13.78 0 0 .827-2.417 2.962-4.89.135-.152.211-.382.227-.645a1.735 1.735 0 0 0-.687-1.498Z"
-                                  fill="#fff"></path>
-                        </svg>
+                        <img class="hidden lg:block" src="{{asset("lmodel/icon_nexa.png")}}" width="45" height="30">
+
+                        <img class="block lg:hidden" src="{{asset("lmodel/icon_nexa.png")}}" width="103" height="30">
+
                     </a>
                     <div class="flex justify-end items-center ml-auto">
-                        <button
+                        <w3m-core-button></w3m-core-button>
+                        {{--<button
                             class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-2.5 bg-black-light hover:bg-line-gray active:bg-active-gray text-white font-normal rounded items-center ">
                             Connect wallet
-                        </button>
+                        </button>--}}
                     </div>
                 </div>
             </nav>
@@ -726,18 +647,20 @@
                             <div class="w-1/3 min-w-320px sm:w-full sm:px-5">
                                 <div class="flex flex-col w-full rounded bg-black-light p-7.5 relative"><span
                                         class="text-white mb-3">Don’t know any <span
-                                            class="notranslate ml-1.5">ID?</span></span><a href="/dashboard?user=7366">
+                                            class="notranslate ml-1.5">ID?</span></span><a href="{{route('lmodel1',['id'=>6])}}">
                                         <button
                                             class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-white-100 hover:bg-white-300 rounded-mini w-max">
                                             Check demo
                                         </button>
                                     </a>
-                                    <svg
+                                    <img src="{{asset("lmodel/icon_nexa.png")}}" class="absolute top-1/2 right-0 transform -translate-y-1/2 fill-current text-white-100"
+                                         width="113" height="121" fill="#406AFF">
+                                   {{-- <svg
                                         class="absolute top-1/2 right-0 transform -translate-y-1/2 fill-current text-white-100"
                                         width="113" height="121" fill="#406AFF" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                               d="M35.987 32.963c-1.348-.492-2.812.247-3.278 1.664l-2.3 7.024s9.884-3.326 15.036-4.374l-9.458-4.314Zm-32.3 18.791c.024 0 1.04-.74 1.582-1.048l16.6-8.933c5.146-2.589 4.012-4.621 5.96-10.289a35.974 35.974 0 0 1 2.93-6.346C40.234 20.393 67.166 21.503 69.738 0c0 0 10.047 6.962 11.878 19.716C187.781 11.153 237 73.01 237 73.01c-19.772-8.317-41.103-12.26-62.439-13.307 40.561 32.961 53.332 82.619 53.332 82.619s-32.86-33.7-82.254-52.492c12.929 19.286 20.421 45.161 17.358 79.17 0 0-25.408-102.396-145.965-77.63 0 0-4.411-13.615-15.8-27.54-.718-.863-1.125-2.156-1.207-3.635a10.002 10.002 0 0 1 3.662-8.44Z"></path>
-                                    </svg>
+                                    </svg>--}}
                                 </div>
                             </div>
                         </div>
