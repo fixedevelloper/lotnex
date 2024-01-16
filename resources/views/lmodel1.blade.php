@@ -1599,7 +1599,7 @@
                             </div>
                         </div>
                         {{--ernd nexachain program--}}
-                        <div class="sm:px-5">
+                  {{--      <div class="sm:px-5">
                             <div class="ambassador-buttonGradient rounded p-[1px]">
                                 <div
                                     class="overflow-hidden bg-darkBlack rounded h-[140px] sm:h-auto w-full flex items-center justify-between space-x-5 sm:space-x-0 sm:flex-col sm:px-5 sm:py-[30px]">
@@ -1617,7 +1617,7 @@
                                     <img src="{{asset("lmodel/logo-full.png")}}"
                                          class="pr-5 sm:pr-0 h-[130%] sm:h-[125px] sm:order-1" alt=""></div>
                             </div>
-                        </div>
+                        </div>--}}
                         {{--recents activity--}}
                         <div class="flex flex-col">
                             <div class="flex items-center sm:px-5"><span
