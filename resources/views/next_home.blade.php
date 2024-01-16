@@ -403,11 +403,13 @@
                             </div>
                         </div>
                         <span class="mb-7.5 text-base sm:text-sm sm:mb-5 ">Connect your wallet to start working. First time here? Watch a tutorial to learn more</span>
-                        <div class="w-full h-full relative flex justify-center items-center sm:mb-5"><img  class="hidden max-w-full h-full max-h-56 sm:flex"
+                      {{--  <div class="w-full h-full relative flex justify-center items-center sm:mb-5">
+
+                            <img  class="hidden max-w-full h-full max-h-56 sm:flex"
                                 src="{{asset('lmodel/wallet_big_min.webp')}}">
                             <div
                                 class="absolute bottom-0 left-0 right-0 -rotate-180 wallet-gradient-main h-11 hidden sm:block"></div>
-                        </div>
+                        </div>--}}
                         <div class="flex space-x-5 sm:space-x-0 sm:space-y-3.5 sm:flex-col">
                             <button onclick="subcription.login()"
                                 class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-main-bg hover:bg-hover-main-bg active:bg-active-main-bg sm:w-full">
@@ -417,13 +419,23 @@
                                 class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-white-100 hover:bg-white-300 rounded-mini sm:w-full">
                                 Watch tutorial
                             </button>
+                            <div class="flex justify-end space-x-5 sm:space-x-0 sm:space-y-3.5 sm:flex-col">
+                                <a href="{{route("nextregister")}}" class="text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-green-350 hover:bg-gold-500 rounded-mini sm:w-full">
+                                    Register
+                                </a></div>
                         </div>
+
                     </div>
-                    <div class="flex relative w-540px flex-shrink-0 h-full -m-7.5 ml-0 sm:hidden"
+            {{--        <div class="flex relative w-540px flex-shrink-0 h-full -m-7.5 ml-0 sm:hidden"
                          style="height: 230px;">
                         <div class="absolute  top-0 bottom-0 right-0 w-full sm:hidden h-330px"
-                             style="background-image: url({{asset('lmodel/wallet_big_min.webp')}}); background-size: cover; background-repeat: round;"></div>
-                    </div>
+                             style="background-image: url({{asset('lmodel/wallet_big_min.webp')}}); background-size: cover; background-repeat: round;">
+                            <button
+                                class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-white-100 hover:bg-white-300 rounded-mini sm:w-full">
+                                Register
+                            </button>
+                        </div>
+                    </div>--}}
                 </div>
                 <div class="carousel-root">
                     <div class="carousel carousel-slider" style="width: 100%;">

@@ -86,8 +86,7 @@
     <span id="user_id">{{$id}}</span>
     <div class="relative flex bg-main-bg items-center justify-center min-h-screen min-w-full overflow-hidden">
         <div class="fixed top-0 left-1/2 -translate-x-1/2 flex justify-center w-full px-10 py-2.5 z-40 lg:p-0 lg:max-h-screen z-999999">
-            <div
-                class="flex justify-between items-center rounded-mini max-w-desktop-preview-bar w-full bg-main-orange px-5 py-2 shadow-preview-bar lg:pl-10 sm:pl-5 lg:py-2.5 lg:rounded-none lg:rounded-b-mini lg:pr-0 false">
+            <div class="flex justify-between items-center rounded-mini max-w-desktop-preview-bar w-full bg-main-orange px-5 py-2 shadow-preview-bar lg:pl-10 sm:pl-5 lg:py-2.5 lg:rounded-none lg:rounded-b-mini lg:pr-0 false">
                 <div class="flex w-full overflow-hidden items-center justify-between space-x-2.5 lg:items-start ">
                     <div
                         class="w-full flex justify-start items-center space-x-5 lg:flex-col lg:h-full lg:items-start lg:space-x-0 lg:space-y-7.5">
@@ -114,7 +113,7 @@
                             </form>
                         </div>
                     </div>
-                    <w3m-core-button class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-main-bg hover:bg-black-500 whitespace-nowrap"></w3m-core-button>
+                    <w3m-core-button></w3m-core-button>
 
                 </div>
                 <div class="flex lg:justify-end lg:ml-auto lg:pr-10 sm:pr-5">
@@ -672,14 +671,15 @@
                                         <div
                                             class="z-10 flex-shrink-0 relative w-34 h-34 rounded-full bg-black-light cursor-pointer sm:w-[100px] sm:h-[100px]">
                                             <img alt="" class="max-w-full max-h-full"
-                                                 src="{{asset("lmodel/UnknownUser.webp")}}"></div>
+                                                 src="{{asset("lmodel/user.png")}}"></div>
                                         <div
                                             class="flex justify-center items-center w-10 h-10 sm:w-7.5 sm:h-7.5 bg-status-gold rounded-full w-[36px] h-[36px] z-10 absolute right-0  bottom-2.5 ">
-                                            <svg class="h-5 sm:h-3.5 fill-current text-gray" fill="none"
+                                           <img src="{{asset('lmodel/icon_nexa.png')}}" class="h-5 sm:h-3.5 fill-current text-gray">
+                                            {{--<svg class="h-5 sm:h-3.5 fill-current text-gray" fill="none"
                                                  viewBox="0 0 21 14" xmlns="http://www.w3.org/2000/svg">
                                                 <path clip-rule="evenodd"
                                                       d="M17.205 3.531a.207.207 0 0 1 .264.128l.186.54s-.797-.255-1.213-.336l.763-.332Zm2.606 1.446c-.002 0-.084-.057-.128-.08l-1.34-.688c-.414-.2-.323-.356-.48-.792a2.705 2.705 0 0 0-.236-.488c-.765-.365-2.937-.28-3.144-1.933 0 0-.811.535-.959 1.516C4.961 1.854.99 6.612.99 6.612c1.595-.64 3.316-.943 5.037-1.024-3.272 2.536-4.302 6.355-4.302 6.355s2.65-2.592 6.635-4.037c-1.043 1.483-1.647 3.474-1.4 6.09 0 0 2.05-7.877 11.774-5.972 0 0 .356-1.047 1.274-2.118a.466.466 0 0 0 .098-.28.754.754 0 0 0-.296-.65Z"></path>
-                                            </svg>
+                                            </svg>--}}
                                         </div>
                                     </div>
                                 </div>
