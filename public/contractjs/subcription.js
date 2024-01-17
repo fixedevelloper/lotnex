@@ -383,14 +383,13 @@ var subcription = function () {
     const getTotalInvested=async function(){
         window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
         var total_invest=  await window.mxgfcontract.methods.totalinvest().call();
-        //var total_user=  await window.mxgfcontract.methods.numberOfUsers().call();
+        var total_user=  await window.mxgfcontract.methods.numberOfUsers().call();
         $('#total_invest').text(total_invest)
-      //  $('#total_user').text(total_user)
+        $('#total_user').text(total_user)
     };
     const getTeam= async function(){
         const account= await getAccountBy_id();
         const de =await calculateTotalTeam(account)
-        console.log(de);
         $("#team_total").text(de)
     }
     const calculateTotalTeam= async function( userAddress,visited = new Set()){
