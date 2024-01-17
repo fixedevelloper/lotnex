@@ -1379,7 +1379,7 @@
                                             </div>
                                         </div>
                                         <span
-                                            class="text-white text-2xl font-bold notranslate sm:text-xl false mt-5 sm:mt-2.5">1 644 716</span>
+                                            class="text-white text-2xl font-bold notranslate sm:text-xl false mt-5 sm:mt-2.5" id="total_user"></span>
                                     </div>
                                     <div
                                         class="p-5 pt-0 flex text-green-light text-base items-baseline notranslate sm:text-sm">
@@ -1392,9 +1392,9 @@
                                     </div>
                                 </div>
                                 <div class="bg-gray rounded p-5 flex flex-col max-w-full"><span
-                                        class="inline-flex items-center text-base text-white-500 sm:text-sm">Members received <div
-                                            class="relative group"><button
-                                                class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none ml-1.5 "
+                                        class="inline-flex items-center text-base text-white-500 sm:text-sm">Members received
+                                        <div class="relative group">
+                                            <button class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none ml-1.5 "
                                                 data-tip="true" data-for="Members received"
                                                 currentitem="false"><span></span> <svg class="w-5 h-5 "
                                                                                        viewBox="0 0 20 20" fill="#fff"
@@ -1409,14 +1409,14 @@
                                     <div
                                         class="flex flex-col py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
                                         <span
-                                            class="text-2xl text-white font-bold sm:text-xl">147 094 333.87 FDUSD</span><span
-                                            class="text-green-light text-base items-baseline sm:text-sm">+ 17 041.7 FDUSD</span>
+                                            class="text-2xl text-white font-bold sm:text-xl"><span id="total_invest">0 </span> &nbsp; FDUSD</span><span
+                                            class="text-green-light text-base items-baseline sm:text-sm">+ 0 FDUSD</span>
                                     </div>
                                     <div
                                         class="flex flex-col py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
                                         <span
-                                            class="text-2xl text-white font-bold sm:text-xl">22 383.5583 BNB</span><span
-                                            class="text-green-light text-base items-baseline sm:text-sm">+ 3.0878 BNB</span>
+                                            class="text-2xl text-white font-bold sm:text-xl">0 FDUSD</span><span
+                                            class="text-green-light text-base items-baseline sm:text-sm">+ 0 FDUSD</span>
                                     </div>
                                 </div>
                                 <div class="bg-gray rounded p-5 flex flex-col flex-1 max-w-full">
@@ -1435,9 +1435,9 @@
                                             <div
                                                 class="flex justify-between items-center py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
                                                 <span
-                                                    class="text-base text-white-500 notranslate sm:text-sm">x3/x4</span>
+                                                    class="text-base text-white-500 notranslate sm:text-sm">ROYAL LOTTERY</span>
                                                 <div class="flex justify-end items-center space-x-2.5"><span
-                                                        class="text-base text-white notranslate sm:text-sm">0x5ac...B97</span>
+                                                        class="text-base text-white notranslate sm:text-sm">0x1e6aEF41...29AB55816e5A</span>
                                                     <button>
                                                         <svg class="h-18px w-18px" viewBox="0 0 20 20" fill="#fff"
                                                              xmlns="http://www.w3.org/2000/svg">
@@ -1448,7 +1448,7 @@
                                                         </svg>
                                                     </button>
                                                     <a target="_blank"
-                                                       href="https://bscscan.com/address/0x5acc84a3e955bdd76467d3348077d003f00ffb97">
+                                                       href="https://bscscan.com/address/0x1e6aEF4108285fCE8F853f5bcc3a29AB55816e5A">
                                                         <svg class="h-18px w-18px" viewBox="0 0 20 20" fill="none"
                                                              xmlns="http://www.w3.org/2000/svg">
                                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1462,9 +1462,9 @@
                                             </div>
                                             <div
                                                 class="flex justify-between items-center py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
-                                                <span class="text-base text-white-500 notranslate sm:text-sm">xXx</span>
+                                                <span class="text-base text-white-500 notranslate sm:text-sm">Qore</span>
                                                 <div class="flex justify-end items-center space-x-2.5"><span
-                                                        class="text-base text-white notranslate sm:text-sm">0x2CA...e52</span>
+                                                        class="text-base text-white notranslate sm:text-sm">0xB80A887...7Ad9502e892</span>
                                                     <button>
                                                         <svg class="h-18px w-18px" viewBox="0 0 20 20" fill="#fff"
                                                              xmlns="http://www.w3.org/2000/svg">
@@ -1475,91 +1475,7 @@
                                                         </svg>
                                                     </button>
                                                     <a target="_blank"
-                                                       href="https://bscscan.com/address/0x2caa4694cb7daf7d49a198dc1103c06d4991ae52">
-                                                        <svg class="h-18px w-18px" viewBox="0 0 20 20" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                  d="M11.314 3.813a3.446 3.446 0 1 1 4.873 4.874l-3.331 3.331a3.418 3.418 0 0 1-4.88-.001.5.5 0 0 1 .715-.7 2.417 2.417 0 0 0 3.452 0l.004-.004L15.48 7.98a2.446 2.446 0 1 0-3.46-3.46l-.416.417a.5.5 0 1 1-.707-.707l.417-.417Z"
-                                                                  fill="#fff"></path>
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                  d="M8.26 7.225a3.417 3.417 0 0 1 3.765.758.5.5 0 0 1-.715.7 2.417 2.417 0 0 0-3.452 0l-.003.004L4.52 12.02a2.446 2.446 0 0 0 3.46 3.46l.416-.417a.5.5 0 1 1 .708.707l-.417.417a3.446 3.446 0 1 1-4.874-4.874l3.332-3.332a3.417 3.417 0 0 1 1.115-.756Z"
-                                                                  fill="#fff"></path>
-                                                        </svg>
-                                                    </a></div>
-                                            </div>
-                                            <div
-                                                class="flex justify-between items-center py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
-                                                <span
-                                                    class="text-base text-white-500 notranslate sm:text-sm">xGold</span>
-                                                <div class="flex justify-end items-center space-x-2.5"><span
-                                                        class="text-base text-white notranslate sm:text-sm">0x988...7C5</span>
-                                                    <button>
-                                                        <svg class="h-18px w-18px" viewBox="0 0 20 20" fill="#fff"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M15 6.667H8.332c-.92 0-1.667.746-1.667 1.666V15c0 .92.746 1.667 1.667 1.667h6.666c.92 0 1.667-.747 1.667-1.667V8.333c0-.92-.746-1.666-1.667-1.666Z"></path>
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                  d="M3.469 3.468A2.167 2.167 0 0 1 5 2.833h6.666A2.167 2.167 0 0 1 13.834 5v1.667a.5.5 0 0 1-1 0V5a1.167 1.167 0 0 0-1.167-1.167H5.001A1.167 1.167 0 0 0 3.834 5v6.667a1.167 1.167 0 0 0 1.167 1.166h1.666a.5.5 0 1 1 0 1H5.001a2.167 2.167 0 0 1-2.167-2.166V5c0-.575.228-1.126.635-1.532Z"></path>
-                                                        </svg>
-                                                    </button>
-                                                    <a target="_blank"
-                                                       href="https://bscscan.com/address/0x98872a66D0749C720D8Dc1A80d496b24B04ff7C5">
-                                                        <svg class="h-18px w-18px" viewBox="0 0 20 20" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                  d="M11.314 3.813a3.446 3.446 0 1 1 4.873 4.874l-3.331 3.331a3.418 3.418 0 0 1-4.88-.001.5.5 0 0 1 .715-.7 2.417 2.417 0 0 0 3.452 0l.004-.004L15.48 7.98a2.446 2.446 0 1 0-3.46-3.46l-.416.417a.5.5 0 1 1-.707-.707l.417-.417Z"
-                                                                  fill="#fff"></path>
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                  d="M8.26 7.225a3.417 3.417 0 0 1 3.765.758.5.5 0 0 1-.715.7 2.417 2.417 0 0 0-3.452 0l-.003.004L4.52 12.02a2.446 2.446 0 0 0 3.46 3.46l.416-.417a.5.5 0 1 1 .708.707l-.417.417a3.446 3.446 0 1 1-4.874-4.874l3.332-3.332a3.417 3.417 0 0 1 1.115-.756Z"
-                                                                  fill="#fff"></path>
-                                                        </svg>
-                                                    </a></div>
-                                            </div>
-                                            <div
-                                                class="flex justify-between items-center py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
-                                                <span
-                                                    class="text-base text-white-500 notranslate sm:text-sm">xQore</span>
-                                                <div class="flex justify-end items-center space-x-2.5"><span
-                                                        class="text-base text-white notranslate sm:text-sm">0x1ee...a78</span>
-                                                    <button>
-                                                        <svg class="h-18px w-18px" viewBox="0 0 20 20" fill="#fff"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M15 6.667H8.332c-.92 0-1.667.746-1.667 1.666V15c0 .92.746 1.667 1.667 1.667h6.666c.92 0 1.667-.747 1.667-1.667V8.333c0-.92-.746-1.666-1.667-1.666Z"></path>
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                  d="M3.469 3.468A2.167 2.167 0 0 1 5 2.833h6.666A2.167 2.167 0 0 1 13.834 5v1.667a.5.5 0 0 1-1 0V5a1.167 1.167 0 0 0-1.167-1.167H5.001A1.167 1.167 0 0 0 3.834 5v6.667a1.167 1.167 0 0 0 1.167 1.166h1.666a.5.5 0 1 1 0 1H5.001a2.167 2.167 0 0 1-2.167-2.166V5c0-.575.228-1.126.635-1.532Z"></path>
-                                                        </svg>
-                                                    </button>
-                                                    <a target="_blank"
-                                                       href="https://bscscan.com/address/0x1ee4A7a62726fDd1EDe780f90fd2a77f53F5Ba78">
-                                                        <svg class="h-18px w-18px" viewBox="0 0 20 20" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                  d="M11.314 3.813a3.446 3.446 0 1 1 4.873 4.874l-3.331 3.331a3.418 3.418 0 0 1-4.88-.001.5.5 0 0 1 .715-.7 2.417 2.417 0 0 0 3.452 0l.004-.004L15.48 7.98a2.446 2.446 0 1 0-3.46-3.46l-.416.417a.5.5 0 1 1-.707-.707l.417-.417Z"
-                                                                  fill="#fff"></path>
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                  d="M8.26 7.225a3.417 3.417 0 0 1 3.765.758.5.5 0 0 1-.715.7 2.417 2.417 0 0 0-3.452 0l-.003.004L4.52 12.02a2.446 2.446 0 0 0 3.46 3.46l.416-.417a.5.5 0 1 1 .708.707l-.417.417a3.446 3.446 0 1 1-4.874-4.874l3.332-3.332a3.417 3.417 0 0 1 1.115-.756Z"
-                                                                  fill="#fff"></path>
-                                                        </svg>
-                                                    </a></div>
-                                            </div>
-                                            <div
-                                                class="flex justify-between items-center py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
-                                                <span
-                                                    class="text-base text-white-500 notranslate sm:text-sm">maxQore</span>
-                                                <div class="flex justify-end items-center space-x-2.5"><span
-                                                        class="text-base text-white notranslate sm:text-sm">0x27D...260</span>
-                                                    <button>
-                                                        <svg class="h-18px w-18px" viewBox="0 0 20 20" fill="#fff"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M15 6.667H8.332c-.92 0-1.667.746-1.667 1.666V15c0 .92.746 1.667 1.667 1.667h6.666c.92 0 1.667-.747 1.667-1.667V8.333c0-.92-.746-1.666-1.667-1.666Z"></path>
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                  d="M3.469 3.468A2.167 2.167 0 0 1 5 2.833h6.666A2.167 2.167 0 0 1 13.834 5v1.667a.5.5 0 0 1-1 0V5a1.167 1.167 0 0 0-1.167-1.167H5.001A1.167 1.167 0 0 0 3.834 5v6.667a1.167 1.167 0 0 0 1.167 1.166h1.666a.5.5 0 1 1 0 1H5.001a2.167 2.167 0 0 1-2.167-2.166V5c0-.575.228-1.126.635-1.532Z"></path>
-                                                        </svg>
-                                                    </button>
-                                                    <a target="_blank"
-                                                       href="https://bscscan.com/address/0x27D6bBaC9112D2097FafA3B14Ae367539A7B1260">
+                                                       href="https://bscscan.com/address/0xB80A88737a27cEb19ec9874A61F4a7Ad9502e892">
                                                         <svg class="h-18px w-18px" viewBox="0 0 20 20" fill="none"
                                                              xmlns="http://www.w3.org/2000/svg">
                                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1577,15 +1493,15 @@
                                                 class="flex flex-col py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
                                                 <span
                                                     class="text-base text-white-500 sm:text-sm">Transactions made</span><span
-                                                    class="text-2xl text-white font-bold sm:text-xl">5 803 177</span><span
-                                                    class="text-green-light text-base items-baseline sm:text-sm">+ 1 203</span>
+                                                    class="text-2xl text-white font-bold sm:text-xl">0</span><span
+                                                    class="text-green-light text-base items-baseline sm:text-sm">+ 0</span>
                                             </div>
                                             <div
                                                 class="flex flex-col py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
                                                 <span class="text-base text-white-500 sm:text-sm"><span>Turnover, <span
                                                             class="notranslate">FDUSD</span> </span></span><span
-                                                    class="text-2xl text-white font-bold sm:text-xl">294 188 667.74</span><span
-                                                    class="text-green-light text-base items-baseline sm:text-sm">+ 34 083.4</span>
+                                                    class="text-2xl text-white font-bold sm:text-xl">0</span><span
+                                                    class="text-green-light text-base items-baseline sm:text-sm">+ 0</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1695,5 +1611,11 @@
 <script src="{{asset("toast/toastr.js")}}"></script>
 <script src="{{asset("contractjs/subcription.js")}}"></script>
 <script type="module" src="{{asset('contractjs/connect-wallet.js')}}"></script>
+<script>
+    jQuery(window).on('load',function () {
+        'use strict';
+        subcription.getTotalInvested()
+    });
+</script>
 </body>
 </html>

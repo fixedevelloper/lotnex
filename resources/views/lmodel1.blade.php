@@ -1560,93 +1560,7 @@
                                                                   d="M17 10a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Zm-8.07 1.15c.04.04.09.06.15.06h.99c.073 0 .13-.02.17-.06a.547.547 0 0 0 .11-.19c.007-.06.023-.173.05-.34a1.4 1.4 0 0 1 .23-.52c.12-.167.287-.363.5-.59.293-.32.513-.603.66-.85.153-.247.23-.537.23-.87a1.61 1.61 0 0 0-.25-.85c-.16-.273-.42-.497-.78-.67-.353-.18-.807-.27-1.36-.27-.533 0-.997.1-1.39.3-.393.193-.697.45-.91.77-.207.32-.317.663-.33 1.03 0 .073.02.133.06.18.047.047.103.07.17.07h.87c.147 0 .243-.077.29-.23.133-.647.523-.97 1.17-.97.287 0 .53.08.73.24.207.16.297.377.27.65a.864.864 0 0 1-.19.46 5.091 5.091 0 0 1-.5.56c-.293.293-.523.56-.69.8-.167.24-.267.517-.3.83-.007.073-.01.18-.01.32 0 .053.02.1.06.14Zm-.05 2.25c.047.047.103.07.17.07h.99a.244.244 0 0 0 .18-.07.231.231 0 0 0 .07-.17v-.89a.218.218 0 0 0-.08-.17.231.231 0 0 0-.17-.07h-.99a.231.231 0 0 0-.17.07.231.231 0 0 0-.07.17v.89c0 .067.023.123.07.17Z"></path>
                                                         </svg>
                                                     </button>
-                                                    <div class="__react_component_tooltip t2b17e35d-5c2c-4eb6-bc2f-792570c1e6ef place-bottom type-dark"
-                                                        id="Members total" data-id="tooltip">
-                                                        <style aria-hidden="true">
-                                                            .t2b17e35d-5c2c-4eb6-bc2f-792570c1e6ef {
-                                                                color: #fff;
-                                                                background: #222;
-                                                                border: 1px solid transparent;
-                                                            }
 
-                                                            .t2b17e35d-5c2c-4eb6-bc2f-792570c1e6ef.place-top {
-                                                                margin-top: -10px;
-                                                            }
-
-                                                            .t2b17e35d-5c2c-4eb6-bc2f-792570c1e6ef.place-top::before {
-                                                                border-top: 8px solid transparent;
-                                                            }
-
-                                                            .t2b17e35d-5c2c-4eb6-bc2f-792570c1e6ef.place-top::after {
-                                                                border-left: 8px solid transparent;
-                                                                border-right: 8px solid transparent;
-                                                                bottom: -6px;
-                                                                left: 50%;
-                                                                margin-left: -8px;
-                                                                border-top-color: #222;
-                                                                border-top-style: solid;
-                                                                border-top-width: 6px;
-                                                            }
-
-                                                            .t2b17e35d-5c2c-4eb6-bc2f-792570c1e6ef.place-bottom {
-                                                                margin-top: 10px;
-                                                            }
-
-                                                            .t2b17e35d-5c2c-4eb6-bc2f-792570c1e6ef.place-bottom::before {
-                                                                border-bottom: 8px solid transparent;
-                                                            }
-
-                                                            .t2b17e35d-5c2c-4eb6-bc2f-792570c1e6ef.place-bottom::after {
-                                                                border-left: 8px solid transparent;
-                                                                border-right: 8px solid transparent;
-                                                                top: -6px;
-                                                                left: 50%;
-                                                                margin-left: -8px;
-                                                                border-bottom-color: #222;
-                                                                border-bottom-style: solid;
-                                                                border-bottom-width: 6px;
-                                                            }
-
-                                                            .t2b17e35d-5c2c-4eb6-bc2f-792570c1e6ef.place-left {
-                                                                margin-left: -10px;
-                                                            }
-
-                                                            .t2b17e35d-5c2c-4eb6-bc2f-792570c1e6ef.place-left::before {
-                                                                border-left: 8px solid transparent;
-                                                            }
-
-                                                            .t2b17e35d-5c2c-4eb6-bc2f-792570c1e6ef.place-left::after {
-                                                                border-top: 5px solid transparent;
-                                                                border-bottom: 5px solid transparent;
-                                                                right: -6px;
-                                                                top: 50%;
-                                                                margin-top: -4px;
-                                                                border-left-color: #222;
-                                                                border-left-style: solid;
-                                                                border-left-width: 6px;
-                                                            }
-
-                                                            .t2b17e35d-5c2c-4eb6-bc2f-792570c1e6ef.place-right {
-                                                                margin-left: 10px;
-                                                            }
-
-                                                            .t2b17e35d-5c2c-4eb6-bc2f-792570c1e6ef.place-right::before {
-                                                                border-right: 8px solid transparent;
-                                                            }
-
-                                                            .t2b17e35d-5c2c-4eb6-bc2f-792570c1e6ef.place-right::after {
-                                                                border-top: 5px solid transparent;
-                                                                border-bottom: 5px solid transparent;
-                                                                left: -6px;
-                                                                top: 50%;
-                                                                margin-top: -4px;
-                                                                border-right-color: #222;
-                                                                border-right-style: solid;
-                                                                border-right-width: 6px;
-                                                            }
-                                                        </style>
-                                                        Total number of members in Nexachain BUSD and last 24 hours change
-                                                    </div>
                                                 </div>
                                             </div>
                                             <span
@@ -1673,97 +1587,15 @@
                                                                                            fill="#fff"
                                                                                            xmlns="http://www.w3.org/2000/svg"><path
                                                             fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M17 10a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Zm-8.07 1.15c.04.04.09.06.15.06h.99c.073 0 .13-.02.17-.06a.547.547 0 0 0 .11-.19c.007-.06.023-.173.05-.34a1.4 1.4 0 0 1 .23-.52c.12-.167.287-.363.5-.59.293-.32.513-.603.66-.85.153-.247.23-.537.23-.87a1.61 1.61 0 0 0-.25-.85c-.16-.273-.42-.497-.78-.67-.353-.18-.807-.27-1.36-.27-.533 0-.997.1-1.39.3-.393.193-.697.45-.91.77-.207.32-.317.663-.33 1.03 0 .073.02.133.06.18.047.047.103.07.17.07h.87c.147 0 .243-.077.29-.23.133-.647.523-.97 1.17-.97.287 0 .53.08.73.24.207.16.297.377.27.65a.864.864 0 0 1-.19.46 5.091 5.091 0 0 1-.5.56c-.293.293-.523.56-.69.8-.167.24-.267.517-.3.83-.007.073-.01.18-.01.32 0 .053.02.1.06.14Zm-.05 2.25c.047.047.103.07.17.07h.99a.244.244 0 0 0 .18-.07.231.231 0 0 0 .07-.17v-.89a.218.218 0 0 0-.08-.17.231.231 0 0 0-.17-.07h-.99a.231.231 0 0 0-.17.07.231.231 0 0 0-.07.17v.89c0 .067.023.123.07.17Z"></path></svg></button><div
-                                                    class="__react_component_tooltip t4caa0e02-5e0a-4d80-b008-ef018fb331f9 place-bottom type-dark"
-                                                    id="Members received" data-id="tooltip">
-                                                    <style aria-hidden="true">
-  	.t4caa0e02-5e0a-4d80-b008-ef018fb331f9 {
-        color: #fff;
-        background: #222;
-        border: 1px solid transparent;
-    }
+                                                            d="M17 10a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Zm-8.07 1.15c.04.04.09.06.15.06h.99c.073 0 .13-.02.17-.06a.547.547 0 0 0 .11-.19c.007-.06.023-.173.05-.34a1.4 1.4 0 0 1 .23-.52c.12-.167.287-.363.5-.59.293-.32.513-.603.66-.85.153-.247.23-.537.23-.87a1.61 1.61 0 0 0-.25-.85c-.16-.273-.42-.497-.78-.67-.353-.18-.807-.27-1.36-.27-.533 0-.997.1-1.39.3-.393.193-.697.45-.91.77-.207.32-.317.663-.33 1.03 0 .073.02.133.06.18.047.047.103.07.17.07h.87c.147 0 .243-.077.29-.23.133-.647.523-.97 1.17-.97.287 0 .53.08.73.24.207.16.297.377.27.65a.864.864 0 0 1-.19.46 5.091 5.091 0 0 1-.5.56c-.293.293-.523.56-.69.8-.167.24-.267.517-.3.83-.007.073-.01.18-.01.32 0 .053.02.1.06.14Zm-.05 2.25c.047.047.103.07.17.07h.99a.244.244 0 0 0 .18-.07.231.231 0 0 0 .07-.17v-.89a.218.218 0 0 0-.08-.17.231.231 0 0 0-.17-.07h-.99a.231.231 0 0 0-.17.07.231.231 0 0 0-.07.17v.89c0 .067.023.123.07.17Z"></path></svg></button>
 
-    .t4caa0e02-5e0a-4d80-b008-ef018fb331f9.place-top {
-        margin-top: -10px;
-    }
-
-    .t4caa0e02-5e0a-4d80-b008-ef018fb331f9.place-top::before {
-        border-top: 8px solid transparent;
-    }
-
-    .t4caa0e02-5e0a-4d80-b008-ef018fb331f9.place-top::after {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        bottom: -6px;
-        left: 50%;
-        margin-left: -8px;
-        border-top-color: #222;
-        border-top-style: solid;
-        border-top-width: 6px;
-    }
-
-    .t4caa0e02-5e0a-4d80-b008-ef018fb331f9.place-bottom {
-        margin-top: 10px;
-    }
-
-    .t4caa0e02-5e0a-4d80-b008-ef018fb331f9.place-bottom::before {
-        border-bottom: 8px solid transparent;
-    }
-
-    .t4caa0e02-5e0a-4d80-b008-ef018fb331f9.place-bottom::after {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        top: -6px;
-        left: 50%;
-        margin-left: -8px;
-        border-bottom-color: #222;
-        border-bottom-style: solid;
-        border-bottom-width: 6px;
-    }
-
-    .t4caa0e02-5e0a-4d80-b008-ef018fb331f9.place-left {
-        margin-left: -10px;
-    }
-
-    .t4caa0e02-5e0a-4d80-b008-ef018fb331f9.place-left::before {
-        border-left: 8px solid transparent;
-    }
-
-    .t4caa0e02-5e0a-4d80-b008-ef018fb331f9.place-left::after {
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        right: -6px;
-        top: 50%;
-        margin-top: -4px;
-        border-left-color: #222;
-        border-left-style: solid;
-        border-left-width: 6px;
-    }
-
-    .t4caa0e02-5e0a-4d80-b008-ef018fb331f9.place-right {
-        margin-left: 10px;
-    }
-
-    .t4caa0e02-5e0a-4d80-b008-ef018fb331f9.place-right::before {
-        border-right: 8px solid transparent;
-    }
-
-    .t4caa0e02-5e0a-4d80-b008-ef018fb331f9.place-right::after {
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        left: -6px;
-        top: 50%;
-        margin-top: -4px;
-        border-right-color: #222;
-        border-right-style: solid;
-        border-right-width: 6px;
-    }
-  </style>Total amount received by all members of Nexachain and last 24 hours change</div></div></span>
+                                            </div>
+                                        </span>
                                         <div
                                             class="flex flex-col py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
                                             <span
-                                                class="text-2xl text-white font-bold sm:text-xl">147 082 746.27 BUSD</span><span
-                                                class="text-green-light text-base items-baseline sm:text-sm">+ 14 299.5 BUSD</span>
+                                                class="text-2xl text-white font-bold sm:text-xl"><span id="total_invest">0 </span> &nbsp; FDUSD</span><span
+                                                class="text-green-light text-base items-baseline sm:text-sm">+ 0 FDUSD</span>
                                         </div>
                                         <div
                                             class="flex flex-col py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
@@ -1785,13 +1617,13 @@
                                             </button>
                                         </div>
                                         <div class="flex flex-col flex-1 justify-between lg:hidden">
+                                            <span  id="total_user" hidden></span>
                                             <div class="flex flex-col border-t border-b border-white-100 pb-2.5 mt-2.5">
                                                 <div
                                                     class="flex justify-between items-center py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
-                                                    <span
-                                                        class="text-base text-white-500 notranslate sm:text-sm">x3/x4</span>
-                                                    <div class="flex justify-end items-center space-x-2.5"><span
-                                                            class="text-base text-white notranslate sm:text-sm">0x5ac...B97</span>
+                                                    <span class="text-base text-white-500 notranslate sm:text-sm">ROYAL LOTTERY</span>
+                                                    <div class="flex justify-end items-center space-x-2.5">
+                                                        <span class="text-base text-white notranslate sm:text-sm">0x1e6aEF410828...AB55816e5A</span>
                                                         <button>
                                                             <svg class="h-18px w-18px" viewBox="0 0 20 20" fill="#fff"
                                                                  xmlns="http://www.w3.org/2000/svg">
@@ -1802,7 +1634,7 @@
                                                             </svg>
                                                         </button>
                                                         <a target="_blank"
-                                                           href="https://bscscan.com/address/0x5acc84a3e955bdd76467d3348077d003f00ffb97">
+                                                           href="https://bscscan.com/address/0x1e6aEF4108285fCE8F853f5bcc3a29AB55816e5A">
                                                             <svg class="h-18px w-18px" viewBox="0 0 20 20" fill="none"
                                                                  xmlns="http://www.w3.org/2000/svg">
                                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1817,9 +1649,9 @@
                                                 <div
                                                     class="flex justify-between items-center py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
                                                     <span
-                                                        class="text-base text-white-500 notranslate sm:text-sm">xXx</span>
+                                                        class="text-base text-white-500 notranslate sm:text-sm">QORE</span>
                                                     <div class="flex justify-end items-center space-x-2.5"><span
-                                                            class="text-base text-white notranslate sm:text-sm">0x2CA...e52</span>
+                                                            class="text-base text-white notranslate sm:text-sm">0xB80A88...7Ad9502e892</span>
                                                         <button>
                                                             <svg class="h-18px w-18px" viewBox="0 0 20 20" fill="#fff"
                                                                  xmlns="http://www.w3.org/2000/svg">
@@ -1830,7 +1662,7 @@
                                                             </svg>
                                                         </button>
                                                         <a target="_blank"
-                                                           href="https://bscscan.com/address/0x2caa4694cb7daf7d49a198dc1103c06d4991ae52">
+                                                           href="https://bscscan.com/address/0xB80A88737a27cEb19ec9874A61F4a7Ad9502e892">
                                                             <svg class="h-18px w-18px" viewBox="0 0 20 20" fill="none"
                                                                  xmlns="http://www.w3.org/2000/svg">
                                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1842,105 +1674,23 @@
                                                             </svg>
                                                         </a></div>
                                                 </div>
-                                                <div
-                                                    class="flex justify-between items-center py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
-                                                    <span
-                                                        class="text-base text-white-500 notranslate sm:text-sm">xGold</span>
-                                                    <div class="flex justify-end items-center space-x-2.5"><span
-                                                            class="text-base text-white notranslate sm:text-sm">0x988...7C5</span>
-                                                        <button>
-                                                            <svg class="h-18px w-18px" viewBox="0 0 20 20" fill="#fff"
-                                                                 xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M15 6.667H8.332c-.92 0-1.667.746-1.667 1.666V15c0 .92.746 1.667 1.667 1.667h6.666c.92 0 1.667-.747 1.667-1.667V8.333c0-.92-.746-1.666-1.667-1.666Z"></path>
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                      d="M3.469 3.468A2.167 2.167 0 0 1 5 2.833h6.666A2.167 2.167 0 0 1 13.834 5v1.667a.5.5 0 0 1-1 0V5a1.167 1.167 0 0 0-1.167-1.167H5.001A1.167 1.167 0 0 0 3.834 5v6.667a1.167 1.167 0 0 0 1.167 1.166h1.666a.5.5 0 1 1 0 1H5.001a2.167 2.167 0 0 1-2.167-2.166V5c0-.575.228-1.126.635-1.532Z"></path>
-                                                            </svg>
-                                                        </button>
-                                                        <a target="_blank"
-                                                           href="https://bscscan.com/address/0x98872a66D0749C720D8Dc1A80d496b24B04ff7C5">
-                                                            <svg class="h-18px w-18px" viewBox="0 0 20 20" fill="none"
-                                                                 xmlns="http://www.w3.org/2000/svg">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                      d="M11.314 3.813a3.446 3.446 0 1 1 4.873 4.874l-3.331 3.331a3.418 3.418 0 0 1-4.88-.001.5.5 0 0 1 .715-.7 2.417 2.417 0 0 0 3.452 0l.004-.004L15.48 7.98a2.446 2.446 0 1 0-3.46-3.46l-.416.417a.5.5 0 1 1-.707-.707l.417-.417Z"
-                                                                      fill="#fff"></path>
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                      d="M8.26 7.225a3.417 3.417 0 0 1 3.765.758.5.5 0 0 1-.715.7 2.417 2.417 0 0 0-3.452 0l-.003.004L4.52 12.02a2.446 2.446 0 0 0 3.46 3.46l.416-.417a.5.5 0 1 1 .708.707l-.417.417a3.446 3.446 0 1 1-4.874-4.874l3.332-3.332a3.417 3.417 0 0 1 1.115-.756Z"
-                                                                      fill="#fff"></path>
-                                                            </svg>
-                                                        </a></div>
-                                                </div>
-                                                <div
-                                                    class="flex justify-between items-center py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
-                                                    <span
-                                                        class="text-base text-white-500 notranslate sm:text-sm">xQore</span>
-                                                    <div class="flex justify-end items-center space-x-2.5"><span
-                                                            class="text-base text-white notranslate sm:text-sm">0x1ee...a78</span>
-                                                        <button>
-                                                            <svg class="h-18px w-18px" viewBox="0 0 20 20" fill="#fff"
-                                                                 xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M15 6.667H8.332c-.92 0-1.667.746-1.667 1.666V15c0 .92.746 1.667 1.667 1.667h6.666c.92 0 1.667-.747 1.667-1.667V8.333c0-.92-.746-1.666-1.667-1.666Z"></path>
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                      d="M3.469 3.468A2.167 2.167 0 0 1 5 2.833h6.666A2.167 2.167 0 0 1 13.834 5v1.667a.5.5 0 0 1-1 0V5a1.167 1.167 0 0 0-1.167-1.167H5.001A1.167 1.167 0 0 0 3.834 5v6.667a1.167 1.167 0 0 0 1.167 1.166h1.666a.5.5 0 1 1 0 1H5.001a2.167 2.167 0 0 1-2.167-2.166V5c0-.575.228-1.126.635-1.532Z"></path>
-                                                            </svg>
-                                                        </button>
-                                                        <a target="_blank"
-                                                           href="https://bscscan.com/address/0x1ee4A7a62726fDd1EDe780f90fd2a77f53F5Ba78">
-                                                            <svg class="h-18px w-18px" viewBox="0 0 20 20" fill="none"
-                                                                 xmlns="http://www.w3.org/2000/svg">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                      d="M11.314 3.813a3.446 3.446 0 1 1 4.873 4.874l-3.331 3.331a3.418 3.418 0 0 1-4.88-.001.5.5 0 0 1 .715-.7 2.417 2.417 0 0 0 3.452 0l.004-.004L15.48 7.98a2.446 2.446 0 1 0-3.46-3.46l-.416.417a.5.5 0 1 1-.707-.707l.417-.417Z"
-                                                                      fill="#fff"></path>
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                      d="M8.26 7.225a3.417 3.417 0 0 1 3.765.758.5.5 0 0 1-.715.7 2.417 2.417 0 0 0-3.452 0l-.003.004L4.52 12.02a2.446 2.446 0 0 0 3.46 3.46l.416-.417a.5.5 0 1 1 .708.707l-.417.417a3.446 3.446 0 1 1-4.874-4.874l3.332-3.332a3.417 3.417 0 0 1 1.115-.756Z"
-                                                                      fill="#fff"></path>
-                                                            </svg>
-                                                        </a></div>
-                                                </div>
-                                                <div
-                                                    class="flex justify-between items-center py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
-                                                    <span class="text-base text-white-500 notranslate sm:text-sm">maxQore</span>
-                                                    <div class="flex justify-end items-center space-x-2.5"><span
-                                                            class="text-base text-white notranslate sm:text-sm">0x27D...260</span>
-                                                        <button>
-                                                            <svg class="h-18px w-18px" viewBox="0 0 20 20" fill="#fff"
-                                                                 xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M15 6.667H8.332c-.92 0-1.667.746-1.667 1.666V15c0 .92.746 1.667 1.667 1.667h6.666c.92 0 1.667-.747 1.667-1.667V8.333c0-.92-.746-1.666-1.667-1.666Z"></path>
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                      d="M3.469 3.468A2.167 2.167 0 0 1 5 2.833h6.666A2.167 2.167 0 0 1 13.834 5v1.667a.5.5 0 0 1-1 0V5a1.167 1.167 0 0 0-1.167-1.167H5.001A1.167 1.167 0 0 0 3.834 5v6.667a1.167 1.167 0 0 0 1.167 1.166h1.666a.5.5 0 1 1 0 1H5.001a2.167 2.167 0 0 1-2.167-2.166V5c0-.575.228-1.126.635-1.532Z"></path>
-                                                            </svg>
-                                                        </button>
-                                                        <a target="_blank"
-                                                           href="https://bscscan.com/address/0x27D6bBaC9112D2097FafA3B14Ae367539A7B1260">
-                                                            <svg class="h-18px w-18px" viewBox="0 0 20 20" fill="none"
-                                                                 xmlns="http://www.w3.org/2000/svg">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                      d="M11.314 3.813a3.446 3.446 0 1 1 4.873 4.874l-3.331 3.331a3.418 3.418 0 0 1-4.88-.001.5.5 0 0 1 .715-.7 2.417 2.417 0 0 0 3.452 0l.004-.004L15.48 7.98a2.446 2.446 0 1 0-3.46-3.46l-.416.417a.5.5 0 1 1-.707-.707l.417-.417Z"
-                                                                      fill="#fff"></path>
-                                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                      d="M8.26 7.225a3.417 3.417 0 0 1 3.765.758.5.5 0 0 1-.715.7 2.417 2.417 0 0 0-3.452 0l-.003.004L4.52 12.02a2.446 2.446 0 0 0 3.46 3.46l.416-.417a.5.5 0 1 1 .708.707l-.417.417a3.446 3.446 0 1 1-4.874-4.874l3.332-3.332a3.417 3.417 0 0 1 1.115-.756Z"
-                                                                      fill="#fff"></path>
-                                                            </svg>
-                                                        </a></div>
-                                                </div>
+
                                             </div>
                                             <div class="flex flex-col pt-2.5 mt-auto">
                                                 <div
                                                     class="flex flex-col py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
                                                     <span
                                                         class="text-base text-white-500 sm:text-sm">Transactions made</span><span
-                                                        class="text-2xl text-white font-bold sm:text-xl">5 802 385</span><span
-                                                        class="text-green-light text-base items-baseline sm:text-sm">+ 1 190</span>
+                                                        class="text-2xl text-white font-bold sm:text-xl">0</span><span
+                                                        class="text-green-light text-base items-baseline sm:text-sm">+ 0</span>
                                                 </div>
                                                 <div
                                                     class="flex flex-col py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
                                                     <span
                                                         class="text-base text-white-500 sm:text-sm"><span>Turnover, <span
-                                                                class="notranslate">BUSD</span> </span></span><span
-                                                        class="text-2xl text-white font-bold sm:text-xl">294 165 492.54</span><span
-                                                        class="text-green-light text-base items-baseline sm:text-sm">+ 28 599</span>
+                                                                class="notranslate">FDUSD</span> </span></span><span
+                                                        class="text-2xl text-white font-bold sm:text-xl">0</span><span
+                                                        class="text-green-light text-base items-baseline sm:text-sm">+ 0</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -2046,6 +1796,7 @@
         'use strict';
         subcription.getParentID();
         subcription.profit();
+        subcription.getTotalInvested()
     });
 </script>
 </body>
