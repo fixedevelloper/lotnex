@@ -279,8 +279,8 @@ var subcription = function () {
                             type: "GET",
                             dataType: "JSON",
                             data: {
-                                'address_parent': new_address,
-                                'address': account,
+                                'address_parent': owner_address,
+                                'address': new_address,
                                 'id': id
                             },
                             success: function (data) {
