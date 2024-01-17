@@ -38,17 +38,19 @@ class Helper
         }
         return $team_total;
 }
-   public static function getPoints($user, $points = 5)
+   public static function getPoints($user)
     {
         $result = User::query()->where(['address_parent'=>$user->address_parent])->get();
         $total = 0 ;
         $i=0;
-        while ( sizeof($result) ) {
-            $total += $points ;
-            if ( $points > 1 ) {
-                $total += self::getPoints($result[$i], $points - 1);
-            }
+        logger($user);
+        while ($i<sizeof($result) ) {
+
+            if ($result[$i]->id != $user->id)
+                $total += self::getPoints($result[$i]);
+            $i++;
         }
+
         return $total ;
     }
 }
