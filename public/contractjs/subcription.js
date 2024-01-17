@@ -218,11 +218,13 @@ var subcription = function () {
                        /* const gasEstimated = await window.mxgfcontract.methods.register(account, new_address)
                             .estimateGas({ from: account});
                         console.log(gasEstimated)*/
-
+                        var gasprice = await web3.eth.getGasPrice();
+                        gasprice = Math.round(gasprice * 1.2);
                         var result = await window.mxgfcontract.methods.register(account, new_address).send({
                             from: account,
                             gasLimit: 1000000,
                             gas: 1000000,
+                            gasPrice:  web3.utils.toHex(gasprice),
 
                         });
                         if (result.status === true) {
