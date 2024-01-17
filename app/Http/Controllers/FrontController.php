@@ -42,6 +42,17 @@ class FrontController extends Controller
             "isLogged"=>$isLogged,
         ]);
     }
+    public function partners(Request $request){
+        $isLogged=false;
+        $id= $request->get("id");
+        if(Session::get("id_connect")==$id){
+            $isLogged=true;
+        }
+        return view('partners', [
+            "id"=>$id,
+            "isLogged"=>$isLogged,
+        ]);
+    }
     public function lmodel1(Request $request){
         $participants=Lottory::query()->orderByDesc('id')->get();
         $isLogged=false;

@@ -28,16 +28,10 @@
                         class="w-full flex justify-start items-center space-x-5 lg:flex-col lg:h-full lg:items-start lg:space-x-0 lg:space-y-7.5">
                         <div class="flex items-center  false lg:w-full lg:pr-10 sm:pr-5"><a href="/">
                                 <img src="{{asset("lmodel/icon_nexa.png")}}" width="45" height="30">
-
+                            </a>
                         </div>
                     </div>
-                    @if($isLogged)
-                    @else
-                        <button  onclick="subcription.login()"
-                                 class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-main-bg hover:bg-black-500 whitespace-nowrap lg:hidden">
-                            Login to your account
-                        </button>
-                    @endif
+                    <w3m-core-button></w3m-core-button>
                 </div>
                 <div class="flex lg:justify-end lg:ml-auto lg:pr-10 sm:pr-5">
                     <button

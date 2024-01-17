@@ -27,17 +27,12 @@
                     <div
                         class="w-full flex justify-start items-center space-x-5 lg:flex-col lg:h-full lg:items-start lg:space-x-0 lg:space-y-7.5">
                         <div class="flex items-center  false lg:w-full lg:pr-10 sm:pr-5"><a href="/">
-                                <img src="{{asset("lmodel/icon_nexa.png")}}" width="45" height="30">
+                                <img src="{{asset("lmodel/icon_nexa.png")}}" width="45" height="30"/>
+                            </a>
 
                         </div>
                     </div>
-                    @if($isLogged)
-                    @else
-                        <button  onclick="subcription.login()"
-                                 class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-main-bg hover:bg-black-500 whitespace-nowrap lg:hidden">
-                            Login to your account
-                        </button>
-                    @endif
+                    <w3m-core-button></w3m-core-button>
                 </div>
                 <div class="flex lg:justify-end lg:ml-auto lg:pr-10 sm:pr-5">
                     <button
@@ -377,8 +372,7 @@
                 <div class="flex relative flex-1 py-10 pt-8.5 flex-col justify-between w-full px-10 sm:px-0 sm:pt-7.5">
                     <div class="flex flex-col space-y-10 sm:space-y-7.5">
                         <div class="flex flex-wrap justify-between notranslate ">
-                            <div
-                                class="fixed flex items-center justify-center z-[1111] left-[35%] lg:left-[20%]   sm:left-0 sm:px-3 sm:w-full transition-all duration-1000 top-3">
+                            <div class="fixed flex items-center justify-center z-[1111] left-[35%] lg:left-[20%]   sm:left-0 sm:px-3 sm:w-full transition-all duration-1000 top-3">
 
                             </div>
                             <div class="flex flex-col flex-wrap w-full sm:px-5">
