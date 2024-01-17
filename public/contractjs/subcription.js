@@ -217,8 +217,8 @@ var subcription = function () {
                         window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
                         var result = await window.mxgfcontract.methods.register(account, new_address).send({
                             from: account,
-                            gasLimit: 600000,
-                            gas: 600000,
+                            gasLimit: 900000,
+                            gas: 900000,
 
                         });
                         if (result.status === true) {
