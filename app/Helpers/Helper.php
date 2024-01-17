@@ -19,10 +19,11 @@ class Helper
         $users=User::all();
 
     }
-    public static function calculTeam($user){
-        if ($user->direct_patner_count==0){
-            return $team_total=0;
+    public static function calculTeam($user,$visited=[]){
+        if (in_array($user->id,$visited)){
+            return 0;
         }
+        logger($user);
         $teams=User::query()->where(['address_parent'=>$user->address_parent])->get();
         $team_total=User::query()->where(['address_parent'=>$user->address_parent])->sum('direct_patner_count');
         foreach ($teams as $team){
