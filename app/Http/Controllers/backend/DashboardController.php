@@ -95,7 +95,7 @@ class DashboardController extends Controller
             }
             Session::put("id_connect",$id);
             Session::put("address_connect",$address);
-            return response()->json(['data' =>  [], 'status'=> 200],405);
+            return response()->json(['data' =>  [], 'status'=> 200],200);
         }else{
             return response()->json(['data' =>  [], 'status'=> 405],405);
         }
