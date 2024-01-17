@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::match(["POST","GET"],'/', [FrontController::class, 'home'])
+Route::match(["POST","GET"],'/home', [FrontController::class, 'home'])
     ->name('home');
 Route::get('/documentation', [FrontController::class, 'documentation'])
     ->name('documentation');
@@ -30,7 +30,7 @@ Route::get('/register_ower', [FrontController::class, 'register_ower'])
     ->name('register_ower');
 Route::get('/activation_ower', [FrontController::class, 'activation_ower'])
     ->name('activation_ower');
-Route::get('/nexthome', [FrontController::class, 'modelHome'])
+Route::get('/', [FrontController::class, 'modelHome'])
     ->name('nexthome');
 Route::get('/partners', [FrontController::class, 'partners'])
     ->name('partners');

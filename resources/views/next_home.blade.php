@@ -1381,15 +1381,15 @@
                                         <span
                                             class="text-white text-2xl font-bold notranslate sm:text-xl false mt-5 sm:mt-2.5" id="total_user"></span>
                                     </div>
-                                    <div
+                                   {{-- <div
                                         class="p-5 pt-0 flex text-green-light text-base items-baseline notranslate sm:text-sm">
                                         <svg class="mr-1.5" width="8" height="11" stroke="#2CFF4E"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path d="M4 10V1m0 0L1 4m3-3 3 3" stroke-linecap="round"
                                                   stroke-linejoin="round"></path>
                                         </svg>
-                                        583
-                                    </div>
+
+                                    </div>--}}
                                 </div>
                                 <div class="bg-gray rounded p-5 flex flex-col max-w-full"><span
                                         class="inline-flex items-center text-base text-white-500 sm:text-sm">Members received
