@@ -164,11 +164,10 @@ var subcription = function () {
     const activateLevelByOwner=async function(){
         const account=await getAccount()
         $('#spinner_loader').show()
-
         const account_activate=$('#new_address').val();
         try {
             window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
-            var result = await window.mxgfcontract.methods.Buy_Qore_ForByOwner (account_activate, Number.parseInt(level)).send({
+            var result = await window.mxgfcontract.methods.Buy_Qore_ForByOwner(account_activate, Number.parseInt($('#level').val())).send({
                 from: account,
                 gasLimit: 600000,
                 gas: 600000,
