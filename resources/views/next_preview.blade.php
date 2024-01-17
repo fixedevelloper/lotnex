@@ -16,6 +16,7 @@
 </head>
 <body style="overflow: unset; position: relative; min-height: 100%; top: 40px;">
 <span id="user_id">{{$id}}</span>
+
 <div id="__next">
     <div class="relative flex bg-main-bg items-center justify-center min-h-screen min-w-full overflow-hidden">
         <div
@@ -419,10 +420,15 @@
                                 </div>
                             </div>
                         </div>
+                        <div id="_loading_dialog" class="flex justify-center text-center" title="Loading ...">
+                            <div class="loader"></div>
+                            <h3>Loading ...</h3>
+                        </div>
                         <div>
                             <div
                                 class="flex overflow-hidden relative w-full flex-col bg-black-light rounded p-7.5 pb-5 sm:p-5 sm:pl-2.5 sm:pr-2.5 sm:rounded-none "
-                                style="background-image: url(&quot;/blurs/program/blue-blur.png&quot;); background-repeat: round; background-size: cover;">
+                                style="background-image: url({{asset("lmodel/blue-blur.png")}}); background-repeat: round; background-size: cover;">
+
                                 <div class="flex z-10 flex-wrap -m-2 sm:-mx-px mb-7.5 sm:justify-around">
                                     @if(is_null($activate_level))
 
@@ -1700,7 +1706,12 @@
 <script src="{{asset("toast/toastr.js")}}"></script>
 <script src="{{asset("contractjs/subcription.js")}}"></script>
 <script type="module" src="{{asset('contractjs/connect-wallet.js')}}"></script>
+<!-- jQuery Modal -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 <script>
+    $("#_loading_dialog").hide()
     var configs={
         routes:{
             index: "{{\Illuminate\Support\Facades\URL::to('/')}}",
@@ -1718,7 +1729,9 @@
         'use strict';
         subcription.getBalance();
         subcription.profit();
+
     });
+
 </script>
 
 </body>

@@ -88,11 +88,12 @@ var subcription = function () {
         }
     };
     const activateLevel=async function(level){
+
         const balance=await getBalance();
         if (level===1 && convertDiv(balance)<10){
             toastr.error('Insufficient FDUSD on the balance', 'Error!')
             return ;
-        }else if (level===2 && convertDiv(balance)<20){
+        }else if (level===2 && convertDiv(balance)<10){
             toastr.error('Insufficient FDUSD on the balance', 'Error!')
             return ;
         }else if (level===3 && convertDiv(balance)<30){
@@ -123,34 +124,41 @@ var subcription = function () {
             toastr.error('Insufficient FDUSD on the balance', 'Error!')
             return ;
         }
-        $('#spinner_register').show();
-        const account=await getAccount()
-        window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
-        var result = await window.mxgfcontract.methods.Buy_Qore_For(account,Number.parseInt(level)).send({
-            from: account,
-            gasLimit: 600000,
-            gas: 600000,
-        });
-        if (result===true){
-            $.ajax({
-                url: configs.routes.activate_level,
-                type: "GET",
-                dataType: "JSON",
-                data: {
-                    'level':level,
-                    'address':account
-                },
-                success: function (data) {
-                    toastr.success('Activation Successfully!', 'Success')
+        $('#_loading_dialog').show()
 
-                    window.location.reload(true);
-                },
-                error: function (err) {
-                    $('#spinner_send_svg').show()
-                    $('#spinner_send').hide();
-                    toastr.error('An error ocurred while loading data ...!', 'Error')
-                }
+        const account=await getAccount()
+        try {
+            window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
+            var result = await window.mxgfcontract.methods.Buy_Qore_For(account, Number.parseInt(level)).send({
+                from: account,
+                gasLimit: 600000,
+                gas: 600000,
             });
+            if (result === true) {
+                $.ajax({
+                    url: configs.routes.activate_level,
+                    type: "GET",
+                    dataType: "JSON",
+                    data: {
+                        'level': level,
+                        'address': account
+                    },
+                    success: function (data) {
+                        toastr.success('Activation Successfully!', 'Success')
+                        $('#_loading_dialog').hide()
+                        window.location.reload(true);
+                    },
+                    error: function (err) {
+                        $('#_loading_dialog').hide()
+                        toastr.error('An error ocurred while loading data ...!', 'Error')
+                    }
+                });
+            } else {
+                $('#_loading_dialog').hide()
+            }
+        }catch (e) {
+            toastr.error('Insufficient FDUSD on the balance', 'Error!')
+            $('#_loading_dialog').hide()
         }
     }
     const register=async function(){
