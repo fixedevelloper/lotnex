@@ -95,8 +95,9 @@ class FrontController extends Controller
             $end=Carbon::today()->addDays(1)->format("Y-m-d h:i:s");
             logger("time1:".$start);
             logger("time:".$end);
-            $totalUp=User::query()->where(['address_parent'=>$user->address_parent])->whereDate("created_at","<",$end)
-                ->whereDate("created_at",">=",$start)->count();
+            $totalUp=User::query()->where(['address_parent'=>$user->address_parent])->whereBetween("created_at",[$start,$end])
+           /*     ->whereDate("created_at","<",$end)
+                ->whereDate("created_at",">=",$start)*/->count();
             $activate_level=ActivationLevel::query()->firstWhere(['address'=>$user->address]);
         }
 

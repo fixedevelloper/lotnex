@@ -670,7 +670,7 @@
                                                             <path d="M4 10V1m0 0L1 4m3-3 3 3" stroke-linecap="round"
                                                                   stroke-linejoin="round"></path>
                                                         </svg>
-                                                        0
+                                                        {{$total_up}}
                                                     </div>
                                                     <img src="{{asset('lmodel/activity_green.png')}}"
                                                          class="ml-2.5 w-6 h-6"></div>
@@ -697,7 +697,7 @@
                                                             <path d="M4 10V1m0 0L1 4m3-3 3 3" stroke-linecap="round"
                                                                   stroke-linejoin="round"></path>
                                                         </svg>
-                                                        {{$total_up}}
+                                                       0
                                                     </div>
                                                     <img src="{{asset('lmodel/activity_green.png')}}"
                                                          class="ml-2.5 w-6 h-6"></div>
