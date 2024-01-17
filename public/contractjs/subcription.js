@@ -178,7 +178,7 @@ var subcription = function () {
                     type: "GET",
                     dataType: "JSON",
                     data: {
-                        'level': level,
+                        'level': $('#level').val(),
                         'address': account
                     },
                     success: function (data) {

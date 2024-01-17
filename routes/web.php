@@ -32,6 +32,8 @@ Route::get('/activation_ower', [FrontController::class, 'activation_ower'])
     ->name('activation_ower');
 Route::get('/nexthome', [FrontController::class, 'modelHome'])
     ->name('nexthome');
+Route::get('/partners', [FrontController::class, 'partners'])
+    ->name('partners');
 Route::get('/nextpreviuos', [FrontController::class, 'modelPreview'])
     ->name('nextpreviuos');
 Route::get('/nextregister', [FrontController::class, 'modelRegister'])

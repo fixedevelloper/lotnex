@@ -143,6 +143,7 @@ class DashboardController extends Controller
 
         }
         $activate->save();
-        return response()->json(['data' =>  $activate, 'status'=> true]);
+        logger($activate);
+        return response()->json(['data' =>  $activate, 'status'=> 200],200);
     }
 }

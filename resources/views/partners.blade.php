@@ -381,52 +381,26 @@
                                     <div class="flex"><a class="mr-1.5 text text-white-300 sm:text-sm"
                                                          href="{{route("lmodel1",["id"=>$id])}}"><span class="hover:text-white-500">ID {{$id}}</span>
                                             /</a></div>
-                                    <span class="text text-white whitespace-nowrap sm:text-sm">Nexachain Register OWNER</span><span
+                                    <span class="text text-white whitespace-nowrap sm:text-sm">Nexachain Partners </span><span
                                         class="text text-white whitespace-nowrap ml-1.5 sm:text-sm"></span></div>
                                 <div class="w-full flex justify-between flex-wrap">
                                     <div class="flex flex-wrap items-center"><span
-                                            class="text-two-half text-white font-medium mr-2 sm:text-2xl sm:max-w-[170px]">Nexachain Register OWNER</span>
+                                            class="text-two-half text-white font-medium mr-2 sm:text-2xl sm:max-w-[170px]">Nexachain Partners</span>
                                     </div>
                                     <div class="flex flex-col items-end">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div id="_loading_dialog" class="flex justify-center text-center" title="Loading ...">
-                            <div class="loader"></div>
-                            <h3>Loading ...</h3>
-                        </div>
+
                         <div>
                             <div
                                 class="flex overflow-hidden relative w-full flex-col bg-black-light rounded p-7.5 pb-5 sm:p-5 sm:pl-2.5 sm:pr-2.5 sm:rounded-none "
                                 style="background-image: url({{asset("lmodel/blue-blur.png")}}); background-repeat: round; background-size: cover;">
 
-                                <div class="flex flex-col mb-10 sm:mb-7.5">
-                                    <div class="w-full relative flex flex-col flex-grow-0 flex-shrink-0">
-                                        <div class="flex items-baseline"><label
-                                                class="mb-2.5 text-white-500 sm:text-sm flex-shrink-0">User Address</label></div>
-                                        <div class="w-full relative">
-                                            <input id="new_address"  class="w-full bg-white-100 border-2 border-transparent
-                                             rounded-mini py-3 px-5 text-white outline-none focus:border-2 focus:border-main-blue focus:bg-transparent  "
-                                                   type="text" placeholder="User Address" value=""></div>
-                                    </div>
-                                    <div class="w-full relative flex flex-col flex-grow-0 flex-shrink-0 mt-4">
-                                        <div class="flex items-baseline"><label
-                                                class="mb-2.5 text-white-500 sm:text-sm flex-shrink-0">Owner Address</label></div>
-                                        <div class="w-full relative">
-                                            <input id="owner_address"  class="w-full bg-white-100 border-2 border-transparent
-                                             rounded-mini py-3 px-5 text-white outline-none focus:border-2 focus:border-main-blue focus:bg-transparent  "
-                                                   type="text" placeholder="Owner Address" value=""></div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-col items-start sm:items-center space-y-2.5">
-                                    <div class="flex space-x-2.5 sm:w-full">
-                                        <button onclick="subcription.register_owner()"
-                                                class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-main-blue hover:bg-hover-main-blue active:bg-active-main-blue mt-10 py-5 !px-10 sm:py-3  sm:mt-7.5 sm:flex-1">
-                                            Send <i id="spinner_loader" class="loader"></i>
-                                        </button>
-                                    </div>
-                                </div>
+                                <table>
+
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -508,9 +482,6 @@
     }
     jQuery(window).on('load',function () {
         'use strict';
-        subcription.getBalance();
-        subcription.profit();
-
     });
 
 </script>
