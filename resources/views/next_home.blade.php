@@ -171,13 +171,7 @@
                                         class="relative w-full flex items-center px-2.5 py-2 rounded-xl cursor-pointer undefined hover:bg-black-light lg:hover:bg-transparent false lg:rounded-none lg:pl-0 lg:pr-5 lg:py-5 lg:justify-between   lg:border-b lg:border-white-300">
                                         <div class="flex items-center text-left">
                                             <svg class="w-6 h-6 stroke-current text-white-500 " viewBox="0 0 24 24">
-                                                <style>.st1 {
-                                                        fill: none;
-                                                        stroke: #adadad;
-                                                        stroke-linecap: round;
-                                                        stroke-linejoin: round;
-                                                        stroke-miterlimit: 10
-                                                    }</style>
+
                                                 <path
                                                     d="m11.6 3.4 8.6 9.1c.7.7.4 1.9-.5 2.3L5.7 21c-.6.3-1.2.1-1.7-.4l-1.4-1.5c-.4-.4-.5-1.1-.2-1.6L9.2 3.8c.4-.9 1.7-1.1 2.4-.4z"
                                                     style="fill: none; stroke: rgb(173, 173, 173); stroke-miterlimit: 10;"></path>
@@ -257,13 +251,7 @@
                                         <div class="flex items-center text-left">
                                             <svg class="w-6 h-6 stroke-current text-white-500 animate-bounce"
                                                  viewBox="0 0 24 24">
-                                                <style>.st1 {
-                                                        fill: none;
-                                                        stroke: #adadad;
-                                                        stroke-linecap: round;
-                                                        stroke-linejoin: round;
-                                                        stroke-miterlimit: 10
-                                                    }</style>
+
                                                 <path
                                                     d="m11.6 3.4 8.6 9.1c.7.7.4 1.9-.5 2.3L5.7 21c-.6.3-1.2.1-1.7-.4l-1.4-1.5c-.4-.4-.5-1.1-.2-1.6L9.2 3.8c.4-.9 1.7-1.1 2.4-.4z"
                                                     style="fill: none; stroke: rgb(173, 173, 173); stroke-miterlimit: 10;"></path>
@@ -625,13 +613,13 @@
                                 class="text-white text-3xl font-bold ">Account preview</span><span
                                 class="text-white-500 text-base mt-1 mb-7.5">Look up any <span
                                     class="notranslate mx-1.5">Nexachain BUSD</span> member account in preview mode. Enter ID or <span
-                                    class="notranslate mx-1.5">BUSD</span> address to preview or click Demo to view a random account.</span>
+                                    class="notranslate mx-1.5">FDUSD</span> address to preview or click Demo to view a random account.</span>
                         </div>
                         <div class="flex sm:flex-col">
                             <div
                                 class="flex flex-col flex-1 justify-between sm:w-full bg-main-blue-200 rounded sm:rounded-none p-7.5 sm:p-5 mr-10 sm:mr-0 sm:mb-5">
                                 <span class="text-white mb-3">Enter <span class="notranslate mx-1">ID</span> or <span
-                                        class="notranslate mx-1">BUSD</span>wallet</span>
+                                        class="notranslate mx-1">FDUSD</span>wallet</span>
                                 <form action="{{route('lmodel1')}}">
                                     <div class="flex sm:flex-col"><input name="id"
                                             class="w-full bg-white-100 border-2 border-transparent rounded-mini py-3 px-5 text-white outline-none focus:border-2 focus:border-main-blue focus:bg-transparent flex-1 mr-5 sm:mr-0 sm:mb-3.5 py-2"
@@ -666,9 +654,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col text-left space-y-[50px] lg:space-y-5 sm:px-5 pb-5 sm:pb-2.5"><span
-                        class="text-white text-3xl font-bold">Roadmap</span>
-                    <div class="grid grid-cols-3 sm:grid-cols-1 !mt-0">
+
+
+                <div class="flex flex-col text-left space-y-[50px] lg:space-y-5 sm:px-5 pb-5 sm:pb-2.5">
+                    {{--<span class="text-white text-3xl font-bold">Roadmap</span>--}}
+                  {{--  <div class="grid grid-cols-3 sm:grid-cols-1 !mt-0">
                         <div class="relative flex flex-col items-center space-y-2.5 p-10 sm:p-0 sm:py-3">
                             <div class="absolute bottom-2.5 border-t-2 border-white-900 h-[1px] sm:left-1/2 sm:right-auto sm:-translate-x-1/2 sm:bottom-0 sm:top-1
                   sm:border-none   w-full mobile-width-line"></div>
@@ -817,8 +807,10 @@
                                 </svg>
                             </div>
                         </div>
-                    </div>
+                    </div>--}}
                 </div>
+
+
                 <div class="my-10">
                     <div class="flex flex-col">
                         <div class="flex items-center sm:px-5"><span class="text-white text-3xl font-bold sm:text-2xl">Platform recent activity</span>
@@ -833,94 +825,7 @@
                                               d="M17 10a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Zm-8.07 1.15c.04.04.09.06.15.06h.99c.073 0 .13-.02.17-.06a.547.547 0 0 0 .11-.19c.007-.06.023-.173.05-.34a1.4 1.4 0 0 1 .23-.52c.12-.167.287-.363.5-.59.293-.32.513-.603.66-.85.153-.247.23-.537.23-.87a1.61 1.61 0 0 0-.25-.85c-.16-.273-.42-.497-.78-.67-.353-.18-.807-.27-1.36-.27-.533 0-.997.1-1.39.3-.393.193-.697.45-.91.77-.207.32-.317.663-.33 1.03 0 .073.02.133.06.18.047.047.103.07.17.07h.87c.147 0 .243-.077.29-.23.133-.647.523-.97 1.17-.97.287 0 .53.08.73.24.207.16.297.377.27.65a.864.864 0 0 1-.19.46 5.091 5.091 0 0 1-.5.56c-.293.293-.523.56-.69.8-.167.24-.267.517-.3.83-.007.073-.01.18-.01.32 0 .053.02.1.06.14Zm-.05 2.25c.047.047.103.07.17.07h.99a.244.244 0 0 0 .18-.07.231.231 0 0 0 .07-.17v-.89a.218.218 0 0 0-.08-.17.231.231 0 0 0-.17-.07h-.99a.231.231 0 0 0-.17.07.231.231 0 0 0-.07.17v.89c0 .067.023.123.07.17Z"></path>
                                     </svg>
                                 </button>
-                                <div
-                                    class="__react_component_tooltip tdbb8c41c-4392-4c77-b8a0-f60cb8f1857d place-bottom type-dark"
-                                    id="Platform recent activity" data-id="tooltip">
-                                    <style aria-hidden="true">
-                                        .tdbb8c41c-4392-4c77-b8a0-f60cb8f1857d {
-                                            color: #fff;
-                                            background: #222;
-                                            border: 1px solid transparent;
-                                        }
 
-                                        .tdbb8c41c-4392-4c77-b8a0-f60cb8f1857d.place-top {
-                                            margin-top: -10px;
-                                        }
-
-                                        .tdbb8c41c-4392-4c77-b8a0-f60cb8f1857d.place-top::before {
-                                            border-top: 8px solid transparent;
-                                        }
-
-                                        .tdbb8c41c-4392-4c77-b8a0-f60cb8f1857d.place-top::after {
-                                            border-left: 8px solid transparent;
-                                            border-right: 8px solid transparent;
-                                            bottom: -6px;
-                                            left: 50%;
-                                            margin-left: -8px;
-                                            border-top-color: #222;
-                                            border-top-style: solid;
-                                            border-top-width: 6px;
-                                        }
-
-                                        .tdbb8c41c-4392-4c77-b8a0-f60cb8f1857d.place-bottom {
-                                            margin-top: 10px;
-                                        }
-
-                                        .tdbb8c41c-4392-4c77-b8a0-f60cb8f1857d.place-bottom::before {
-                                            border-bottom: 8px solid transparent;
-                                        }
-
-                                        .tdbb8c41c-4392-4c77-b8a0-f60cb8f1857d.place-bottom::after {
-                                            border-left: 8px solid transparent;
-                                            border-right: 8px solid transparent;
-                                            top: -6px;
-                                            left: 50%;
-                                            margin-left: -8px;
-                                            border-bottom-color: #222;
-                                            border-bottom-style: solid;
-                                            border-bottom-width: 6px;
-                                        }
-
-                                        .tdbb8c41c-4392-4c77-b8a0-f60cb8f1857d.place-left {
-                                            margin-left: -10px;
-                                        }
-
-                                        .tdbb8c41c-4392-4c77-b8a0-f60cb8f1857d.place-left::before {
-                                            border-left: 8px solid transparent;
-                                        }
-
-                                        .tdbb8c41c-4392-4c77-b8a0-f60cb8f1857d.place-left::after {
-                                            border-top: 5px solid transparent;
-                                            border-bottom: 5px solid transparent;
-                                            right: -6px;
-                                            top: 50%;
-                                            margin-top: -4px;
-                                            border-left-color: #222;
-                                            border-left-style: solid;
-                                            border-left-width: 6px;
-                                        }
-
-                                        .tdbb8c41c-4392-4c77-b8a0-f60cb8f1857d.place-right {
-                                            margin-left: 10px;
-                                        }
-
-                                        .tdbb8c41c-4392-4c77-b8a0-f60cb8f1857d.place-right::before {
-                                            border-right: 8px solid transparent;
-                                        }
-
-                                        .tdbb8c41c-4392-4c77-b8a0-f60cb8f1857d.place-right::after {
-                                            border-top: 5px solid transparent;
-                                            border-bottom: 5px solid transparent;
-                                            left: -6px;
-                                            top: 50%;
-                                            margin-top: -4px;
-                                            border-right-color: #222;
-                                            border-right-style: solid;
-                                            border-right-width: 6px;
-                                        }
-                                    </style>
-                                    Nexachain BUSD real-time global events with links to transactions in blockchain
-                                </div>
                             </div>
                         </div>
                         <div class="grid grid-cols-3 gap-10 mt-5 lg:grid-cols-1 lg:gap-0 z-10">
@@ -992,7 +897,7 @@
                                                     class="h-full flex flex-wrap justify-center items-center mx-2.5 sm:mx-1.5 false">
                                                     <span
                                                         class="text-white-500 text-base sm:text-sm sm:leading-30px">+</span><span
-                                                        class="text-white text-base sm:text-sm mx-1 notranslate sm:leading-30px">5 BUSD </span><span
+                                                        class="text-white text-base sm:text-sm mx-1 notranslate sm:leading-30px">5 FDUSD </span><span
                                                         class="text-white-500 text-base sm:text-sm sm:leading-30px">in <span
                                                             class="notranslate text-light-purple"> x4 </span></span>
                                                 </div>
@@ -1041,7 +946,7 @@
                                                     class="h-full flex flex-wrap justify-center items-center mx-2.5 sm:mx-1.5 false">
                                                     <span
                                                         class="text-white-500 text-base sm:text-sm sm:leading-30px">+</span><span
-                                                        class="text-white text-base sm:text-sm mx-1 notranslate sm:leading-30px">5 BUSD </span><span
+                                                        class="text-white text-base sm:text-sm mx-1 notranslate sm:leading-30px">5 FDUSD </span><span
                                                         class="text-white-500 text-base sm:text-sm sm:leading-30px">in <span
                                                             class="notranslate text-main-blue"> x3 </span></span></div>
                                             </div>
@@ -1129,7 +1034,7 @@
                                                     class="h-full flex flex-wrap justify-center items-center mx-2.5 sm:mx-1.5 false">
                                                     <span
                                                         class="text-white-500 text-base sm:text-sm sm:leading-30px">+</span><span
-                                                        class="text-white text-base sm:text-sm mx-1 notranslate sm:leading-30px">5 BUSD </span><span
+                                                        class="text-white text-base sm:text-sm mx-1 notranslate sm:leading-30px">5 FDUSD </span><span
                                                         class="text-white-500 text-base sm:text-sm sm:leading-30px">in <span
                                                             class="notranslate text-light-purple"> x4 </span></span>
                                                 </div>
@@ -1178,7 +1083,7 @@
                                                     class="h-full flex flex-wrap justify-center items-center mx-2.5 sm:mx-1.5 false">
                                                     <span
                                                         class="text-white-500 text-base sm:text-sm sm:leading-30px">+</span><span
-                                                        class="text-white text-base sm:text-sm mx-1 notranslate sm:leading-30px">5 BUSD </span><span
+                                                        class="text-white text-base sm:text-sm mx-1 notranslate sm:leading-30px">5 FDUSD </span><span
                                                         class="text-white-500 text-base sm:text-sm sm:leading-30px">in <span
                                                             class="notranslate text-main-blue"> x3 </span></span></div>
                                             </div>
@@ -1226,7 +1131,7 @@
                                                     class="h-full flex flex-wrap justify-center items-center mx-2.5 sm:mx-1.5 false">
                                                     <span
                                                         class="text-white-500 text-base sm:text-sm sm:leading-30px">+</span><span
-                                                        class="text-white text-base sm:text-sm mx-1 notranslate sm:leading-30px">10 BUSD </span><span
+                                                        class="text-white text-base sm:text-sm mx-1 notranslate sm:leading-30px">10 FDUSD </span><span
                                                         class="text-white-500 text-base sm:text-sm sm:leading-30px">in <span
                                                             class="notranslate text-main-blue"> x3 </span></span></div>
                                             </div>
@@ -1314,7 +1219,7 @@
                                                     class="h-full flex flex-wrap justify-center items-center mx-2.5 sm:mx-1.5 false">
                                                     <span
                                                         class="text-white-500 text-base sm:text-sm sm:leading-30px">+</span><span
-                                                        class="text-white text-base sm:text-sm mx-1 notranslate sm:leading-30px">5 BUSD </span><span
+                                                        class="text-white text-base sm:text-sm mx-1 notranslate sm:leading-30px">5 FDUSD </span><span
                                                         class="text-white-500 text-base sm:text-sm sm:leading-30px">in <span
                                                             class="notranslate text-light-purple"> x4 </span></span>
                                                 </div>
@@ -1363,7 +1268,7 @@
                                                     class="h-full flex flex-wrap justify-center items-center mx-2.5 sm:mx-1.5 false">
                                                     <span
                                                         class="text-white-500 text-base sm:text-sm sm:leading-30px">+</span><span
-                                                        class="text-white text-base sm:text-sm mx-1 notranslate sm:leading-30px">5 BUSD </span><span
+                                                        class="text-white text-base sm:text-sm mx-1 notranslate sm:leading-30px">5 FDUSD </span><span
                                                         class="text-white-500 text-base sm:text-sm sm:leading-30px">in <span
                                                             class="notranslate text-main-blue"> x3 </span></span></div>
                                             </div>
@@ -1411,7 +1316,7 @@
                                                     class="h-full flex flex-wrap justify-center items-center mx-2.5 sm:mx-1.5 false">
                                                     <span
                                                         class="text-white-500 text-base sm:text-sm sm:leading-30px">+</span><span
-                                                        class="text-white text-base sm:text-sm mx-1 notranslate sm:leading-30px">10 BUSD </span><span
+                                                        class="text-white text-base sm:text-sm mx-1 notranslate sm:leading-30px">10 FDUSD </span><span
                                                         class="text-white-500 text-base sm:text-sm sm:leading-30px">in <span
                                                             class="notranslate text-light-purple"> x4 </span></span>
                                                 </div>
@@ -1468,90 +1373,8 @@
                                                 <div
                                                     class="__react_component_tooltip t4458817d-a47f-4f72-9885-a1a226636787 place-bottom type-dark"
                                                     id="Members total" data-id="tooltip">
-                                                    <style aria-hidden="true">
-                                                        .t4458817d-a47f-4f72-9885-a1a226636787 {
-                                                            color: #fff;
-                                                            background: #222;
-                                                            border: 1px solid transparent;
-                                                        }
 
-                                                        .t4458817d-a47f-4f72-9885-a1a226636787.place-top {
-                                                            margin-top: -10px;
-                                                        }
 
-                                                        .t4458817d-a47f-4f72-9885-a1a226636787.place-top::before {
-                                                            border-top: 8px solid transparent;
-                                                        }
-
-                                                        .t4458817d-a47f-4f72-9885-a1a226636787.place-top::after {
-                                                            border-left: 8px solid transparent;
-                                                            border-right: 8px solid transparent;
-                                                            bottom: -6px;
-                                                            left: 50%;
-                                                            margin-left: -8px;
-                                                            border-top-color: #222;
-                                                            border-top-style: solid;
-                                                            border-top-width: 6px;
-                                                        }
-
-                                                        .t4458817d-a47f-4f72-9885-a1a226636787.place-bottom {
-                                                            margin-top: 10px;
-                                                        }
-
-                                                        .t4458817d-a47f-4f72-9885-a1a226636787.place-bottom::before {
-                                                            border-bottom: 8px solid transparent;
-                                                        }
-
-                                                        .t4458817d-a47f-4f72-9885-a1a226636787.place-bottom::after {
-                                                            border-left: 8px solid transparent;
-                                                            border-right: 8px solid transparent;
-                                                            top: -6px;
-                                                            left: 50%;
-                                                            margin-left: -8px;
-                                                            border-bottom-color: #222;
-                                                            border-bottom-style: solid;
-                                                            border-bottom-width: 6px;
-                                                        }
-
-                                                        .t4458817d-a47f-4f72-9885-a1a226636787.place-left {
-                                                            margin-left: -10px;
-                                                        }
-
-                                                        .t4458817d-a47f-4f72-9885-a1a226636787.place-left::before {
-                                                            border-left: 8px solid transparent;
-                                                        }
-
-                                                        .t4458817d-a47f-4f72-9885-a1a226636787.place-left::after {
-                                                            border-top: 5px solid transparent;
-                                                            border-bottom: 5px solid transparent;
-                                                            right: -6px;
-                                                            top: 50%;
-                                                            margin-top: -4px;
-                                                            border-left-color: #222;
-                                                            border-left-style: solid;
-                                                            border-left-width: 6px;
-                                                        }
-
-                                                        .t4458817d-a47f-4f72-9885-a1a226636787.place-right {
-                                                            margin-left: 10px;
-                                                        }
-
-                                                        .t4458817d-a47f-4f72-9885-a1a226636787.place-right::before {
-                                                            border-right: 8px solid transparent;
-                                                        }
-
-                                                        .t4458817d-a47f-4f72-9885-a1a226636787.place-right::after {
-                                                            border-top: 5px solid transparent;
-                                                            border-bottom: 5px solid transparent;
-                                                            left: -6px;
-                                                            top: 50%;
-                                                            margin-top: -4px;
-                                                            border-right-color: #222;
-                                                            border-right-style: solid;
-                                                            border-right-width: 6px;
-                                                        }
-                                                    </style>
-                                                    Total number of members in Nexachain BUSD and last 24 hours change
                                                 </div>
                                             </div>
                                         </div>
@@ -1579,94 +1402,15 @@
                                                         fill-rule="evenodd" clip-rule="evenodd"
                                                         d="M17 10a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Zm-8.07 1.15c.04.04.09.06.15.06h.99c.073 0 .13-.02.17-.06a.547.547 0 0 0 .11-.19c.007-.06.023-.173.05-.34a1.4 1.4 0 0 1 .23-.52c.12-.167.287-.363.5-.59.293-.32.513-.603.66-.85.153-.247.23-.537.23-.87a1.61 1.61 0 0 0-.25-.85c-.16-.273-.42-.497-.78-.67-.353-.18-.807-.27-1.36-.27-.533 0-.997.1-1.39.3-.393.193-.697.45-.91.77-.207.32-.317.663-.33 1.03 0 .073.02.133.06.18.047.047.103.07.17.07h.87c.147 0 .243-.077.29-.23.133-.647.523-.97 1.17-.97.287 0 .53.08.73.24.207.16.297.377.27.65a.864.864 0 0 1-.19.46 5.091 5.091 0 0 1-.5.56c-.293.293-.523.56-.69.8-.167.24-.267.517-.3.83-.007.073-.01.18-.01.32 0 .053.02.1.06.14Zm-.05 2.25c.047.047.103.07.17.07h.99a.244.244 0 0 0 .18-.07.231.231 0 0 0 .07-.17v-.89a.218.218 0 0 0-.08-.17.231.231 0 0 0-.17-.07h-.99a.231.231 0 0 0-.17.07.231.231 0 0 0-.07.17v.89c0 .067.023.123.07.17Z"></path></svg></button><div
                                                 class="__react_component_tooltip te9d343a9-ffdc-464d-a784-b847dc42a7ec place-bottom type-dark"
-                                                id="Members received" data-id="tooltip"><style aria-hidden="true">
-  	.te9d343a9-ffdc-464d-a784-b847dc42a7ec {
-        color: #fff;
-        background: #222;
-        border: 1px solid transparent;
-    }
+                                                id="Members received" data-id="tooltip">
 
-    .te9d343a9-ffdc-464d-a784-b847dc42a7ec.place-top {
-        margin-top: -10px;
-    }
+                                            </div></div></span>
 
-    .te9d343a9-ffdc-464d-a784-b847dc42a7ec.place-top::before {
-        border-top: 8px solid transparent;
-    }
-
-    .te9d343a9-ffdc-464d-a784-b847dc42a7ec.place-top::after {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        bottom: -6px;
-        left: 50%;
-        margin-left: -8px;
-        border-top-color: #222;
-        border-top-style: solid;
-        border-top-width: 6px;
-    }
-
-    .te9d343a9-ffdc-464d-a784-b847dc42a7ec.place-bottom {
-        margin-top: 10px;
-    }
-
-    .te9d343a9-ffdc-464d-a784-b847dc42a7ec.place-bottom::before {
-        border-bottom: 8px solid transparent;
-    }
-
-    .te9d343a9-ffdc-464d-a784-b847dc42a7ec.place-bottom::after {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        top: -6px;
-        left: 50%;
-        margin-left: -8px;
-        border-bottom-color: #222;
-        border-bottom-style: solid;
-        border-bottom-width: 6px;
-    }
-
-    .te9d343a9-ffdc-464d-a784-b847dc42a7ec.place-left {
-        margin-left: -10px;
-    }
-
-    .te9d343a9-ffdc-464d-a784-b847dc42a7ec.place-left::before {
-        border-left: 8px solid transparent;
-    }
-
-    .te9d343a9-ffdc-464d-a784-b847dc42a7ec.place-left::after {
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        right: -6px;
-        top: 50%;
-        margin-top: -4px;
-        border-left-color: #222;
-        border-left-style: solid;
-        border-left-width: 6px;
-    }
-
-    .te9d343a9-ffdc-464d-a784-b847dc42a7ec.place-right {
-        margin-left: 10px;
-    }
-
-    .te9d343a9-ffdc-464d-a784-b847dc42a7ec.place-right::before {
-        border-right: 8px solid transparent;
-    }
-
-    .te9d343a9-ffdc-464d-a784-b847dc42a7ec.place-right::after {
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        left: -6px;
-        top: 50%;
-        margin-top: -4px;
-        border-right-color: #222;
-        border-right-style: solid;
-        border-right-width: 6px;
-    }
-  </style>Total amount received by all members of Nexachain and last 24 hours change</div></div></span>
                                     <div
                                         class="flex flex-col py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
                                         <span
-                                            class="text-2xl text-white font-bold sm:text-xl">147 094 333.87 BUSD</span><span
-                                            class="text-green-light text-base items-baseline sm:text-sm">+ 17 041.7 BUSD</span>
+                                            class="text-2xl text-white font-bold sm:text-xl">147 094 333.87 FDUSD</span><span
+                                            class="text-green-light text-base items-baseline sm:text-sm">+ 17 041.7 FDUSD</span>
                                     </div>
                                     <div
                                         class="flex flex-col py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
@@ -1677,7 +1421,7 @@
                                 </div>
                                 <div class="bg-gray rounded p-5 flex flex-col flex-1 max-w-full">
                                     <div class="flex justify-between items-center text-base text-white-500 sm:text-sm">
-                                        <span>Nexachain BUSD Contracts</span>
+                                        <span>Nexachain FDUSD Contracts</span>
                                         <button
                                             class="rounded-full h-5 w-5 justify-center items-center bg-main-blue hidden lg:flex">
                                             <svg class="stroke-current text-white" width="8" height="4" fill="#fff"
@@ -1839,7 +1583,7 @@
                                             <div
                                                 class="flex flex-col py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
                                                 <span class="text-base text-white-500 sm:text-sm"><span>Turnover, <span
-                                                            class="notranslate">BUSD</span> </span></span><span
+                                                            class="notranslate">FDUSD</span> </span></span><span
                                                     class="text-2xl text-white font-bold sm:text-xl">294 188 667.74</span><span
                                                     class="text-green-light text-base items-baseline sm:text-sm">+ 34 083.4</span>
                                             </div>
@@ -1912,7 +1656,7 @@
                             </svg>
                         </a><a
                             class="w-7 h-7 flex justify-center items-center rounded-full bg-white-100 hover:bg-white-300"
-                            target="_blank" href="https://www.youtube.com/@FORSAGECommunity/">
+                            target="_blank" href="https://www.youtube.com/@NEXACHAINCommunity/">
                             <svg class="w-4 h-4" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M13.326 1.702A1.687 1.687 0 0 0 12.163.494C11.13.2 6.998.2 6.998.2S2.867.2 1.834.482C1.279.64.822 1.115.67 1.702.398 2.775.398 5 .398 5s0 2.236.272 3.298c.153.587.598 1.05 1.164 1.208 1.043.294 5.164.294 5.164.294s4.132 0 5.165-.282a1.687 1.687 0 0 0 1.164-1.209c.271-1.073.271-3.298.271-3.298s.011-2.236-.272-3.309ZM5.683 7.055v-4.11L9.119 5 5.683 7.055Z"
