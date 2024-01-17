@@ -307,7 +307,7 @@ var subcription = function () {
         window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
         var id=  await window.mxgfcontract.methods.userIDs(account).call();
         console.log(id)
-        if (id>=0){
+        if (id>0){
             $.ajax({
                 url: configs.routes.login_next,
                 type: "GET",

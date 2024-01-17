@@ -980,29 +980,29 @@
                                                 class="flex w-5/12 h-full flex-col items-start justify-end sm:w-full flex-wrap sm:mb-7.5">
                                                 <div class="flex flex-wrap -m-1">
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                 </div>
                                             </div>
                                             <div
@@ -1213,12 +1213,12 @@
                                                 <div class="flex" id="content_lotto">
                                                 </div>
                                                 <div class="flex sm:w-full">
-                                                    <button onclick="lottery.sendLottery()" type="button" id="btn_lotto"
-                                                            class=" flex justify-center items-center text-center
+                                                    <button  type="button" id="btn_lotto"
+                                                            class="cursor-not-allowed flex justify-center items-center text-center
                                                              text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-cyan-300
                                                               hover:bg-hover-cyan-300 active:bg-active-cyan-300 z-0 sm:w-full text-white">
                                                         <div class="flex flex-col space-y-1 items-center">
-                                                            <div class="flex items-center">Send Now
+                                                            <div class="flex items-center">COMING SOON
                                                                 <i id="spinner_send" class="loading"></i>
                                                                 <svg id="spinner_send_svg" width="17" height="17" viewBox="0 0 17 17" fill="none"
                                                                      xmlns="http://www.w3.org/2000/svg">
@@ -1261,35 +1261,35 @@
                                                 class="flex w-5/12 h-full flex-col items-start justify-end sm:w-full flex-wrap sm:mb-7.5">
                                                 <div class="flex flex-wrap -m-1">
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                     <div
-                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-main-blue "></div>
+                                                        class="flex items-center justify-center m-1 w-7.5 h-7.5 rounded-md bg-white-100 "></div>
                                                 </div>
                                             </div>
                                             <div

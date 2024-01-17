@@ -93,10 +93,14 @@ class DashboardController extends Controller
                 $user->id_contract=$request->get("id");
                 $user->save();
             }
+            Session::put("id_connect",$id);
+            Session::put("address_connect",$address);
+            return response()->json(['data' =>  [], 'status'=> 200],405);
+        }else{
+            return response()->json(['data' =>  [], 'status'=> 405],405);
         }
-        Session::put("id_connect",$id);
-        Session::put("address_connect",$address);
-        return response()->json(['data' =>  [], 'status'=> true]);
+
+
     }
     function check_register(Request $request){
         $is_in=false;

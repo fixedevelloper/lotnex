@@ -612,7 +612,7 @@
                         <div class="flex flex-col sm:px-5"><span
                                 class="text-white text-3xl font-bold ">Account preview</span><span
                                 class="text-white-500 text-base mt-1 mb-7.5">Look up any <span
-                                    class="notranslate mx-1.5">Nexachain BUSD</span> member account in preview mode. Enter ID or <span
+                                    class="notranslate mx-1.5">Nexachain FDUSD</span> member account in preview mode. Enter ID or <span
                                     class="notranslate mx-1.5">FDUSD</span> address to preview or click Demo to view a random account.</span>
                         </div>
                         <div class="flex sm:flex-col">
@@ -831,7 +831,7 @@
                         <div class="grid grid-cols-3 gap-10 mt-5 lg:grid-cols-1 lg:gap-0 z-10">
                             <div
                                 class="notranslate w-full overflow-hidden flex flex-col col-span-2 p-5 bg-gray rounded h-[1000px]  lg:order-2 sm:rounded-none sm:p-5 sm:max-h-3/4">
-                                <div class="flex -mr-10 pr-10 flex-col flex-1 overflow-auto">
+                                {{--<div class="flex -mr-10 pr-10 flex-col flex-1 overflow-auto">
                                     <div
                                         class="flex items-center justify-between py-5 border-line-gray border-b first:pt-0 w-full sm:py-5 sm:items-start">
                                         <div class="flex items-center sm:items-start justify-start sm:w-full">
@@ -1340,7 +1340,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>--}}
                                 <button
                                     class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-white-100 hover:bg-white-300 w-full rounded-mini mt-5 flex justify-center items-center">
                                     <svg class="mr-2.5" width="21" height="20" fill="#fff"
@@ -1598,7 +1598,7 @@
                         style="background-image: url({{asset('lmodel/blue-blur.png')}}); background-repeat: round; background-size: cover;"
                         class="absolute left-1/2 -bottom-1/2 transform -translate-x-1/2 w-full h-full z-0 sm:hidden"></div>
                 </div>
-                <div class="sm:px-5">
+{{--                <div class="sm:px-5">
                     <button
                         class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none banners-notifybot-wrapper relative w-full flex sm:flex-col justify-between sm:items-center bg-[#0B0316] rounded px-7.5 pb-3 sm:pb-0 pt-5 min-h-[143px] sm:min-h-[359px]">
                         <svg class="absolute top-2.5 right-2.5" width="20" height="20" fill="none"
@@ -1627,7 +1627,7 @@
                         class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-main-blue hover:bg-hover-main-blue active:bg-active-main-blue font-medium rounded-mini sm:w-full">
                         Contact support
                     </button>
-                </div>
+                </div>--}}
             </div>
             <footer
                 class="flex z-10  items-center  justify-between  py-10 w-full sm:justify-start sm:items-start sm:flex-col sm:px-5 sm:pt-7.5 sm:pb-12 sm:mt-0">
