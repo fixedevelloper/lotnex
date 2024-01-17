@@ -670,7 +670,7 @@
                                                             <path d="M4 10V1m0 0L1 4m3-3 3 3" stroke-linecap="round"
                                                                   stroke-linejoin="round"></path>
                                                         </svg>
-                                                        {{$total_up}}
+                                                       {{-- {{$total_up}}--}}0
                                                     </div>
                                                     <img src="{{asset('lmodel/activity_green.png')}}"
                                                          class="ml-2.5 w-6 h-6"></div>
@@ -880,9 +880,11 @@
                                     <span class="text-base sm:text-sm"> Info </span></button>
                             </div>
                             <div class="grid w-full gap-10 mt-8 grid-cols-2 sm:grid-cols-1">
-                                <a
+                                <a class="cursor-not-allowed relative flex flex-col p-7.5 w-full bg-gray rounded z-10 overflow-hidden justify-between min-h-programDashboard sm:p-5 sm:min-h-programDashboardMobile"
+                                   >
+                               {{-- <a
                                     class="relative flex flex-col p-7.5 w-full bg-gray rounded z-10 overflow-hidden justify-between min-h-programDashboard sm:p-5 sm:min-h-programDashboardMobile"
-                                    href="{{route('nextpreviuos',['id'=>$id,'type'=>'qore'])}}">
+                                    href="{{route('nextpreviuos',['id'=>$id,'type'=>'qore'])}}">--}}
                                     <svg class="absolute top-2 right-2 sm:top-1 sm:right-1 " width="20" height="20"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -939,7 +941,7 @@
                                                     <button
                                                         class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-main-blue hover:bg-hover-main-blue active:bg-active-main-blue z-0 sm:w-full pointer-events-none text-white">
                                                         <div class="flex flex-col space-y-1 items-start">
-                                                            <div class="flex items-center">Preview
+                                                            <div class="flex items-center">COMING SOON
                                                                 <svg class="ml-3 fill-current" width="16" height="16"
                                                                      fill="#fff" xmlns="http://www.w3.org/2000/svg">
                                                                     <path fill-rule="evenodd" clip-rule="evenodd"
