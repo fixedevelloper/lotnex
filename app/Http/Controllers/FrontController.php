@@ -83,17 +83,22 @@ class FrontController extends Controller
             $isLogged=true;
         }
         $user=User::query()->firstWhere(['id_contract'=>$id]);
+        $teams=0;
         if (is_null($user)){
             $activate_level=null;
         }else{
+            $teams=User::query()->where(['address_parent'=>$user->address_parent])->sum('direct_patner_count');
             $activate_level=ActivationLevel::query()->firstWhere(['address'=>$user->address]);
         }
+
+
         return view('lmodel1', [
             "participants"=>$participants,
             "id"=>$id,
             "isLogged"=>$isLogged,
             "user"=>$user,
-            "activate_level"=>$activate_level
+            "activate_level"=>$activate_level,
+            'teams'=>$teams
         ]);
 
     }

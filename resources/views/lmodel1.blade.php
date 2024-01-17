@@ -562,7 +562,7 @@
                                             src="{{asset('lmodel/fdusd.png')}}" alt="">
                                         <div class="flex flex-col px-5 py-5 w-full">
                                             <div class="flex items-center mb-1"><span
-                                                    class="text-white-500 text-base sm:text-sm sm:whitespace-nowrap">Profits</span>
+                                                    class="text-white-500 text-base sm:text-sm sm:whitespace-nowrap">PROFITS</span>
                                             </div>
                                             <div class="flex items-center justify-between">
                                                 <div class="flex flex-1 w-full text-white text-2xl font-bold notranslate sm:text-xl !mt-1 !sm:mt-2.5 mt-5 sm:mt-2.5">
@@ -670,7 +670,7 @@
                                                             <path d="M4 10V1m0 0L1 4m3-3 3 3" stroke-linecap="round"
                                                                   stroke-linejoin="round"></path>
                                                         </svg>
-                                                        7
+                                                        0
                                                     </div>
                                                     <img src="{{asset('lmodel/activity_green.png')}}"
                                                          class="ml-2.5 w-6 h-6"></div>
@@ -686,7 +686,7 @@
                                                         class="text-white-500 text-base sm:text-sm sm:whitespace-nowrap">Team</span>
                                                 </div>
                                                 <span
-                                                    class="text-white text-2xl font-bold notranslate sm:text-xl !mt-1 !sm:mt-2.5 mt-5 sm:mt-2.5">1644313</span>
+                                                    class="text-white text-2xl font-bold notranslate sm:text-xl !mt-1 !sm:mt-2.5 mt-5 sm:mt-2.5">{{$teams}}</span>
                                             </div>
                                             <div class="flex p-2.5 w-full">
                                                 <div
@@ -714,7 +714,7 @@
                                                     class="text-white-500 text-base sm:text-sm sm:whitespace-nowrap">Ratio</span>
                                             </div>
                                             <span
-                                                class="text-white text-2xl font-bold notranslate sm:text-xl !mt-1 !sm:mt-2.5 mt-5 sm:mt-2.5">2653 %</span>
+                                                class="text-white text-2xl font-bold notranslate sm:text-xl !mt-1 !sm:mt-2.5 mt-5 sm:mt-2.5">0 %</span>
                                         </div>
                                         <div class="flex p-2.5 w-full">
                                             <div
