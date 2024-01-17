@@ -90,7 +90,7 @@ class FrontController extends Controller
             $activate_level=null;
         }else{
             $teams=User::query()->where(['address_parent'=>$user->address_parent])->sum('direct_patner_count');
-            $start=Carbon::today()->hour(0)->minutes(0)->format("y-m-d h:j:s");
+            $start=Carbon::today()->setTime(0,0,0)->format("y-m-d h:j:s");
 
             $end=Carbon::today()->addDays(1)->format("y-m-d h:j:s");
             logger("time1:".$start);
