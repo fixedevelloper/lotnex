@@ -91,8 +91,8 @@ class FrontController extends Controller
         if (is_null($user)){
             $activate_level=null;
         }else{
-            $team=Helper::calculTeam($user);
-            logger($team);
+            //$team=Helper::calculTeam($user);
+           // logger($team);
             $teams=User::query()->where(['address_parent'=>$user->address_parent])->sum('direct_patner_count');
             $start=Carbon::today()->setTime(1,00,00)->format("Y-m-d h:i:s");
 
