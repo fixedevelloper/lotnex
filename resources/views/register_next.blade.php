@@ -473,7 +473,7 @@
                                             </a></div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>{{--
                             <div class="flex flex-col items-start">
                                 <div class="flex ">
                                     <div
@@ -481,7 +481,7 @@
                                     <div class="flex flex-wrap items-center ml-2.5 leading-5 text-base whitespace-nowrap undefined">
                                         <span><span>Approve BUSD</span></span></div>
                                 </div>
-                            </div>
+                            </div>--}}
                         </div>
                     </div>
                     <div class="flex flex-col items-start sm:items-center space-y-2.5">

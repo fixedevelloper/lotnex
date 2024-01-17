@@ -95,7 +95,7 @@ $(document).ready(function() {
     Countdown
     --------------------------*/
     $('#countdown').countdown({
-        date: '01/17/2024 14:00:00',
+        date: '01/17/2024 14:30:00',
         day: 'Day',
         days: 'Days'
     });

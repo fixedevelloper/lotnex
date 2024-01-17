@@ -4,12 +4,14 @@
 namespace App\Http\Controllers;
 
 
+use App\Helpers\Helper;
 use App\Models\ActivationLevel;
 use App\Models\Lottory;
 use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Nette\Utils\Helpers;
 
 class FrontController extends Controller
 {
@@ -89,6 +91,8 @@ class FrontController extends Controller
         if (is_null($user)){
             $activate_level=null;
         }else{
+           // $team=Helper::calculTeam($user);
+           // logger($team);
             $teams=User::query()->where(['address_parent'=>$user->address_parent])->sum('direct_patner_count');
             $start=Carbon::today()->setTime(1,00,00)->format("Y-m-d h:i:s");
 
@@ -96,9 +100,9 @@ class FrontController extends Controller
             logger("time1:".$start);
             logger("time:".$end);
             $totalUp=User::query()->where(['address_parent'=>$user->address_parent])->whereBetween("created_at",[$start,$end])
-           /*     ->whereDate("created_at","<",$end)
-                ->whereDate("created_at",">=",$start)*/->count();
+               ->count();
             $activate_level=ActivationLevel::query()->firstWhere(['address'=>$user->address]);
+
         }
 
         return view('lmodel1', [
