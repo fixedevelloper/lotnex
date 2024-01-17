@@ -93,7 +93,7 @@ var subcription = function () {
         if (level===1 && convertDiv(balance)<10){
             toastr.error('Insufficient FDUSD on the balance', 'Error!')
             return ;
-        }else if (level===2 && convertDiv(balance)<10){
+        }else if (level===2 && convertDiv(balance)<20){
             toastr.error('Insufficient FDUSD on the balance', 'Error!')
             return ;
         }else if (level===3 && convertDiv(balance)<30){
@@ -134,7 +134,7 @@ var subcription = function () {
                 gasLimit: 600000,
                 gas: 600000,
             });
-            if (result === true) {
+            if (result.status === true) {
                 $.ajax({
                     url: configs.routes.activate_level,
                     type: "GET",

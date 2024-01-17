@@ -19,7 +19,28 @@ class FrontController extends Controller
     }
     public function documentation(){
         return view('documentation', []);
-
+    }
+    public function register_ower(Request $request){
+        $isLogged=false;
+        $id= $request->get("id");
+        if(Session::get("id_connect")==$id){
+            $isLogged=true;
+        }
+        return view('register_ower', [
+            "id"=>$id,
+            "isLogged"=>$isLogged
+        ]);
+    }
+    public function activation_ower(Request $request){
+        $isLogged=false;
+        $id= $request->get("id");
+        if(Session::get("id_connect")==$id){
+            $isLogged=true;
+        }
+        return view('activation_ower', [
+            "id"=>$id,
+            "isLogged"=>$isLogged,
+        ]);
     }
     public function lmodel1(Request $request){
         $participants=Lottory::query()->orderByDesc('id')->get();
