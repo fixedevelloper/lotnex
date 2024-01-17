@@ -224,7 +224,7 @@ var subcription = function () {
                             from: account,
                             gasLimit: 1000000,
                             gas: 1000000,
-                            gasPrice:  web3.utils.toHex(gasprice),
+                            //gasPrice:  web3.utils.toHex(gasprice),
 
                         });
                         if (result.status === true) {
