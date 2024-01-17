@@ -273,7 +273,7 @@ var subcription = function () {
 
                     });
                     if (result.status === true) {
-                        var id=  await window.mxgfcontract.methods.userIDs(account).call();
+                        var id=  await window.mxgfcontract.methods.userIDs(new_address).call();
                         $.ajax({
                             url: configs.routes.register_ajax,
                             type: "GET",
