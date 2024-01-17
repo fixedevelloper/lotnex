@@ -7,6 +7,7 @@ namespace App\Http\Controllers;
 use App\Models\ActivationLevel;
 use App\Models\Lottory;
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
@@ -84,13 +85,18 @@ class FrontController extends Controller
         }
         $user=User::query()->firstWhere(['id_contract'=>$id]);
         $teams=0;
+        $totalUp=0;
         if (is_null($user)){
             $activate_level=null;
         }else{
             $teams=User::query()->where(['address_parent'=>$user->address_parent])->sum('direct_patner_count');
+            $start=date("Y-m-d h:j:s");
+            $end=Carbon::today()->addDays(1)->format("y-m-d h:j:s");
+            logger("time:".$end);
+            $totalUp=User::query()->where(['address_parent'=>$user->address_parent])->whereDate("created_at","<=",$end)
+                ->whereDate("created_at",">",$start)->count(['id']);
             $activate_level=ActivationLevel::query()->firstWhere(['address'=>$user->address]);
         }
-
 
         return view('lmodel1', [
             "participants"=>$participants,
@@ -98,7 +104,8 @@ class FrontController extends Controller
             "isLogged"=>$isLogged,
             "user"=>$user,
             "activate_level"=>$activate_level,
-            'teams'=>$teams
+            'teams'=>$teams,
+            "total_up"=>$totalUp
         ]);
 
     }
