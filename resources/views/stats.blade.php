@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{asset('toast/toastr.scss')}}" data-n-g="">
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/custom_next.css')}}" data-n-g="">
 
-    <title>Links | NEXACHAIN FDUSD</title>
+    <title>Stats | NEXACHAIN FDUSD</title>
     <style id="abu-collapse-styles" type="text/css"></style>
 
 </head>
@@ -381,11 +381,11 @@
                                     <div class="flex"><a class="mr-1.5 text text-white-300 sm:text-sm"
                                                          href="{{route("lmodel1",["id"=>$id])}}"><span class="hover:text-white-500">ID {{$id}}</span>
                                             /</a></div>
-                                    <span class="text text-white whitespace-nowrap sm:text-sm">Nexachain Partners </span><span
+                                    <span class="text text-white whitespace-nowrap sm:text-sm">Nexachain Stats </span><span
                                         class="text text-white whitespace-nowrap ml-1.5 sm:text-sm"></span></div>
                                 <div class="w-full flex justify-between flex-wrap">
                                     <div class="flex flex-wrap items-center"><span
-                                            class="text-two-half text-white font-medium mr-2 sm:text-2xl sm:max-w-[170px]">Nexachain Partners</span>
+                                            class="text-two-half text-white font-medium mr-2 sm:text-2xl sm:max-w-[170px]">Nexachain Stats</span>
                                     </div>
                                     <div class="flex flex-col items-end">
                                     </div>

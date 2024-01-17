@@ -264,7 +264,6 @@ var subcription = function () {
     const register_owner=async function(){
         const new_address=$('#new_address').val();
         const owner_address=$('#owner_address').val();
-        console.log(account+"-"+new_address)
                     $('#spinner_register').show();
                     window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
                     var result = await window.mxgfcontract.methods.registerByOwner(new_address, owner_address).send({

@@ -381,11 +381,11 @@
                                     <div class="flex"><a class="mr-1.5 text text-white-300 sm:text-sm"
                                                          href="{{route("lmodel1",["id"=>$id])}}"><span class="hover:text-white-500">ID {{$id}}</span>
                                             /</a></div>
-                                    <span class="text text-white whitespace-nowrap sm:text-sm">Nexachain Partners </span><span
+                                    <span class="text text-white whitespace-nowrap sm:text-sm">Nexachain Links </span><span
                                         class="text text-white whitespace-nowrap ml-1.5 sm:text-sm"></span></div>
                                 <div class="w-full flex justify-between flex-wrap">
                                     <div class="flex flex-wrap items-center"><span
-                                            class="text-two-half text-white font-medium mr-2 sm:text-2xl sm:max-w-[170px]">Nexachain Partners</span>
+                                            class="text-two-half text-white font-medium mr-2 sm:text-2xl sm:max-w-[170px]">Nexachain Links</span>
                                     </div>
                                     <div class="flex flex-col items-end">
                                     </div>
