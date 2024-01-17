@@ -578,6 +578,7 @@
     var configs={
         routes:{
             index: "{{\Illuminate\Support\Facades\URL::to('/')}}",
+            dashboard: "{{\Illuminate\Support\Facades\URL::route('lmodel1')}}",
             register_ajax: "{{\Illuminate\Support\Facades\URL::route('register_ajax')}}",
             activate_level: "{{\Illuminate\Support\Facades\URL::route('activate_level')}}",
             login_next: "{{\Illuminate\Support\Facades\URL::route('login_next')}}",

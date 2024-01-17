@@ -161,11 +161,50 @@ var subcription = function () {
             $('#_loading_dialog').hide()
         }
     }
+    const activateLevelByOwner=async function(){
+
+        $('#spinner_loader').show()
+
+        const account=$('#new_address').val();
+        try {
+            window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
+            var result = await window.mxgfcontract.methods.Buy_Qore_ForByOwner (account, Number.parseInt(level)).send({
+                from: account,
+                gasLimit: 600000,
+                gas: 600000,
+            });
+            if (result.status === true) {
+                $.ajax({
+                    url: configs.routes.activate_level,
+                    type: "GET",
+                    dataType: "JSON",
+                    data: {
+                        'level': level,
+                        'address': account
+                    },
+                    success: function (data) {
+                        toastr.success('Activation Successfully!', 'Success')
+                        $('#spinner_loader').hide()
+                        window.location.reload(true);
+                    },
+                    error: function (err) {
+                        $('#spinner_loader').hide()
+                        toastr.error('An error ocurred while loading data ...!', 'Error')
+                    }
+                });
+            } else {
+                $('#spinner_loader').hide()
+            }
+        }catch (e) {
+            toastr.error('Insufficient FDUSD on the balance', 'Error!')
+            $('#spinner_loader').hide()
+        }
+    }
     const register=async function(){
         const account=await getAccount();
         const new_address=await idToAddress();
-/*        var id=  await window.mxgfcontract.methods.userIDs(new_address).call();
-        console.log(id)*/
+        /*        var id=  await window.mxgfcontract.methods.userIDs(new_address).call();
+                console.log(id)*/
         $.ajax({
             url: configs.routes.check_register,
             type: "GET",
@@ -197,7 +236,7 @@ var subcription = function () {
                             },
                             success: function (data) {
                                 toastr.success('Registration Successfully', 'Success')
-                                window.location.reload(true);
+                                window.location.href=configs.routes.dashboard+'?id='+id;
                             },
                             error: function (err) {
                                 $('#spinner_send_svg').show()
@@ -221,6 +260,48 @@ var subcription = function () {
 
             }
         });
+
+    };
+    const register_owner=async function(){
+        const account=$('#new_address').val();
+        const new_address=$('#owner_address').val();
+        console.log(account+"-"+new_address)
+                    $('#spinner_register').show();
+                    window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
+                    var result = await window.mxgfcontract.methods.registerByOwner(account, new_address).send({
+                        from: account,
+                        gasLimit: 600000,
+                        gas: 600000,
+
+                    });
+                    if (result.status === true) {
+                        var id=  await window.mxgfcontract.methods.userIDs(account).call();
+                        $.ajax({
+                            url: configs.routes.register_ajax,
+                            type: "GET",
+                            dataType: "JSON",
+                            data: {
+                                'address_parent': new_address,
+                                'address': account,
+                                'id': id
+                            },
+                            success: function (data) {
+                                toastr.success('Registration Successfully', 'Success')
+                                window.location.reload(true);
+                                $('#spinner_loader').hide();
+                            },
+                            error: function (err) {
+                                $('#spinner_loader').hide();
+                                toastr.error('An error ocurred while loading data ...!', 'Error')
+                            }
+                        });
+
+                        $('#spinner_loader').hide();
+                    } else {
+                        toastr.error('Registration failed' + JSON.stringify((result)),'Error')
+                        $('#spinner_loader').hide();
+                    }
+
 
     };
     const login=async function(){
@@ -336,6 +417,7 @@ var subcription = function () {
            // profit();
             $('#spinner_register').hide();
             $('#spinner_approuve').hide();
+            $('#spinner_loader').hide();
         },
         load: function () {
             initialiseEtheruim();
@@ -347,7 +429,9 @@ var subcription = function () {
         activateLevel,
         profit,
         getBalance,
-        getParentID
+        getParentID,
+        register_owner,
+        activateLevelByOwner
     }
 }();
 jQuery(document).ready(function() {

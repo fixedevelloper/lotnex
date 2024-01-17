@@ -1712,6 +1712,7 @@
     var configs={
         routes:{
             index: "{{\Illuminate\Support\Facades\URL::to('/')}}",
+            dashboard: "{{\Illuminate\Support\Facades\URL::route('lmodel1')}}",
             sendLottory: "{{\Illuminate\Support\Facades\URL::route('sendlottory')}}",
         }
     }

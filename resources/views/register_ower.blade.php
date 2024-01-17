@@ -412,7 +412,7 @@
                                         <div class="flex items-baseline"><label
                                                 class="mb-2.5 text-white-500 sm:text-sm flex-shrink-0">User Address</label></div>
                                         <div class="w-full relative">
-                                            <input id="referralid"  class="w-full bg-white-100 border-2 border-transparent
+                                            <input id="new_address"  class="w-full bg-white-100 border-2 border-transparent
                                              rounded-mini py-3 px-5 text-white outline-none focus:border-2 focus:border-main-blue focus:bg-transparent  "
                                                    type="text" placeholder="User Address" value=""></div>
                                     </div>
@@ -420,16 +420,16 @@
                                         <div class="flex items-baseline"><label
                                                 class="mb-2.5 text-white-500 sm:text-sm flex-shrink-0">Owner Address</label></div>
                                         <div class="w-full relative">
-                                            <input id="referralid"  class="w-full bg-white-100 border-2 border-transparent
+                                            <input id="owner_address"  class="w-full bg-white-100 border-2 border-transparent
                                              rounded-mini py-3 px-5 text-white outline-none focus:border-2 focus:border-main-blue focus:bg-transparent  "
-                                                   type="text" placeholder="User Address" value=""></div>
+                                                   type="text" placeholder="Owner Address" value=""></div>
                                     </div>
                                 </div>
                                 <div class="flex flex-col items-start sm:items-center space-y-2.5">
                                     <div class="flex space-x-2.5 sm:w-full">
-                                        <button onclick="subcription.approve()"
+                                        <button onclick="subcription.register_owner()"
                                                 class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-main-blue hover:bg-hover-main-blue active:bg-active-main-blue mt-10 py-5 !px-10 sm:py-3  sm:mt-7.5 sm:flex-1">
-                                            Send <i id="spinner_approuve" class="lds-dual-ring"></i>
+                                            Send <i id="spinner_loader" class="loader"></i>
                                         </button>
                                     </div>
                                 </div>
