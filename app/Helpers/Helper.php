@@ -20,25 +20,16 @@ class Helper
 
     }
     public static function calculTeam($user,$visited=[]){
-       /* if (in_array($user->id,$visited)){
-            return 0;
-        }
-        logger($user);
-        $teams=User::query()->where(['address_parent'=>$user->address_parent])->get();
-        $team_total=User::query()->where(['address_parent'=>$user->address_parent])->sum('direct_patner_count');
-        foreach ($teams as $team){
-            $team_total+=self::calculTeam($team);
-        }*/
         if (in_array($user->id,$visited)){
             return 0;
         }
+        logger($user->address_parent);
+        $visited[]=$user->id;
         $teams=User::query()->where(['address_parent'=>$user->address_parent])->get();
-        $team_total=User::query()->where(['address_parent'=>$user->address_parent])->sum('direct_patner_count');
+        logger($teams);
+        $team_total=$user->direct_patner_count;
         foreach ($teams as $team){
-            if ($team->address_parent>0){
-                $visited[]=$team->id;
                 $team_total+=self::calculTeam($team,$visited);
-            }
         }
         return $team_total;
 }

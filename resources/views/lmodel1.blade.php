@@ -686,7 +686,7 @@
                                                         class="text-white-500 text-base sm:text-sm sm:whitespace-nowrap">Team</span>
                                                 </div>
                                                 <span
-                                                    class="text-white text-2xl font-bold notranslate sm:text-xl !mt-1 !sm:mt-2.5 mt-5 sm:mt-2.5">{{$teams}}</span>
+                                                    class="text-white text-2xl font-bold notranslate sm:text-xl !mt-1 !sm:mt-2.5 mt-5 sm:mt-2.5"><span id="team_total" ></span></span>
                                             </div>
                                             <div class="flex p-2.5 w-full">
                                                 <div
@@ -1796,7 +1796,9 @@
         'use strict';
         subcription.getParentID();
         subcription.profit();
-        subcription.getTotalInvested()
+        subcription.getTotalInvested();
+        subcription.getTeam()
+
     });
 </script>
 </body>

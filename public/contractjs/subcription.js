@@ -387,6 +387,27 @@ var subcription = function () {
         $('#total_invest').text(total_invest)
       //  $('#total_user').text(total_user)
     };
+    const getTeam= async function(){
+        const account= await getAccountBy_id();
+        const de =await calculateTotalTeam(account)
+        console.log(de);
+        $("#team_total").text(de)
+    }
+    const calculateTotalTeam= async function( userAddress,visited = new Set()){
+        window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
+        if (visited.has(userAddress)) {
+            return 0;
+        }
+        visited.add(userAddress);
+        let totalCount =Number.parseInt( await window.mxgfcontract.methods.getDirectPartnersCount(userAddress).call());
+
+        const partnersAddresses =  await window.mxgfcontract.methods.getDirectDownlineInfos(userAddress).call();
+        for (const partnerAddress of filterAdresse(partnersAddresses[0])) {
+            totalCount += Number.parseInt(await calculateTotalTeam( partnerAddress, visited)) ;
+        }
+
+        return totalCount;
+    }
     const getParentID=async function(){
         window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
         var new_adress=  await window.mxgfcontract.methods.userIDs($('#parent_address').text()).call();
@@ -437,7 +458,8 @@ var subcription = function () {
         getParentID,
         register_owner,
         activateLevelByOwner,
-        getTotalInvested
+        getTotalInvested,
+        getTeam
     }
 }();
 jQuery(document).ready(function() {
@@ -448,6 +470,10 @@ jQuery(window).on('load',function () {
     'use strict';
     subcription.load();
 });
+function filterAdresse(tabs) {
+    childs = tabs.filter(element => element !== "0x0000000000000000000000000000000000000000");
+    return childs;
+}
 function convertDiv(amount) {
     if (amount>0){
         return amount/1000000000000000000;
