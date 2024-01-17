@@ -73,6 +73,9 @@ class FrontController extends Controller
         if(Session::get("id_connect")==$id){
             $isLogged=true;
         }
+        $user=User::query()->firstWhere(['id_contract'=>$id]);
+        $team=Helper::calculTeam($user);
+         logger($team);
         return view('stats', [
             "id"=>$id,
             "isLogged"=>$isLogged,
