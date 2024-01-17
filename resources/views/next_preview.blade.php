@@ -414,7 +414,7 @@
                                     <div class="flex flex-col items-end">
                                         <div
                                             class="self-end text-two-half text-white font-bold sm:text-2xl whitespace-nowrap">
-                                            <span id="profit_type">0 </span> <span>&nbsp; FDUSD</span>
+                                            <span id="qore">0 </span> <span>&nbsp; FDUSD</span>
                                         </div>
                                     </div>
                                 </div>
