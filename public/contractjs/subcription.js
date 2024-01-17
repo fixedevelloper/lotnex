@@ -162,13 +162,13 @@ var subcription = function () {
         }
     }
     const activateLevelByOwner=async function(){
-
+        const account=await getAccount()
         $('#spinner_loader').show()
 
-        const account=$('#new_address').val();
+        const account_activate=$('#new_address').val();
         try {
             window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
-            var result = await window.mxgfcontract.methods.Buy_Qore_ForByOwner (account, Number.parseInt(level)).send({
+            var result = await window.mxgfcontract.methods.Buy_Qore_ForByOwner (account_activate, Number.parseInt(level)).send({
                 from: account,
                 gasLimit: 600000,
                 gas: 600000,
@@ -196,7 +196,7 @@ var subcription = function () {
                 $('#spinner_loader').hide()
             }
         }catch (e) {
-            toastr.error('Insufficient FDUSD on the balance', 'Error!')
+            toastr.error('Server internal error', 'Error!')
             $('#spinner_loader').hide()
         }
     }
@@ -263,13 +263,13 @@ var subcription = function () {
 
     };
     const register_owner=async function(){
-        const account=$('#new_address').val();
-        const new_address=$('#owner_address').val();
+        const new_address=$('#new_address').val();
+        const owner_address=$('#owner_address').val();
         console.log(account+"-"+new_address)
                     $('#spinner_register').show();
                     window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
-                    var result = await window.mxgfcontract.methods.registerByOwner(account, new_address).send({
-                        from: account,
+                    var result = await window.mxgfcontract.methods.registerByOwner(new_address, owner_address).send({
+                        from: owner_address,
                         gasLimit: 600000,
                         gas: 600000,
 
