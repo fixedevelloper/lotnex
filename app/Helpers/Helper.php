@@ -29,11 +29,15 @@ class Helper
         foreach ($teams as $team){
             $team_total+=self::calculTeam($team);
         }*/
+        if (in_array($user->id,$visited)){
+            return 0;
+        }
         $teams=User::query()->where(['address_parent'=>$user->address_parent])->get();
         $team_total=User::query()->where(['address_parent'=>$user->address_parent])->sum('direct_patner_count');
         foreach ($teams as $team){
             if ($team->address_parent>0){
-                $team_total+=self::calculTeam($team);
+                $visited[]=$team->id;
+                $team_total+=self::calculTeam($team,$visited);
             }
         }
         return $team_total;
@@ -45,9 +49,9 @@ class Helper
         $i=0;
         logger($user);
         while ($i<sizeof($result) ) {
-
-            if ($result[$i]->id != $user->id)
+            if ($result[$i]->id != $user->id){
                 $total += self::getPoints($result[$i]);
+            }
             $i++;
         }
 

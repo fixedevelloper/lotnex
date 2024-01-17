@@ -74,7 +74,7 @@ class FrontController extends Controller
             $isLogged=true;
         }
         $user=User::query()->firstWhere(['id_contract'=>$id]);
-        $team=Helper::getPoints($user);
+        $team=Helper::calculTeam($user);
          logger($team);
         return view('stats', [
             "id"=>$id,
