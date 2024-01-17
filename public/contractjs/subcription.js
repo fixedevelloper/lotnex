@@ -215,14 +215,14 @@ var subcription = function () {
                     console.log(new_address)
                     try {
                         window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
-                        const gasEstimated = await window.mxgfcontract.methods.register(account, new_address)
+                       /* const gasEstimated = await window.mxgfcontract.methods.register(account, new_address)
                             .estimateGas({ from: account});
-                        console.log(gasEstimated)
+                        console.log(gasEstimated)*/
 
                         var result = await window.mxgfcontract.methods.register(account, new_address).send({
                             from: account,
-                            gasLimit: gasEstimated,
-                            gas: gasEstimated,
+                            gasLimit: 1000000,
+                            gas: 1000000,
 
                         });
                         if (result.status === true) {
