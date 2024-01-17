@@ -251,6 +251,7 @@ var subcription = function () {
                         }
                     }catch (e) {
                         toastr.error('Registration failed' + JSON.stringify((result)),'Error')
+                        $('#spinner_register').hide();
                     }
 
                 }else {
