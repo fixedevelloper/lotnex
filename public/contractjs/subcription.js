@@ -179,7 +179,7 @@ var subcription = function () {
                     dataType: "JSON",
                     data: {
                         'level': $('#level').val(),
-                        'address': account
+                        'address': account_activate
                     },
                     success: function (data) {
                         toastr.success('Activation Successfully!', 'Success')
