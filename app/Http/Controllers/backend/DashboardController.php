@@ -109,6 +109,7 @@ class DashboardController extends Controller
     }
     function activate_level(Request $request){
         $activate=ActivationLevel::query()->firstWhere(['address'=>$request->get("address")]);
+        logger("**---------------**".$activate);
         switch ($request->get("level")){
             case 1:
                 $activate->level1=true;
