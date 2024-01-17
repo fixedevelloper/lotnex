@@ -202,8 +202,6 @@ var subcription = function () {
     const register=async function(){
         const account=await getAccount();
         const new_address=await idToAddress();
-        /*        var id=  await window.mxgfcontract.methods.userIDs(new_address).call();
-                console.log(id)*/
         $.ajax({
             url: configs.routes.check_register,
             type: "GET",
@@ -215,41 +213,46 @@ var subcription = function () {
                 if (data.is_in===false){
                     $('#spinner_register').show();
                     console.log(new_address)
-                    window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
-                    var result = await window.mxgfcontract.methods.register(account, new_address).send({
-                        from: account,
-                        gasLimit: 600000,
-                        gas: 600000,
+                    try {
+                        window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
+                        var result = await window.mxgfcontract.methods.register(account, new_address).send({
+                            from: account,
+                            gasLimit: 600000,
+                            gas: 600000,
 
-                    });
-                    if (result.status === true) {
-                        var id=  await window.mxgfcontract.methods.userIDs(account).call();
-                        $.ajax({
-                            url: configs.routes.register_ajax,
-                            type: "GET",
-                            dataType: "JSON",
-                            data: {
-                                'address_parent': new_address,
-                                'address': account,
-                                'id': id
-                            },
-                            success: function (data) {
-                                toastr.success('Registration Successfully', 'Success')
-                                window.location.href=configs.routes.dashboard+'?id='+id;
-                            },
-                            error: function (err) {
-                                $('#spinner_send_svg').show()
-                                $('#spinner_send').hide();
-                                toastr.error('An error ocurred while loading data ...!', 'Error')
-                            }
                         });
+                        if (result.status === true) {
+                            var id=  await window.mxgfcontract.methods.userIDs(account).call();
+                            $.ajax({
+                                url: configs.routes.register_ajax,
+                                type: "GET",
+                                dataType: "JSON",
+                                data: {
+                                    'address_parent': new_address,
+                                    'address': account,
+                                    'id': id
+                                },
+                                success: function (data) {
+                                    toastr.success('Registration Successfully', 'Success')
+                                    window.location.href=configs.routes.dashboard+'?id='+id;
+                                },
+                                error: function (err) {
+                                    $('#spinner_send_svg').show()
+                                    $('#spinner_send').hide();
+                                    toastr.error('An error ocurred while loading data ...!', 'Error')
+                                }
+                            });
 
-                        $('#spinner_register').hide();
-                        //  window.location.href = url;
-                    } else {
+                            $('#spinner_register').hide();
+                            //  window.location.href = url;
+                        } else {
+                            toastr.error('Registration failed' + JSON.stringify((result)),'Error')
+                            $('#spinner_register').hide();
+                        }
+                    }catch (e) {
                         toastr.error('Registration failed' + JSON.stringify((result)),'Error')
-                        $('#spinner_register').hide();
                     }
+
                 }else {
                     toastr.warning('You are already registered please login')
                 }
