@@ -398,8 +398,21 @@
                                 class="flex overflow-hidden relative w-full flex-col bg-black-light rounded p-7.5 pb-5 sm:p-5 sm:pl-2.5 sm:pr-2.5 sm:rounded-none "
                                 style="background-image: url({{asset("lmodel/blue-blur.png")}}); background-repeat: round; background-size: cover;">
 
-                                <table>
-
+                                <table class="min-w-max w-full table-auto border-white-100">
+                                    <thead class="text-white-500 text-xs border-b border-white-100">
+                                    <tr>
+                                        <th class="p-4 text-left font-normal sm:p-3 ">#</th>
+                                        <th class="p-4 text-left font-normal sm:p-3 ">Address</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="text-gray-600 text-sm font-light align-baseline">
+                                    @foreach($partners as $partner)
+                                        <tr class="border-b border-white-100 last:border-none">
+                                            <td class="p-4 text-left whitespace-nowrap sm:p-3"></td>
+                                            <td class="p-4 text-left whitespace-nowrap sm:p-3">{{$partner->address}}</td>
+                                        </tr>
+                                    @endforeach
+                                    </tbody>
                                 </table>
                             </div>
                         </div>

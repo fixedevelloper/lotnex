@@ -62,9 +62,16 @@ class FrontController extends Controller
         if(Session::get("id_connect")==$id){
             $isLogged=true;
         }
+        $user=User::query()->firstWhere(['id_contract'=>$id]);
+        $partners=[];
+        if (!is_null($user)){
+            $partners=User::query()->where(['address_parent'=>$user->address_parent])->limit(10)->get();
+        }
+
         return view('partners', [
             "id"=>$id,
             "isLogged"=>$isLogged,
+            "partners"=>$partners
         ]);
     }
     public function links(Request $request){

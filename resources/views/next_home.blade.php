@@ -1659,6 +1659,18 @@
         day: 'Day',
         days: 'Days'
     });
+/*    function auto_start(){
+        console.log("icci")
+        const date_=new Date()
+        date_.setHours(date_.getHours() + 4);
+        $('#countdown').countdown({
+            date: '01/18/2024 14:00:00',
+            day: 'Day',
+            days: 'Days'
+        });
+    }
+
+    setInterval(auto_start, 1000);*/
 </script>
 </body>
 </html>
