@@ -137,11 +137,14 @@ var lottery = function () {
         $('#previous_number').text("First:"+Object.values(current_balance)[0]+" Second:"+Object.values(current_balance)[1])
     };
     const findWinner=async function(){
-        var account= await lottery.getAccount()
         window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().abi, initialiseABI().address);
         var lastwinneer=  await window.mxgfcontract.methods.getLastFiveWinners().call();
-        console.log(Object.values(lastwinneer))
-        $('#previous_number').text("First:"+Object.values(current_balance)[0]+" Second:"+Object.values(current_balance)[1])
+
+        $.each(lastwinneer, function( index, value ) {
+            $('#table_winner>tbody').append("<tr>" +
+                "<td>"+Number(index+1)+"</td><td>"+value[0]+"</td><td></td>"+value[1]+"</tr>")
+        });
+       // $('#previous_number').text("First:"+Object.values(current_balance)[0]+" Second:"+Object.values(current_balance)[1])
     };
     return {
         init: function () {
