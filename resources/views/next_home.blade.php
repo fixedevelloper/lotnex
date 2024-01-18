@@ -29,6 +29,11 @@
         .iq-countdown #countdown li:last-child:before { display: none; }
         .iq-countdown #countdown li span { font-size: 44px; line-height: normal; font-weight: 700; color: var(--white); }
         .iq-countdown #countdown li p { font-size: 14px; font-weight: 700; color: var(--white); margin-bottom: 0; }
+        @media(max-width:479px) {
+            .iq-countdown { padding-left: 0; padding-right: 0; }
+            .iq-countdown #countdown li p { font-size: 11px; }
+            .iq-countdown #countdown li span { font-size: 36px; }
+        }
 
 
     </style>
@@ -829,7 +834,7 @@
                     </div>--}}
                 </div>
                 <div class="my-10">
-                    <div class="flex flex-col">
+                    <div class="flex flex-col p-2">
                         <span class="text-white text-3xl font-bold sm:text-2xl">Lottery starts in</span>
                         <div class="iq-countdown flex items-center sm:px-5">
                             {{-- <h5 class="iq-tw-6 text-white"><a href="javascript:void(0)"> Nexachain </a>on the ethereum ERC20 blockchain</h5>--}}
@@ -1650,7 +1655,7 @@
         subcription.getTotalInvested()
     });
     $('#countdown').countdown({
-        date: '01/18/2024 12:00:00',
+        date: '01/18/2024 14:00:00',
         day: 'Day',
         days: 'Days'
     });
