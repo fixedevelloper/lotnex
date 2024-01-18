@@ -139,8 +139,8 @@ var lottery = function () {
     const findWinner=async function(){
         var account= await lottery.getAccount()
         window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().abi, initialiseABI().address);
-        var current_balance=  await window.mxgfcontract.methods.getPreviousNumberPair().call();
-        console.log(Object.values(current_balance))
+        var lastwinneer=  await window.mxgfcontract.methods.getLastFiveWinners().call();
+        console.log(Object.values(lastwinneer))
         $('#previous_number').text("First:"+Object.values(current_balance)[0]+" Second:"+Object.values(current_balance)[1])
     };
     return {
