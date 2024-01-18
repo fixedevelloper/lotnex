@@ -13,6 +13,25 @@
     <title>Main page | NEXACHAIN FDUSD</title>
     <meta name="description" content=""
           data-react-helmet="true">
+    <style type="text/css">
+        .iq-banner-2 .iq-countdown { border-radius: 30px; padding: 40px 40px; position: relative; }
+        .iq-banner-2  .iq-countdown .list-inline { margin-top: 15px; }
+        .iq-banner-2 .iq-countdown .list-inline li a { color: var(--white); font-size: 18px; margin: 0 5px; }
+        .iq-banner-2 .iq-countdown .list-inline li a:hover { color: var(--iq-primary); }
+        /*---------------------------------------------------------------------
+                            Token
+-----------------------------------------------------------------------*/
+        .iq-countdown #countdown { list-style: none; margin: 40px 0; padding: 0; display: inline-block; width: 100%; }
+        .iq-countdown #countdown li { display: inline-block; padding: 0 20px; position: relative; }
+        .iq-countdown #countdown li:before { content: ""; position: absolute; top: 0; right: 0; width: 1px; height: 100%; display: inline-block; background: rgba(255, 255, 255, 0.1); }
+        .iq-countdown #countdown li:first-child { padding-left: 0; }
+        .iq-countdown #countdown li:last-child { padding-right: 0; }
+        .iq-countdown #countdown li:last-child:before { display: none; }
+        .iq-countdown #countdown li span { font-size: 44px; line-height: normal; font-weight: 700; color: var(--white); }
+        .iq-countdown #countdown li p { font-size: 14px; font-weight: 700; color: var(--white); margin-bottom: 0; }
+
+
+    </style>
 </head>
 <body style="overflow: unset; position: relative; min-height: 100%; top: 40px;">
 
@@ -809,11 +828,33 @@
                         </div>
                     </div>--}}
                 </div>
-
+                <div class="my-10">
+                    <div class="flex flex-col">
+                        <span class="text-white text-3xl font-bold sm:text-2xl">Lottery starts in</span>
+                        <div class="iq-countdown flex items-center sm:px-5">
+                            {{-- <h5 class="iq-tw-6 text-white"><a href="javascript:void(0)"> Nexachain </a>on the ethereum ERC20 blockchain</h5>--}}
+                            <ul id="countdown" class="text-center">
+                                <li class="border-white sm:px-10"><span class="days">00</span>
+                                    <p class="days_text">Days</p>
+                                </li>
+                                <li class="border-white sm:px-10"><span class="hours">00</span>
+                                    <p class="hours_text">Hours</p>
+                                </li>
+                                <li class=" border-white sm:px-10"><span class="minutes">00</span>
+                                    <p class="minutes_text">Minutes</p>
+                                </li>
+                                <li class="border-white sm:px-10"><span class="seconds">00</span>
+                                    <p class="seconds_text">Seconds</p>
+                                </li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
 
                 <div class="my-10">
                     <div class="flex flex-col">
-                        <div class="flex items-center sm:px-5"><span class="text-white text-3xl font-bold sm:text-2xl">Platform recent activity</span>
+                        <div class="flex items-center sm:px-5">
+                            <span class="text-white text-3xl font-bold sm:text-2xl">Platform recent activity</span>
                             <div class="relative group">
                                 <button
                                     class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none ml-1.5 "
@@ -1381,15 +1422,6 @@
                                         <span
                                             class="text-white text-2xl font-bold notranslate sm:text-xl false mt-5 sm:mt-2.5" id="total_user"></span>
                                     </div>
-                                   {{-- <div
-                                        class="p-5 pt-0 flex text-green-light text-base items-baseline notranslate sm:text-sm">
-                                        <svg class="mr-1.5" width="8" height="11" stroke="#2CFF4E"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4 10V1m0 0L1 4m3-3 3 3" stroke-linecap="round"
-                                                  stroke-linejoin="round"></path>
-                                        </svg>
-
-                                    </div>--}}
                                 </div>
                                 <div class="bg-gray rounded p-5 flex flex-col max-w-full"><span
                                         class="inline-flex items-center text-base text-white-500 sm:text-sm">Members received
@@ -1611,10 +1643,16 @@
 <script src="{{asset("toast/toastr.js")}}"></script>
 <script src="{{asset("contractjs/subcription.js")}}"></script>
 <script type="module" src="{{asset('contractjs/connect-wallet.js')}}"></script>
+<script src="{{asset('lmodel/m2/js/all-plugins.js')}}"></script>
 <script>
     jQuery(window).on('load',function () {
         'use strict';
         subcription.getTotalInvested()
+    });
+    $('#countdown').countdown({
+        date: '01/18/2024 12:00:00',
+        day: 'Day',
+        days: 'Days'
     });
 </script>
 </body>
