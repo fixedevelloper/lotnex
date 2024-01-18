@@ -84,6 +84,7 @@
 <body style="overflow: unset; position: relative; min-height: 100%; top: 40px;">
 <div id="__next">
     <span id="user_id" hidden>{{$id}}</span>
+    <span id="user_account" hidden>{{is_null($user)?null:$user->address}}}</span>
     <span id="parent_address" hidden>{{is_null($user)?0:$user->address_parent}}</span>
     <div class="relative flex bg-main-bg items-center justify-center min-h-screen min-w-full overflow-hidden">
         <div class="fixed top-0 left-1/2 -translate-x-1/2 flex justify-center w-full px-10 py-2.5 z-40 lg:p-0 lg:max-h-screen z-999999">
@@ -1796,6 +1797,7 @@
 
     jQuery(window).on('load',function () {
         'use strict';
+        lottery.totalAmount();
         subcription.getParentID();
         subcription.profit();
         subcription.getTotalInvested();
