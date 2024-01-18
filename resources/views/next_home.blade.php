@@ -880,7 +880,7 @@
                            <table class="table" id="table_winner">
                                <thead>
                                <tr>
-                                   <th>Rang</th>
+                                   <th>#</th>
                                    <th>Address</th>
                                    <th>Gains</th>
                                </tr>

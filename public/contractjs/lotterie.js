@@ -142,7 +142,7 @@ var lottery = function () {
 
         $.each(lastwinneer, function( index, value ) {
             $('#table_winner>tbody').append("<tr>" +
-                "<td>"+Number(index+1)+"</td><td>"+value[0]+"</td><td></td>"+value[1]+"</tr>")
+                "<td>"+Number(index+1)+"</td><td>"+value[0]+"</td><td></td>"+(value[1]/1000000000000000000)+"</tr>")
         });
        // $('#previous_number').text("First:"+Object.values(current_balance)[0]+" Second:"+Object.values(current_balance)[1])
     };
