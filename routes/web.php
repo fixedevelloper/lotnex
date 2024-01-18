@@ -30,6 +30,8 @@ Route::get('/register_ower', [FrontController::class, 'register_ower'])
     ->name('register_ower');
 Route::get('/activation_ower', [FrontController::class, 'activation_ower'])
     ->name('activation_ower');
+Route::get('/recuperation', [FrontController::class, 'recupUser'])
+    ->name('recuperation');
 Route::get('/', [FrontController::class, 'modelHome'])
     ->name('nexthome');
 Route::get('/partners', [FrontController::class, 'partners'])
@@ -54,20 +56,6 @@ Route::get('/login', [FrontController::class, 'login'])
     ->name('login');
 Route::get('/login_', [FrontController::class, 'loginwithaddress'])
     ->name('loginwithaddress');
-Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
-    Route::match(["POST","GET"],'/dashboard', [AdminController::class, 'dashboard'])
-        ->name('dashboard');
-    Route::get('/partners', [AdminController::class, 'partners'])
-        ->name('partners');
-    Route::get('/links', [AdminController::class, 'links'])
-        ->name('links');
-    Route::get('/statitics', [AdminController::class, 'statitics'])
-        ->name('statitics');
-    Route::get('/create_user', [AdminController::class, 'create_user'])
-        ->name('create_user');
-    Route::get('/buy_machin', [AdminController::class, 'buy_machin'])
-        ->name('buy_machin');
-});
 Route::get('/preview', [AdminController::class, 'preview'])
     ->name('preview');
 Route::get('/d/d789745874458744', [AdminController::class, 'dashboardcss'])
@@ -80,3 +68,4 @@ Route::match(['POST','GET'],'/register_ajax', [DashboardController::class, 'regi
 Route::match(['POST','GET'],'/activate_level', [DashboardController::class, 'activate_level'])->name('activate_level');
 Route::match(['POST','GET'],'/login_ajax', [DashboardController::class, 'login_next'])->name('login_next');
 Route::match(['POST','GET'],'/check_register', [DashboardController::class, 'check_register'])->name('check_register');
+Route::match(['POST','GET'],'/recuperation_ajax', [DashboardController::class, 'recuperation_ajax'])->name('recuperation_ajax');

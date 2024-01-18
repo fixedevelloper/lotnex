@@ -34,6 +34,17 @@ class FrontController extends Controller
             "isLogged"=>$isLogged
         ]);
     }
+    public function recupUser(Request $request){
+        $isLogged=false;
+        $id= $request->get("id");
+        if(Session::get("id_connect")==$id){
+            $isLogged=true;
+        }
+        return view('recuperation', [
+            "id"=>$id,
+            "isLogged"=>$isLogged
+        ]);
+    }
     public function activation_ower(Request $request){
         $isLogged=false;
         $id= $request->get("id");

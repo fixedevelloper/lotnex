@@ -102,6 +102,29 @@ class DashboardController extends Controller
 
 
     }
+    function recuperation_ajax(Request $request){
+        $id=$request->get("id");
+        $address=$request->get("address");
+        $address_parent=$request->get('address_parent');
+        $user=User::query()->firstWhere(['address'=>$address]);
+        if (is_null($user)){
+            $user=new User();
+            $user->name=$address;
+            $user->address=$address;
+            $user->address_parent=$address_parent;
+            $user->id_contract=$id;
+            $user->total_team=0;
+            $user->direct_patner_count=0;
+            $user->save();
+            $parain=User::query()->firstWhere(['address'=>$address_parent]);
+            $parain->direct_patner_count=$parain->direct_patner_count+1;
+            $parain->save();
+            $activate=new ActivationLevel();
+            $activate->address=$address;
+            $activate->save();
+        }
+        return response()->json(['data' =>  [], 'status'=> true]);
+    }
     function check_register(Request $request){
         $is_in=false;
         $address=$request->get("address");

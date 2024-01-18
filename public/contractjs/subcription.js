@@ -63,6 +63,35 @@ var subcription = function () {
         const balance=  await window.mxgfcontract.methods.balanceOf(accounts).call();
         return balance;
     };
+    const recuperation= async function(){
+        var address=$("#new_address_recup").val();
+        window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().StakingnmatrixAbi, initialiseABI().stakingaddress);
+        var id=  await window.mxgfcontract.methods.userIDs(address).call();
+        var addres_parent = await window.mxgfcontract.methods.getUserDirectReferrer(address).call();
+        if (id>0){
+            $.ajax({
+                url: configs.routes.recuperation_ajax,
+                type: "GET",
+                dataType: "JSON",
+                data: {
+                    'address_parent': addres_parent,
+                    'address': address,
+                    'id': id
+                },
+                success: function (data) {
+                    toastr.success('Registration Successfully', 'Success')
+                    window.location.href=configs.routes.dashboard+'?id='+id;
+                },
+                error: function (err) {
+                    $('#spinner_send_svg').show()
+                    $('#spinner_send').hide();
+                    toastr.error('An error ocurred while loading data ...!', 'Error')
+                }
+            });
+        }else {
+            toastr.error('User not exist', 'Error')
+        }
+    };
     const initialiseEtheruim = async function () {
         if (window.ethereum) {
             window.web3 = new Web3(ethereum);
@@ -468,7 +497,8 @@ var subcription = function () {
         register_owner,
         activateLevelByOwner,
         getTotalInvested,
-        getTeam
+        getTeam,
+        recuperation
     }
 }();
 jQuery(document).ready(function() {
