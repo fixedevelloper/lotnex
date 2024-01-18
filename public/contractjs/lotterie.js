@@ -139,10 +139,11 @@ var lottery = function () {
     const findWinner=async function(){
         window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().abi, initialiseABI().address);
         var lastwinneer=  await window.mxgfcontract.methods.getLastFiveWinners().call();
+        console.log(lastwinneer)
 
         $.each(lastwinneer, function( index, value ) {
             $('#table_winner>tbody').append("<tr>" +
-                "<td>"+Number(index+1)+"</td><td>"+value[0]+"</td><td></td>"+(value[1]/1000000000000000000)+"</tr>")
+                "<td>"+Number(index+1)+"</td><td>"+value[0]+"</td><td>"+(value[1]/1000000000000000000)+"</td></tr>")
         });
        // $('#previous_number').text("First:"+Object.values(current_balance)[0]+" Second:"+Object.values(current_balance)[1])
     };
