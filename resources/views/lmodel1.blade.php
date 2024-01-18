@@ -1216,12 +1216,12 @@
                                                 <div class="flex" id="content_lotto">
                                                 </div>
                                                 <div class="flex sm:w-full">
-                                                    <button  type="button" id="btn_lotto"
-                                                            class="cursor-not-allowed flex justify-center items-center text-center
+                                                    <button onclick="lottery.sendLottery()"  type="button" id="btn_lotto"
+                                                            class="flex justify-center items-center text-center
                                                              text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-cyan-300
                                                               hover:bg-hover-cyan-300 active:bg-active-cyan-300 z-0 sm:w-full text-white">
                                                         <div class="flex flex-col space-y-1 items-center">
-                                                            <div class="flex items-center">COMING SOON
+                                                            <div class="flex items-center">Send now
                                                                 <i id="spinner_send" class="loading"></i>
                                                                 <svg id="spinner_send_svg" width="17" height="17" viewBox="0 0 17 17" fill="none"
                                                                      xmlns="http://www.w3.org/2000/svg">
