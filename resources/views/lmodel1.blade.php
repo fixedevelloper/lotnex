@@ -1440,7 +1440,7 @@
                                                 border-right-width: 6px;
                                             }
                                         </style>
-                                        Nexachain BUSD real-time global events with links to transactions in blockchain
+                                        Nexachain FDUSD real-time global events with links to transactions in blockchain
                                     </div>
                                 </div>
                             </div>
@@ -1609,7 +1609,7 @@
                                     <div class="bg-gray rounded p-5 flex flex-col flex-1 max-w-full">
                                         <div
                                             class="flex justify-between items-center text-base text-white-500 sm:text-sm">
-                                            <span>Nexachain BUSD Contracts</span>
+                                            <span>Nexachain FDUSD Contracts</span>
                                             <button
                                                 class="rounded-full h-5 w-5 justify-center items-center bg-main-blue hidden lg:flex">
                                                 <svg class="stroke-current text-white" width="8" height="4" fill="#fff"
