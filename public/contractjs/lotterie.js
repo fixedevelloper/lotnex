@@ -119,10 +119,10 @@ var lottery = function () {
     };
     const totalAmount=async function(){
         console.log($('#user_account').text())
-        if ($('#user_account').text() !== null){
-
+        const account=$('#user_account').text();
+        if (account !== null){
             window.mxgfcontract = await new window.web3.eth.Contract(initialiseABI().abi, initialiseABI().address);
-            var total_amount=  await window.mxgfcontract.methods.totalAmountReceived($('#user_account').text()).call();
+            var total_amount=  await window.mxgfcontract.methods.totalAmountReceived(account).call();
             console.log("*********"+total_amount)
             $('#profit_royal_lottery').text(total_amount/1000000000000000000)
         }else {
