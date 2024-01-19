@@ -881,11 +881,9 @@
                                     <span class="text-base sm:text-sm"> Info </span></button>
                             </div>
                             <div class="grid w-full gap-10 mt-8 grid-cols-2 sm:grid-cols-1">
-                                <a class="cursor-not-allowed relative flex flex-col p-7.5 w-full bg-gray rounded z-10 overflow-hidden justify-between min-h-programDashboard sm:p-5 sm:min-h-programDashboardMobile"
-                                   >
-                               {{-- <a
+                                <a
                                     class="relative flex flex-col p-7.5 w-full bg-gray rounded z-10 overflow-hidden justify-between min-h-programDashboard sm:p-5 sm:min-h-programDashboardMobile"
-                                    href="{{route('nextpreviuos',['id'=>$id,'type'=>'qore'])}}">--}}
+                                    href="{{route('nextpreviuos',['id'=>$id,'type'=>'qore'])}}">
                                     <svg class="absolute top-2 right-2 sm:top-1 sm:right-1 " width="20" height="20"
                                          fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
