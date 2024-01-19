@@ -940,7 +940,7 @@
                                                     <button
                                                         class="flex justify-center items-center text-center text-base font-bold text-white rounded-mini sm:text-sm outline-none px-5 py-3 bg-main-blue hover:bg-hover-main-blue active:bg-active-main-blue z-0 sm:w-full pointer-events-none text-white">
                                                         <div class="flex flex-col space-y-1 items-start">
-                                                            <div class="flex items-center">COMING SOON
+                                                            <div class="flex items-center">Preview
                                                                 <svg class="ml-3 fill-current" width="16" height="16"
                                                                      fill="#fff" xmlns="http://www.w3.org/2000/svg">
                                                                     <path fill-rule="evenodd" clip-rule="evenodd"
