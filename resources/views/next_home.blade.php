@@ -877,12 +877,12 @@
                         <div class="grid grid-cols-3 gap-10 mt-5 lg:grid-cols-1 lg:gap-0 z-10">
                             <div
                                 class="notranslate w-full overflow-hidden flex flex-col col-span-2 p-5 bg-gray rounded h-[1000px]  lg:order-2 sm:rounded-none sm:p-5 sm:max-h-3/4">
-                           <table class="table" id="table_winner">
-                               <thead>
+                           <table class="min-w-max w-full table-auto border-white-100" id="table_winner">
+                               <thead class="text-white-500 text-xs border-b border-white-100">
                                <tr>
-                                   <th>#</th>
-                                   <th>Address</th>
-                                   <th>Gains</th>
+                                   <th class="p-4 text-left font-normal sm:p-3 ">#</th>
+                                   <th class="p-4 text-left font-normal sm:p-3 ">Address</th>
+                                   <th class="p-4 text-left font-normal sm:p-3 ">Gains</th>
                                </tr>
                                </thead>
                                <tbody class="text-center text-gray-600 text-sm font-light align-baseline">
