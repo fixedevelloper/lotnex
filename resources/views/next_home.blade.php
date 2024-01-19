@@ -835,7 +835,7 @@
                 </div>
                 <div class="my-10">
                     <div class="flex flex-col p-2">
-                        <span class="text-white text-3xl font-bold sm:text-2xl">Lottery starts in</span>
+                        <span class="text-white text-3xl font-bold sm:text-2xl">Level activation begins in</span>
                         <div class="iq-countdown flex items-center sm:px-5">
                             {{-- <h5 class="iq-tw-6 text-white"><a href="javascript:void(0)"> Nexachain </a>on the ethereum ERC20 blockchain</h5>--}}
                             <ul id="countdown" class="text-center">
@@ -1159,7 +1159,7 @@
         lottery.findWinner()
     });
     $('#countdown').countdown({
-        date: '01/19/2024 14:00:00',
+        date: '01/19/2024 15:00:00',
         day: 'Day',
         days: 'Days'
     });
