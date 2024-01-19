@@ -1159,7 +1159,7 @@
         lottery.findWinner()
     });
     $('#countdown').countdown({
-        date: '01/18/2024 20:00:00',
+        date: '01/19/2024 14:00:00',
         day: 'Day',
         days: 'Days'
     });
