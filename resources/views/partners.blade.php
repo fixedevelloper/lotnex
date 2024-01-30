@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{asset('toast/toastr.scss')}}" data-n-g="">
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/custom_next.css')}}" data-n-g="">
 
-    <title>Links | NEXACHAIN FDUSD</title>
+    <title>Links | NEXACHAIN BNB</title>
     <style id="abu-collapse-styles" type="text/css"></style>
 
 </head>

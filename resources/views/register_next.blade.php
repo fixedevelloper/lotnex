@@ -385,7 +385,7 @@
                 <div class="flex flex-1 flex-col items-start mr-10 sm:mr-0 sm:items-stretch sm:max-w-full sm:p-5">
                     <div class="flex flex-col sm:flex-1"><span
                             class="inline-block text-two-half text-white mb-10 sm:mb-7.5 sm:text-2xl"> Registration <br> in <span
-                                class="notranslate"> NEXACHAIN FDUSD</span></span>
+                                class="notranslate"> NEXACHAIN BNB</span></span>
                         <div class="flex flex-col mb-10 sm:mb-7.5">
                             <div class="w-full relative flex flex-col flex-grow-0 flex-shrink-0">
                                 <div class="flex items-baseline"><label
@@ -450,7 +450,7 @@
                                     </svg>
                                     <div
                                         class="flex flex-wrap items-center ml-2.5 leading-5 text-base whitespace-nowrap text-red">
-                                        <span class="mr-1.5"><span>Balance</span><span>:</span></span><span class="">min 5 FDUSD </span>
+                                        <span class="mr-1.5"><span>Balance</span><span>:</span></span><span class="">min 5 BNB </span>
                                     </div>
                                 </div>
                                 <div class="hidden bg-white-100 rounded flex-col w-full p-5 mt-4 sm:flex">

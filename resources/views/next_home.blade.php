@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{asset('toast/toastr.scss')}}" data-n-g="">
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/custom_next.css')}}" data-n-g="">
 
-    <title>Main page | NEXACHAIN FDUSD</title>
+    <title>Main page | NEXACHAIN BNB</title>
     <meta name="description" content=""
           data-react-helmet="true">
     <style type="text/css">
@@ -86,7 +86,7 @@
                     <div class="flex flex-col sm:w-full z-10 flex-shrink-0">
                         <div class="flex items-start sm:items-center mb-5 sm:mb-2.5">
                             <div class="flex items-center"><span
-                                    class="text-white font-medium text-two-half leading-48px sm:text-xl">Welcome to NEXACHAIN FDUSD</span>
+                                    class="text-white font-medium text-two-half leading-48px sm:text-xl">Welcome to NEXACHAIN BNB</span>
                             </div>
                         </div>
                         <span class="mb-7.5 text-base sm:text-sm sm:mb-5 ">Connect your wallet to start working. First time here? Watch a tutorial to learn more</span>
@@ -390,14 +390,14 @@
                         <div class="flex flex-col sm:px-5"><span
                                 class="text-white text-3xl font-bold ">Account preview</span><span
                                 class="text-white-500 text-base mt-1 mb-7.5">Look up any <span
-                                    class="notranslate mx-1.5">Nexachain FDUSD</span> member account in preview mode. Enter ID or <span
-                                    class="notranslate mx-1.5">FDUSD</span> address to preview or click Demo to view a random account.</span>
+                                    class="notranslate mx-1.5">Nexachain BNB</span> member account in preview mode. Enter ID or <span
+                                    class="notranslate mx-1.5">BNB</span> address to preview or click Demo to view a random account.</span>
                         </div>
                         <div class="flex sm:flex-col">
                             <div
                                 class="flex flex-col flex-1 justify-between sm:w-full bg-main-blue-200 rounded sm:rounded-none p-7.5 sm:p-5 mr-10 sm:mr-0 sm:mb-5">
                                 <span class="text-white mb-3">Enter <span class="notranslate mx-1">ID</span> or <span
-                                        class="notranslate mx-1">FDUSD</span>wallet</span>
+                                        class="notranslate mx-1">BNB</span>wallet</span>
                                 <form action="{{route('lmodel1')}}">
                                     <div class="flex sm:flex-col"><input name="id"
                                             class="w-full bg-white-100 border-2 border-transparent rounded-mini py-3 px-5 text-white outline-none focus:border-2 focus:border-main-blue focus:bg-transparent flex-1 mr-5 sm:mr-0 sm:mb-3.5 py-2"
@@ -702,19 +702,19 @@
                                     <div
                                         class="flex flex-col py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
                                         <span
-                                            class="text-2xl text-white font-bold sm:text-xl"><span id="total_invest">0 </span> &nbsp; FDUSD</span><span
-                                            class="text-green-light text-base items-baseline sm:text-sm">+ 0 FDUSD</span>
+                                            class="text-2xl text-white font-bold sm:text-xl"><span id="total_invest">0 </span> &nbsp; BNB</span><span
+                                            class="text-green-light text-base items-baseline sm:text-sm">+ 0 BNB</span>
                                     </div>
                                     <div
                                         class="flex flex-col py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
                                         <span
-                                            class="text-2xl text-white font-bold sm:text-xl">0 FDUSD</span><span
-                                            class="text-green-light text-base items-baseline sm:text-sm">+ 0 FDUSD</span>
+                                            class="text-2xl text-white font-bold sm:text-xl">0 BNB</span><span
+                                            class="text-green-light text-base items-baseline sm:text-sm">+ 0 BNB</span>
                                     </div>
                                 </div>
                                 <div class="bg-gray rounded p-5 flex flex-col flex-1 max-w-full">
                                     <div class="flex justify-between items-center text-base text-white-500 sm:text-sm">
-                                        <span>Nexachain FDUSD Contracts</span>
+                                        <span>Nexachain BNB Contracts</span>
                                         <button
                                             class="rounded-full h-5 w-5 justify-center items-center bg-main-blue hidden lg:flex">
                                             <svg class="stroke-current text-white" width="8" height="4" fill="#fff"
@@ -792,7 +792,7 @@
                                             <div
                                                 class="flex flex-col py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
                                                 <span class="text-base text-white-500 sm:text-sm"><span>Turnover, <span
-                                                            class="notranslate">FDUSD</span> </span></span><span
+                                                            class="notranslate">BNB</span> </span></span><span
                                                     class="text-2xl text-white font-bold sm:text-xl">0</span><span
                                                     class="text-green-light text-base items-baseline sm:text-sm">+ 0</span>
                                             </div>

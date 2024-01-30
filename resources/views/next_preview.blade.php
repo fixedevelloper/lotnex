@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{asset('toast/toastr.scss')}}" data-n-g="">
     <link rel="stylesheet" href="{{asset('lmodel/m2/css/custom_next.css')}}" data-n-g="">
 
-    <title>Preview | NEXACHAIN FDUSD</title>
+    <title>Preview | NEXACHAIN BNB</title>
     <style id="abu-collapse-styles" type="text/css"></style>
 
 </head>
@@ -414,7 +414,7 @@
                                     <div class="flex flex-col items-end">
                                         <div
                                             class="self-end text-two-half text-white font-bold sm:text-2xl whitespace-nowrap">
-                                            <span id="qore">0 </span> <span>&nbsp; FDUSD</span>
+                                            <span id="qore">0 </span> <span>&nbsp; BNB</span>
                                         </div>
                                     </div>
                                 </div>

@@ -567,7 +567,7 @@
                                             </div>
                                             <div class="flex items-center justify-between">
                                                 <div class="flex flex-1 w-full text-white text-2xl font-bold notranslate sm:text-xl !mt-1 !sm:mt-2.5 mt-5 sm:mt-2.5">
-                                                   <span id="profit_1">0 </span>  <span>&nbsp; FDUSD</span>
+                                                   <span id="profit_1">0 </span>  <span>&nbsp; BNB</span>
                                                 </div>
                                                 <div class="flex p-1.5">
                                                     <div
@@ -596,7 +596,7 @@
                                             </div>
                                             <div class="flex items-center justify-between">
                                                 <div class="flex flex-1 w-full text-white text-2xl font-bold notranslate sm:text-xl !mt-1 !sm:mt-2.5 mt-5 sm:mt-2.5">
-                                                    <span id="profit_free">0 </span> <span>&nbsp; FDUSD</span>
+                                                    <span id="profit_free">0 </span> <span>&nbsp; BNB</span>
                                                 </div>
                                                 <div class="flex p-1.5">
                                                     <div
@@ -898,7 +898,7 @@
                                                 class="text-white text-2xl notranslate font-bold justify-start sm:text-xl false">Qore</span>
                                         </div>
                                         <span
-                                            class="text-white text-2xl font-bold justify-end text-right notranslate sm:text-xl"><span id="qore">0 </span> <span>&nbsp; FDUSD</span></span>
+                                            class="text-white text-2xl font-bold justify-end text-right notranslate sm:text-xl"><span id="qore">0 </span> <span>&nbsp; BNB</span></span>
                                     </div>
                                     <div class="flex justify-between h-full w-full">
                                         <div class="flex justify-between w-full z-10 sm:flex-col mt-5 w-full items-end">
@@ -1439,7 +1439,7 @@
                                                 border-right-width: 6px;
                                             }
                                         </style>
-                                        Nexachain FDUSD real-time global events with links to transactions in blockchain
+                                        Nexachain BNB real-time global events with links to transactions in blockchain
                                     </div>
                                 </div>
                             </div>
@@ -1595,8 +1595,8 @@
                                         <div
                                             class="flex flex-col py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
                                             <span
-                                                class="text-2xl text-white font-bold sm:text-xl"><span id="total_invest">0 </span> &nbsp; FDUSD</span><span
-                                                class="text-green-light text-base items-baseline sm:text-sm">+ 0 FDUSD</span>
+                                                class="text-2xl text-white font-bold sm:text-xl"><span id="total_invest">0 </span> &nbsp; BNB</span><span
+                                                class="text-green-light text-base items-baseline sm:text-sm">+ 0 BNB</span>
                                         </div>
                                         <div
                                             class="flex flex-col py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
@@ -1608,7 +1608,7 @@
                                     <div class="bg-gray rounded p-5 flex flex-col flex-1 max-w-full">
                                         <div
                                             class="flex justify-between items-center text-base text-white-500 sm:text-sm">
-                                            <span>Nexachain FDUSD Contracts</span>
+                                            <span>Nexachain BNB Contracts</span>
                                             <button
                                                 class="rounded-full h-5 w-5 justify-center items-center bg-main-blue hidden lg:flex">
                                                 <svg class="stroke-current text-white" width="8" height="4" fill="#fff"
@@ -1689,7 +1689,7 @@
                                                     class="flex flex-col py-2.5 border-b border-white-100 space-y-1.5 last:border-0 last:pb-0">
                                                     <span
                                                         class="text-base text-white-500 sm:text-sm"><span>Turnover, <span
-                                                                class="notranslate">FDUSD</span> </span></span><span
+                                                                class="notranslate">BNB</span> </span></span><span
                                                         class="text-2xl text-white font-bold sm:text-xl">0</span><span
                                                         class="text-green-light text-base items-baseline sm:text-sm">+ 0</span>
                                                 </div>
